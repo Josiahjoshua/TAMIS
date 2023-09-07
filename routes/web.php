@@ -29,11 +29,7 @@ Route::get('/', function () { return view('admin.index');});
 
 Route::get('dashboard', function () { return view('admin.dashboard');});
 
-<<<<<<< HEAD
 Route::get('dashboard', function () { return view('admin.dashboard');});
-=======
-Route::get('departmentoffice', function () { return view('admin.departmentoffice');});
->>>>>>> bc0d7bf0202f439a81be97fae901169d91e697a6
 
 Route::get('departmentreport', function () { return view('admin.departmentreport');});
 
@@ -43,25 +39,5 @@ Route::get('assethistory', function () { return view('admin.assethistory');});
 
 Route::get('transferasset', function () { return view('admin.transferasset');});
 
-<<<<<<< HEAD
 Route::get('user', function () { return view('admin.user');});
 
-=======
-//DIRECTOR ROUTES
-
-Route::get('/', function () { return view('director.index');});
-
-Route::get('dashboard', function () { return view('director.dashboard');});
-
-Route::get('departmentoffice', function () { return view('director.departmentoffice');});
-
-Route::get('departmentreport', function () { return view('director.departmentreport');});
-
-Route::get('assetinfo', function () { return view('director.assetinfo');});
-
-Route::get('assethistory', function () { return view('director.assethistory');});
-
-Route::get('assetassignment', function () { return view('director.assetassignment');});
-
-Route::get('transferasset', function () { return view('director.transferasset');});
->>>>>>> bc0d7bf0202f439a81be97fae901169d91e697a6
