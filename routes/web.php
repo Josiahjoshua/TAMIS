@@ -66,9 +66,14 @@ Route::group(['prefix'=>'stock-checker'], function(){
         return view('stock_checker.assetdisposal');
     })->name('stock-checker.assetdisposal');
 
+    Route::get('assets_report', function() {
+        return view('stock_checker.report');
+    })->name('stock-checker.report');
+
     Route::get('profile', function() {
         return view('stock_checker.user');
     })->name('stock_checker.profile');
+
 
 
 });

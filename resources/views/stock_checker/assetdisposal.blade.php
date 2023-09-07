@@ -214,7 +214,7 @@
                                                     <td>ICT Set</td>
                                                     <td >Msasani</td>
                                                     <td>850,000</td>
-                                                    <td>January 12, 2020</td>
+                                                    <td>Poor</td>
                                                     <td>2</td>
                                                     <td></td>
                                                     <td>22/03/2023</td>
@@ -237,7 +237,7 @@
                             <div class="sparkline9-list shadow-reset">
                                 <div class="sparkline9-hd">
                                     <div class="main-sparkline9-hd">
-                                        <h1>Asset Information Encoding <span class="basic-ds-n">Form</span></h1>
+                                        <h1>Asset Disposal Encoding <span class="basic-ds-n">Form</span></h1>
                                         
                                     </div>
                                 </div>
