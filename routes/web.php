@@ -27,7 +27,7 @@ Route::get('branchoffice', function () { return view('branchoffice');});
 
 Route::get('branchreport', function () { return view('branchreport');});
 
-Route::get('dashboard', function () { return view('dashboard');});
+Route::get('dashboard', function () { return view('admin.dashboard');});
 
 Route::get('department', function () { return view('department');});
 
@@ -38,3 +38,4 @@ Route::get('employeereport', function () { return view('employeereport');});
 Route::get('transferasset', function () { return view('transferasset');});
 
 Route::get('user', function () { return view('admin.user');});
+
