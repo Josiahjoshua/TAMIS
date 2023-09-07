@@ -46,15 +46,15 @@ Route::group(['prefix'=>'stock-checker'], function(){
         return view('stock_checker.dashboard');
     })->name('stock_checker.dashboard');
 
-    Route::get('assethistory', function(){ 
+    Route::get('assets_history', function(){ 
         return view('stock_checker.assethistory');
     })->name('stock-checker.assethistory');
     
-    Route::get('assetcategory', function(){ 
+    Route::get('assets_category', function(){ 
         return view('stock_checker.assetcategory');
     })->name('stock-checker.assetcategory');
     
-    Route::get('assetinfo', function(){ 
+    Route::get('assets_info', function(){ 
         return view('stock_checker.assetinfo');
     })->name('stock-checker.assetinfo');
     
@@ -62,7 +62,7 @@ Route::group(['prefix'=>'stock-checker'], function(){
         return view('stock_checker.department');
     })->name('stock-checker.department');
     
-    Route::get('assetdisposal', function(){ 
+    Route::get('assets_disposal', function(){ 
         return view('stock_checker.assetdisposal');
     })->name('stock-checker.assetdisposal');
 
