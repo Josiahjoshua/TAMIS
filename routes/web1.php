@@ -25,19 +25,19 @@ use Illuminate\Support\Facades\Route;
 
 // Route::get('/branchoffice', [AdminController::class, 'home']) ->name('branchoffice');
 
-Route::get('/', function () { return view('admin.index');});
+Route::get('/', function () { return view('director.index');});
 
-Route::get('dashboard', function () { return view('admin.dashboard');});
+Route::get('dashboard', function () { return view('director.dashboard');});
 
-Route::get('dashboard', function () { return view('admin.dashboard');});
+Route::get('dashboard', function () { return view('director.dashboard');});
 
-Route::get('departmentreport', function () { return view('admin.departmentreport');});
+Route::get('departmentreport', function () { return view('director.departmentreport');});
 
-Route::get('assetinfo', function () { return view('admin.assetinfo');});
+Route::get('assetinfo', function () { return view('director.assetinfo');});
 
-Route::get('assethistory', function () { return view('admin.assethistory');});
+Route::get('assethistory', function () { return view('director.assethistory');});
 
-Route::get('transferasset', function () { return view('admin.transferasset');});
+Route::get('transferasset', function () { return view('director.transferasset');});
 
-Route::get('user', function () { return view('admin.user');});
+Route::get('user', function () { return view('director.user');});
 
