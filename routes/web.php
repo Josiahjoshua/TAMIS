@@ -1,5 +1,5 @@
 <?php
-
+use App\Http\Controllers\directorController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -12,47 +12,21 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-//ADMIN ROUTES
-// Route::get('/', [AdminController::class, 'home']) ->name('home');
-
-// Route::get('assettassignment', [AdminController::class, 'home']) ->name('assettassignment');
-
-// Route::get('/assetcategory', [AdminController::class, 'home']) ->name('assetcategory');
-
-// Route::get('/assethistory', [AdminController::class, 'home']) ->name('assethistory');
-
-// Route::get('/assetinfo', [AdminController::class, 'home']) ->name('assetinfo');
-
-// Route::get('/branchoffice', [AdminController::class, 'home']) ->name('branchoffice');
-
-Route::get('/', function () { return view('admin.index');});
-
-Route::get('dashboard', function () { return view('admin.dashboard');});
-
-Route::get('departmentoffice', function () { return view('admin.departmentoffice');});
-
-Route::get('departmentreport', function () { return view('admin.departmentreport');});
-
-Route::get('assetinfo', function () { return view('admin.assetinfo');});
-
-Route::get('assethistory', function () { return view('admin.assethistory');});
-
-Route::get('transferasset', function () { return view('admin.transferasset');});
 
 //DIRECTOR ROUTES
 
-Route::get('/', function () { return view('director.index');});
+Route::get('/', [directorController::class, 'index']) ->name('index');
 
-Route::get('dashboard', function () { return view('director.dashboard');});
+Route::get('dashboard', [directorController::class, 'dashboard']) ->name('dashboard');
 
-Route::get('departmentoffice', function () { return view('director.departmentoffice');});
+Route::get('departmentoffice',[directorController::class, 'departmentoffice']) ->name('departmentoffice');
 
-Route::get('departmentreport', function () { return view('director.departmentreport');});
+Route::get('departmentreport', [directorController::class, 'departmentreport']) ->name('departmentreport');
 
-Route::get('assetinfo', function () { return view('director.assetinfo');});
+Route::get('assetinfo', [directorController::class, 'assetinfo']) ->name('assetinfo');
 
-Route::get('assethistory', function () { return view('director.assethistory');});
+Route::get('assethistory', [directorController::class, 'assethistory']) ->name('assethistory');
 
-Route::get('assetassignment', function () { return view('director.assetassignment');});
+Route::get('assetassignment', [directorController::class, 'assetassignment']) ->name('assetassignment');
 
-Route::get('transferasset', function () { return view('director.transferasset');});
+Route::get('transferasset', [directorController::class, 'transferasset']) ->name('transferasset');

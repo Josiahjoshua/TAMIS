@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
  <!-- favicon
 		============================================ -->
-        <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+        <link rel="shortcut icon" type="image/x-icon" href="{{asset('asset/img/favicon.ico')}}">
         <!-- Google Fonts
             ============================================ -->
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i,800" rel="stylesheet">
@@ -37,7 +37,7 @@
         <!-- normalize CSS
             ============================================ -->
         <link rel="stylesheet" href="{{asset('asset/css/data-table/bootstrap-table.css')}}">
-        <link rel="stylesheet" href="css/data-table/bootstrap-editable.css">
+        <link rel="stylesheet" href="{{asset('asset/css/data-table/bootstrap-editable.css')}}">
         <!-- normalize CSS
             ============================================ -->
         <link rel="stylesheet" href="{{asset('asset/css/normalize.css')}}">
@@ -64,7 +64,7 @@
         <div class="left-sidebar-pro">
             <nav id="sidebar">
                 <div class="sidebar-header">
-                    <a href="#"><img src="img/1.jpg" alt="" class="img-circle"     />
+                    <a href="#"><img src="{{asset('asset/img/1.jpg')}}" alt="" class="img-circle"     />
                     </a>
                     <h3>User</h3>
                     <p>Director</p>
@@ -73,22 +73,22 @@
                 <div class="left-custom-menu-adp-wrap">
                     <ul class="nav navbar-nav left-sidebar-menu-pro">
                         <li class="active">
-                            <a href="dashboard" role="button" aria-expanded="false"><i class="fa big-icon fa-dashboard"></i> <span class="mini-dn"> Dashboard</span> </a>
+                            <a href="{{route('dashboard')}}" role="button" aria-expanded="false"><i class="fa big-icon fa-dashboard"></i> <span class="mini-dn"> Dashboard</span> </a>
                         </li>
                         <li>
-                            <a href="departmentoffice" role="button" aria-expanded="false"><i class="fa big-icon fa-home"></i> <span class="mini-dn"> Department Office</span> </a>
+                            <a href="{{route('departmentoffice')}}" role="button" aria-expanded="false"><i class="fa big-icon fa-home"></i> <span class="mini-dn"> Department Office</span> </a>
                         </li>
                         <li>
-                            <a href="departmentreport" role="button" aria-expanded="false"><i class="fa big-icon fa-home"></i> <span class="mini-dn"> Department Report</span> </a>
+                            <a href="{{route('departmentreport')}}" role="button" aria-expanded="false"><i class="fa big-icon fa-home"></i> <span class="mini-dn"> Department Report</span> </a>
                         </li>
                         <li>
-                            <a href="assetinfo" role="button" aria-expanded="false"><i class="fa big-icon fa-folder-open"></i> <span class="mini-dn">Asset Information</span> </a>
+                            <a href="{{route('assetinfo')}}" role="button" aria-expanded="false"><i class="fa big-icon fa-folder-open"></i> <span class="mini-dn">Asset Information</span> </a>
                         </li>
                         <li>
-                            <a href="assethistory" role="button" aria-expanded="false"><i class="fa big-icon fa-history"></i> <span class="mini-dn">Asset Transfer History</span> </a>
+                            <a href="{{route('assethistory')}}" role="button" aria-expanded="false"><i class="fa big-icon fa-history"></i> <span class="mini-dn">Asset Transfer History</span> </a>
                         </li>
                         <li>
-                            <a href="transferasset" role="button" aria-expanded="false"><i class="fa big-icon fa-history"></i> <span class="mini-dn">Transfer Asset</span> </a>
+                            <a href="{{route('transferasset')}}" role="button" aria-expanded="false"><i class="fa big-icon fa-history"></i> <span class="mini-dn">Transfer Asset</span> </a>
                         </li>
                     </ul>
                 </div>
@@ -105,7 +105,7 @@
                                     <i class="fa fa-bars"></i>
                                 </button>
                                 <div class="admin-logo logo-wrap-pro">
-                                    <a href="#"><img src="img/logo/log.png" alt="" />
+                                    <a href="#"><img src="{{asset('asset/img/logo/log.png')}}" alt="" />
                                     </a>
                                 </div>
                             </div>
