@@ -44,5 +44,10 @@ Route::group(['prefix'=>'stock-checker'], function(){
 
     Route::get('dashboard', function(){
         return view('stock_checker.dashboard');
-    });
+    })->name('stock_checker.dashboard');
+
+    Route::get('profile', function() {
+        return view('stock_checker.user');
+    })->name('stock_checker.profile');
+
 });
