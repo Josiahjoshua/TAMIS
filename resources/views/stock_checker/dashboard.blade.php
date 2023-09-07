@@ -1,6 +1,6 @@
-@extends('layouts.admin')
+@extends('layouts.stock_checker')
 
-@section('admincontent')
+@section('stock-checker-content')
             <!-- Breadcome start-->
             <div class="breadcome-area mg-b-30 small-dn">
                 <div class="container-fluid">

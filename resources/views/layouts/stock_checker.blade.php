@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Dashboard v.2.0 | Adminpro - Admin Template</title>
+    <title>Stock Checker Dashboard</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
  <!-- favicon
@@ -66,9 +66,9 @@
                 <div class="sidebar-header">
                     <a href="#"><img src="img/1.jpg" alt="" class="img-circle"     />
                     </a>
-                    <h3>User</h3>
-                    <p>Team Leader</p>
-                    <strong>AMS</strong>
+                    <h3>TAMIS</h3>
+                    <p>Stock Checker </p>
+                    <strong><img src="" alt="tirdo_logo"></strong>
                 </div>
                 <div class="left-custom-menu-adp-wrap">
                     <ul class="nav navbar-nav left-sidebar-menu-pro">
@@ -134,7 +134,7 @@
                                         <li class="nav-item">
                                             <a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="nav-link dropdown-toggle">
                                                 <span class="adminpro-icon adminpro-user-rounded header-riht-inf"></span>
-                                                <span class="admin-name">User</span>
+                                                <span class="admin-name">peculiar</span>
                                                 <span class="author-project-icon adminpro-icon adminpro-down-arrow"></span>
                                             </a>
                                             <ul role="menu" class="dropdown-header-top author-log dropdown-menu animated flipInX">
@@ -152,7 +152,7 @@
             </div>
             <!-- Header top area end-->
 
-            @yield('usercontent')
+            @yield('stock-checker-content')
 
         </div>
     </div>

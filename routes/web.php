@@ -21,7 +21,7 @@ Route::get('assetcategory', function () { return view('assetcategory');});
 
 Route::get('assethistory', function () { return view('assethistory');});
 
-Route::get('/assetinfo', function () { return view('assetinfo');});
+Route::get('assetinfo', function () { return view('assetinfo');});
 
 Route::get('branchoffice', function () { return view('branchoffice');});
 
@@ -38,3 +38,11 @@ Route::get('employeereport', function () { return view('employeereport');});
 Route::get('transferasset', function () { return view('transferasset');});
 
 Route::get('user', function () { return view('admin.user');});
+
+
+Route::group(['prefix'=>'stock-checker'], function(){
+
+    Route::get('dashboard', function(){
+        return view('stock_checker.dashboard');
+    });
+});
