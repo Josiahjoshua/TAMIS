@@ -1,6 +1,6 @@
-@extends('layouts.admin')
+@extends('layouts.director')
 
-@section('admincontent')
+@section('directorcontent')
             <!-- Breadcome start-->
             <div class="breadcome-area mg-b-30 small-dn">
                 <div class="container-fluid">
@@ -9,7 +9,7 @@
                             <div class="breadcome-list shadow-reset">
                                 <div class="row">
                                     <div class="col-lg-6">
-                                        <a href="transferasset.php"><button class="btn btn-custon-rounded-three btn-success"><i class="fa fa-plus"></i> Transfer Asset</button></a>
+                                        <a href="transferasset"><button class="btn btn-custon-rounded-three btn-success"><i class="fa fa-plus"></i> Transfer Asset</button></a>
 
                                     </div>
                                     <div class="col-lg-6">

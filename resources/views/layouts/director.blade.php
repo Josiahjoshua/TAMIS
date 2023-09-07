@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Dashboard v.2.0 | Adminpro - Admin Template</title>
+    <title>DIRECTOR</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
  <!-- favicon
@@ -67,37 +67,28 @@
                     <a href="#"><img src="img/1.jpg" alt="" class="img-circle"     />
                     </a>
                     <h3>User</h3>
-                    <p>Team Leader</p>
-                    <strong>AMS</strong>
+                    <p>Director</p>
+                    <strong>TAMIS</strong>
                 </div>
                 <div class="left-custom-menu-adp-wrap">
                     <ul class="nav navbar-nav left-sidebar-menu-pro">
                         <li class="active">
-                            <a href="dashboard.php" role="button" aria-expanded="false"><i class="fa big-icon fa-dashboard"></i> <span class="mini-dn"> Dashboard</span> </a>
+                            <a href="dashboard" role="button" aria-expanded="false"><i class="fa big-icon fa-dashboard"></i> <span class="mini-dn"> Dashboard</span> </a>
                         </li>
                         <li>
-                            <a href="brachoffice.php" role="button" aria-expanded="false"><i class="fa big-icon fa-home"></i> <span class="mini-dn"> Branch Office</span> </a>
+                            <a href="departmentoffice" role="button" aria-expanded="false"><i class="fa big-icon fa-home"></i> <span class="mini-dn"> Department Office</span> </a>
                         </li>
                         <li>
-                            <a href="assetcategory.php" role="button" aria-expanded="false"><i class="fa big-icon fa-file-archive-o"></i> <span class="mini-dn"> Asset Category</span> </a>
+                            <a href="departmentreport" role="button" aria-expanded="false"><i class="fa big-icon fa-home"></i> <span class="mini-dn"> Department Report</span> </a>
                         </li>
                         <li>
-                            <a href="department.php" role="button" aria-expanded="false"><i class="fa big-icon fa-institution"></i> <span class="mini-dn"> Department</span> </a>
+                            <a href="assetinfo" role="button" aria-expanded="false"><i class="fa big-icon fa-folder-open"></i> <span class="mini-dn">Asset Information</span> </a>
                         </li>
                         <li>
-                            <a href="employeeinfo.php" role="button" aria-expanded="false"><i class="fa big-icon fa-folder-open"></i> <span class="mini-dn">Employee Information</span> </a>
+                            <a href="assethistory" role="button" aria-expanded="false"><i class="fa big-icon fa-history"></i> <span class="mini-dn">Asset Transfer History</span> </a>
                         </li>
                         <li>
-                            <a href="assetinfo.php" role="button" aria-expanded="false"><i class="fa big-icon fa-folder-open"></i> <span class="mini-dn">Asset Information</span> </a>
-                        </li>
-                        <li>
-                            <a href="assetassignment.php" role="button" aria-expanded="false"><i class="fa big-icon fa-list-alt"></i> <span class="mini-dn">Asset Assignment</span> </a>
-                        </li>
-                        <li>
-                            <a href="assethistory.php" role="button" aria-expanded="false"><i class="fa big-icon fa-history"></i> <span class="mini-dn">Asset Transfer History</span> </a>
-                        </li>
-                        <li>
-                            <a href="user.php" role="button" aria-expanded="false"><i class="fa big-icon fa-users"></i> <span class="mini-dn">User Information</span> </a>
+                            <a href="transferasset" role="button" aria-expanded="false"><i class="fa big-icon fa-history"></i> <span class="mini-dn">Transfer Asset</span> </a>
                         </li>
                     </ul>
                 </div>
@@ -121,9 +112,9 @@
                             <div class="col-lg-6 col-md-1 col-sm-1 col-xs-12">
                                 <div class="header-top-menu tabl-d-n">
                                     <ul class="nav navbar-nav mai-top-nav">
-                                        <li class="nav-item"><a href="branchreport.php" class="nav-link">Brach Report List</a>
+                                        <li class="nav-item"><a href="departmentreport" class="nav-link">Department Report List</a>
                                         </li>
-                                        <li class="nav-item"><a href="employeereport.php" class="nav-link">Employee Report List</a>
+                                        <li class="nav-item"><a href="assethistory" class="nav-link">Assset History List</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -138,7 +129,7 @@
                                                 <span class="author-project-icon adminpro-icon adminpro-down-arrow"></span>
                                             </a>
                                             <ul role="menu" class="dropdown-header-top author-log dropdown-menu animated flipInX">
-                                                <li><a href="index.php"><span class="adminpro-icon adminpro-locked author-log-ic"></span>Log Out</a>
+                                                <li><a href="index"><span class="adminpro-icon adminpro-locked author-log-ic"></span>Log Out</a>
                                                 </li>
                                             </ul>
                                         </li>
@@ -152,7 +143,7 @@
             </div>
             <!-- Header top area end-->
 
-            @yield('usercontent')
+            @yield('directorcontent')
 
         </div>
     </div>

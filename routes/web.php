@@ -12,29 +12,47 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+//ADMIN ROUTES
+// Route::get('/', [AdminController::class, 'home']) ->name('home');
 
-Route::get('/', function () { return view('index');});
+// Route::get('assettassignment', [AdminController::class, 'home']) ->name('assettassignment');
 
-Route::get('assettassignment', function () { return view('assettassignment');});
+// Route::get('/assetcategory', [AdminController::class, 'home']) ->name('assetcategory');
 
-Route::get('assetcategory', function () { return view('assetcategory');});
+// Route::get('/assethistory', [AdminController::class, 'home']) ->name('assethistory');
 
-Route::get('assethistory', function () { return view('assethistory');});
+// Route::get('/assetinfo', [AdminController::class, 'home']) ->name('assetinfo');
 
-Route::get('/assetinfo', function () { return view('assetinfo');});
+// Route::get('/branchoffice', [AdminController::class, 'home']) ->name('branchoffice');
 
-Route::get('branchoffice', function () { return view('branchoffice');});
+Route::get('/', function () { return view('admin.index');});
 
-Route::get('branchreport', function () { return view('branchreport');});
+Route::get('dashboard', function () { return view('admin.dashboard');});
 
-Route::get('dashboard', function () { return view('dashboard');});
+Route::get('departmentoffice', function () { return view('admin.departmentoffice');});
 
-Route::get('department', function () { return view('department');});
+Route::get('departmentreport', function () { return view('admin.departmentreport');});
 
-Route::get('employeeinfo', function () { return view('employeeinfo');});
+Route::get('assetinfo', function () { return view('admin.assetinfo');});
 
-Route::get('employeereport', function () { return view('employeereport');});
+Route::get('assethistory', function () { return view('admin.assethistory');});
 
-Route::get('transferasset', function () { return view('transferasset');});
+Route::get('transferasset', function () { return view('admin.transferasset');});
 
-Route::get('user', function () { return view('admin.user');});
+//DIRECTOR ROUTES
+
+Route::get('/', function () { return view('director.index');});
+
+Route::get('dashboard', function () { return view('director.dashboard');});
+
+Route::get('departmentoffice', function () { return view('director.departmentoffice');});
+
+Route::get('departmentreport', function () { return view('director.departmentreport');});
+
+Route::get('assetinfo', function () { return view('director.assetinfo');});
+
+Route::get('assethistory', function () { return view('director.assethistory');});
+
+Route::get('assetassignment', function () { return view('director.assetassignment');});
+
+Route::get('transferasset', function () { return view('director.transferasset');});

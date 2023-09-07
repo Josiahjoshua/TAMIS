@@ -1,6 +1,6 @@
-@extends('layouts.admin')
+@extends('layouts.director')
 
-@section('admincontent')
+@section('directorcontent')
             <!-- Breadcome start-->
             <div class="breadcome-area mg-b-30 small-dn">
                 <div class="container-fluid">
@@ -23,7 +23,7 @@
                             <div class="sparkline9-list shadow-reset">
                                 <div class="sparkline9-hd">
                                     <div class="main-sparkline9-hd">
-                                        <h1>Department Encoding <span class="basic-ds-n">Form</span></h1>
+                                        <h1>Department Office Encoding <span class="basic-ds-n">Form</span></h1>
 
                                     </div>
                                 </div>
@@ -38,10 +38,30 @@
                                                         <div class="form-group-inner">
                                                             <div class="row">
                                                                 <div class="col-lg-4">
-                                                                    <label class="login2">Department : </label>
+                                                                    <label class="login2">Location : </label>
                                                                 </div>
                                                                 <div class="col-lg-8">
-                                                                    <input type="text" class="form-control" placeholder="Enter Department Name" />
+                                                                    <input type="text" class="form-control" placeholder="Enter Location" />
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group-inner">
+                                                            <div class="row">
+                                                                <div class="col-lg-4">
+                                                                    <label class="login2">Address : </label>
+                                                                </div>
+                                                                <div class="col-lg-8">
+                                                                    <input type="text" class="form-control" placeholder="Enter Address" />
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group-inner">
+                                                            <div class="row">
+                                                                <div class="col-lg-4">
+                                                                    <label class="login2">Contact : </label>
+                                                                </div>
+                                                                <div class="col-lg-8">
+                                                                    <input type="text" class="form-control" placeholder="Enter Contact Information" />
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -53,11 +73,11 @@
                             </div>
                         </div>
                     </div>
-                        </div>
-                            <div class="modal-footer footer-modal-admin">
-                                <a data-dismiss="modal" href="#">Cancel</a>
-                                    <a href="#">Save</a>
-                                        </div>
+                </div>
+                    <div class="modal-footer footer-modal-admin">
+                        <a data-dismiss="modal" href="#">Cancel</a>
+                            <a href="#">Save</a>
+                                </div>
                                     </form>
                                     </div>
                                 </div>
@@ -67,7 +87,7 @@
                                         <ul class="breadcome-menu">
                                             <li><a href="#">Dashboard</a> <span class="bread-slash">/</span>
                                             </li>
-                                            <li><span class="bread-blod">Department</span>
+                                            <li><span class="bread-blod">Brach Office</span>
                                             </li>
                                         </ul>
                                     </div>
@@ -86,7 +106,7 @@
                             <div class="sparkline13-list shadow-reset">
                                 <div class="sparkline13-hd">
                                     <div class="main-sparkline13-hd">
-                                        <h1>Department <span class="table-project-n"> Encoding  </span> Form Table</h1>
+                                        <h1>Department Office <span class="table-project-n"> Encoding  </span> Form Table</h1>
                                         <div class="sparkline13-outline-icon">
                                             <span class="sparkline13-collapse-link"><i class="fa fa-chevron-up"></i></span>
                                             <span><i class="fa fa-wrench"></i></span>
@@ -100,22 +120,28 @@
                                         <table id="table" data-toggle="table" data-pagination="true" data-search="true" data-show-columns="true"  data-show-refresh="true" data-key-events="true"  data-resizable="true"  data-click-to-select="true" >
                                             <thead>
                                                 <tr>
-                                                    <th >Name</th>
+                                                    <th data-editable="true">Location</th>
+                                                    <th data-editable="true">Address</th>
+                                                    <th data-editable="true">Contact Information</th>
                                                     <th></th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr>
-                                                    <td> The service department</td>
+                                                    <td>U.S. Capitol</td>
+                                                    <td>Azusa New York 39531</td>
+                                                    <td>Web DevelopmentZendesk</td>
                                                     <td><button type="button" class="btn btn-primary btn-circle" data-toggle="modal" data-target="#edit"><i class="fa fa-edit"></i></button> <button type="button" class="btn btn-danger"><i class="fa fa-trash"></i></button></td>
                                                 </tr>
                                                 <tr>
-                                                    <td>The supply chain management department</td>
+                                                    <td>Venezuela</td>
+                                                    <td>Tamuning PA 10855</td>
+                                                    <td>Jquery Advance</td>
                                                     <td><button type="button" class="btn btn-primary btn-circle" data-toggle="modal" data-target="#edit"><i class="fa fa-edit"></i></button> <button type="button" class="btn btn-danger"><i class="fa fa-trash"></i></button></td>
                                                 </tr>
                                             </tbody>
                                         </table>
-                            <div id="edit" class="modal modal-adminpro-general fullwidth-popup-InformationproModal fade" role="dialog">
+                                <div id="edit" class="modal modal-adminpro-general fullwidth-popup-InformationproModal fade" role="dialog">
                                 <div class="modal-dialog">
                                     <div class="modal-content">
                                             <form action="">
@@ -128,7 +154,7 @@
                             <div class="sparkline9-list shadow-reset">
                                 <div class="sparkline9-hd">
                                     <div class="main-sparkline9-hd">
-                                        <h1>Department Encoding <span class="basic-ds-n">Form</span></h1>
+                                        <h1>Department Office Encoding <span class="basic-ds-n">Form</span></h1>
 
                                     </div>
                                 </div>
@@ -143,10 +169,30 @@
                                                         <div class="form-group-inner">
                                                             <div class="row">
                                                                 <div class="col-lg-4">
-                                                                    <label class="login2">Department : </label>
+                                                                    <label class="login2">Location : </label>
                                                                 </div>
                                                                 <div class="col-lg-8">
-                                                                    <input type="text" class="form-control" placeholder="Enter Department Name" />
+                                                                    <input type="text" class="form-control" placeholder="Enter Location" />
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group-inner">
+                                                            <div class="row">
+                                                                <div class="col-lg-4">
+                                                                    <label class="login2">Address : </label>
+                                                                </div>
+                                                                <div class="col-lg-8">
+                                                                    <input type="text" class="form-control" placeholder="Enter Address" />
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group-inner">
+                                                            <div class="row">
+                                                                <div class="col-lg-4">
+                                                                    <label class="login2">Contact : </label>
+                                                                </div>
+                                                                <div class="col-lg-8">
+                                                                    <input type="text" class="form-control" placeholder="Enter Contact Information" />
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -158,15 +204,16 @@
                             </div>
                         </div>
                     </div>
-                        </div>
-                            <div class="modal-footer footer-modal-admin">
-                                <a data-dismiss="modal" href="#">Cancel</a>
-                                    <a href="#">Save</a>
-                                        </div>
+                </div>
+                    <div class="modal-footer footer-modal-admin">
+                        <a data-dismiss="modal" href="#">Cancel</a>
+                            <a href="#">Save</a>
+                                </div>
                                     </form>
                                     </div>
                                 </div>
-                            </div>                                    </div>
+                            </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
