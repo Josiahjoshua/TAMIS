@@ -105,7 +105,7 @@
                                         <ul class="breadcome-menu">
                                             <li><a href="#">Dashboard</a> <span class="bread-slash">/</span>
                                             </li>
-                                            <li><span class="bread-blod">User Information</span>
+                                            <li><span class="bread-blod">Asset Type Information</span>
                                             </li>
                                         </ul>
                                     </div>
