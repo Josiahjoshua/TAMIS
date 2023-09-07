@@ -37,4 +37,4 @@ Route::get('employeereport', function () { return view('employeereport');});
 
 Route::get('transferasset', function () { return view('transferasset');});
 
-Route::get('user', function () { return view('user');});
+Route::get('user', function () { return view('admin.user');});
