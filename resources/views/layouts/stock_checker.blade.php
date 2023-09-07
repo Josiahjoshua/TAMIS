@@ -19,7 +19,6 @@
         <!-- Bootstrap CSS
             ============================================ -->
         <link rel="stylesheet" href="{{asset('asset/css/font-awesome.min.css')}}">
-        {{-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> --}}
         <!-- adminpro icon CSS
             ============================================ -->
         <link rel="stylesheet" href="{{asset('asset/css/adminpro-custon-icon.css')}}">
@@ -76,21 +75,23 @@
                         <li class="active">
                             <a href="{{ route('stock_checker.dashboard') }}" role="button" aria-expanded="false"><i class="fa big-icon fa-dashboard"></i> <span class="mini-dn"> Dashboard</span> </a>
                         </li>
+                        <li>
+                            <a href="{{ route('stock-checker.department') }}" role="button" aria-expanded="false"><i class="fa big-icon fa-institution"></i> <span class="mini-dn"> Department</span> </a>
+                        </li>
+                        <li>
+                            <a href="{{ route('stock-checker.assetinfo') }}" role="button" aria-expanded="false"><i class="fa big-icon fa-folder-open"></i> <span class="mini-dn">Asset Information</span> </a>
+                        </li>
                         {{-- <li>
                             <a href="brachoffice.php" role="button" aria-expanded="false"><i class="fa big-icon fa-home"></i> <span class="mini-dn"> Branch Office</span> </a>
                         </li> --}}
                         <li>
-                            <a href="{{ route('stock-checker.assetcategory') }}" role="button" aria-expanded="false"><i class="fa big-icon fa-file-archive-o"></i> <span class="mini-dn"> Asset Category</span> </a>
+                            <a href="{{ route('stock-checker.assetcategory') }}" role="button" aria-expanded="false"><i class="fa big-icon fa-flask"></i> <span class="mini-dn"> Asset Category</span> </a>
                         </li>
-                        <li>
-                            <a href="{{ route('stock-checker.department') }}" role="button" aria-expanded="false"><i class="fa big-icon fa-institution"></i> <span class="mini-dn"> Department</span> </a>
-                        </li>
+                       
                         {{-- <li>
                             <a href="employeeinfo.php" role="button" aria-expanded="false"><i class="fa big-icon fa-folder-open"></i> <span class="mini-dn">Employee Information</span> </a>
                         </li> --}}
-                        <li>
-                            <a href="{{ route('stock-checker.assetinfo') }}" role="button" aria-expanded="false"><i class="fa big-icon fa-folder-open"></i> <span class="mini-dn">Asset Information</span> </a>
-                        </li>
+                       
                         {{-- <li>
                             <a href="assetassignment.php" role="button" aria-expanded="false"><i class="fa big-icon fa-list-alt"></i> <span class="mini-dn">Asset Assignment</span> </a>
                         </li> --}}
@@ -98,10 +99,10 @@
                             <a href="{{ route('stock-checker.assethistory') }}" role="button" aria-expanded="false"><i class="fa big-icon fa-history"></i> <span class="mini-dn">Asset Transfer History</span> </a>
                         </li>
                         <li>
-                            <a href="{{ route('stock-checker.assetdisposal') }}" role="button" aria-expanded="false"><i class="fa big-icon fa-users"></i> <span class="mini-dn">Assets Disposal</span> </a>
+                            <a href="{{ route('stock-checker.assetdisposal') }}" role="button" aria-expanded="false"><i class="fa big-icon fa-trash"></i> <span class="mini-dn">Assets Disposal</span> </a>
                         </li>
                         <li>
-                            <a href="{{ route('stock-checker.report') }}" role="button" aria-expanded="false"><i class="fa big-icon fa-history"></i> <span class="mini-dn">Reports</span> </a>
+                            <a href="{{ route('stock-checker.report') }}" role="button" aria-expanded="false"><i class="fa big-icon fa-files-o"></i> <span class="mini-dn">Reports</span> </a>
                         </li>
                     </ul>
                 </div>
@@ -142,7 +143,9 @@
                                                 <span class="author-project-icon adminpro-icon adminpro-down-arrow"></span>
                                             </a>
                                             <ul role="menu" class="dropdown-header-top author-log dropdown-menu animated flipInX">
-                                                <li><a href="{{ route('stock_checker.profile') }}"><span class="adminpro-icon adminpro-locked author-log-ic"></span>My Profile</a>
+                                                <li><a href="{{ route('stock_checker.profile') }}"><span class="adminpro-icon adminpro-user-rounded header-riht-inf"></span>My Profile</a>
+                                                </li>
+                                                <li><a href="#"><span class="adminpro-icon adminpro-user-rounded header-riht-inf"></span>Change Password</a>
                                                 </li>
                                                 <li><a href="index.php"><span class="adminpro-icon adminpro-locked author-log-ic"></span>Log Out</a>
                                                 </li>
