@@ -1,5 +1,5 @@
 <?php
-
+use App\Http\Controllers\directorController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -12,32 +12,21 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-//ADMIN ROUTES
-// Route::get('/', [AdminController::class, 'home']) ->name('home');
 
-// Route::get('assettassignment', [AdminController::class, 'home']) ->name('assettassignment');
+//DIRECTOR ROUTES
 
-// Route::get('/assetcategory', [AdminController::class, 'home']) ->name('assetcategory');
+Route::get('/', [directorController::class, 'index']) ->name('index');
 
-// Route::get('/assethistory', [AdminController::class, 'home']) ->name('assethistory');
+Route::get('dashboard', [directorController::class, 'dashboard']) ->name('dashboard');
 
-// Route::get('/assetinfo', [AdminController::class, 'home']) ->name('assetinfo');
+Route::get('departmentoffice',[directorController::class, 'departmentoffice']) ->name('departmentoffice');
 
-// Route::get('/branchoffice', [AdminController::class, 'home']) ->name('branchoffice');
+Route::get('departmentreport', [directorController::class, 'departmentreport']) ->name('departmentreport');
 
-Route::get('/', function () { return view('director.index');});
+Route::get('assetinfo', [directorController::class, 'assetinfo']) ->name('assetinfo');
 
-Route::get('dashboard', function () { return view('director.dashboard');});
+Route::get('assethistory', [directorController::class, 'assethistory']) ->name('assethistory');
 
-Route::get('dashboard', function () { return view('director.dashboard');});
+Route::get('assetassignment', [directorController::class, 'assetassignment']) ->name('assetassignment');
 
-Route::get('departmentreport', function () { return view('director.departmentreport');});
-
-Route::get('assetinfo', function () { return view('director.assetinfo');});
-
-Route::get('assethistory', function () { return view('director.assethistory');});
-
-Route::get('transferasset', function () { return view('director.transferasset');});
-
-Route::get('user', function () { return view('director.user');});
-
+Route::get('transferasset', [directorController::class, 'transferasset']) ->name('transferasset');
