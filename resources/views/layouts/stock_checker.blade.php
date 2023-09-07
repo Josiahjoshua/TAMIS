@@ -122,7 +122,7 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="col-lg-6 col-md-1 col-sm-1 col-xs-12">
+                            {{-- <div class="col-lg-6 col-md-1 col-sm-1 col-xs-12">
                                 <div class="header-top-menu tabl-d-n">
                                     <ul class="nav navbar-nav mai-top-nav">
                                         <li class="nav-item"><a href="branchreport.php" class="nav-link">Brach Report List</a>
@@ -131,8 +131,8 @@
                                         </li>
                                     </ul>
                                 </div>
-                            </div>
-                            <div class="col-lg-5 col-md-5 col-sm-6 col-xs-12" >
+                            </div> --}}
+                            <div class="col-lg-11 col-md-6 col-sm-6 col-xs-12" >
                                 <div class="header-right-info">
                                     <ul class="nav navbar-nav mai-top-nav header-right-menu">
                                         <li class="nav-item">

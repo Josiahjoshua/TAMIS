@@ -15,7 +15,7 @@
                                     </div> --}}
                                     <div class="col-lg-12">
                                         <ul class="breadcome-menu">
-                                            <li><a href="#">Dashboard</a> <span class="bread-slash">/</span>
+                                            <li><a href="{{ route('stock_checker.dashboard') }}">Dashboard</a> <span class="bread-slash">/</span>
                                             </li>
                                             <li><span class="bread-blod">Asset Transfer History</span>
                                             </li>
@@ -36,7 +36,7 @@
                             <div class="sparkline13-list shadow-reset">
                                 <div class="sparkline13-hd">
                                     <div class="main-sparkline13-hd">
-                                        <h1>Asset Transfer History  <span class="table-project-n"></span> Form Table</h1>
+                                        <h1>Asset Transfer History  </h1>
                                         <div class="sparkline13-outline-icon">
                                             <span class="sparkline13-collapse-link"><i class="fa fa-chevron-up"></i></span>
                                             <span><i class="fa fa-wrench"></i></span>
