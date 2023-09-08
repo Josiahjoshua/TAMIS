@@ -177,7 +177,7 @@
                                         <span class="income-percentange">89% <i class="fa fa-file-archive-o"></i></span>
                                     </div>
                                     <div class="clear"></div>
-
+{{--
                                     <div class="clear"></div>
                                     <div class="income-rate-total">
                                         <div class="price-adminpro-rate">
@@ -206,7 +206,7 @@
                                         <p> Books Assets</p>
                                         <span class="income-percentange">89% <i class="fa fa-file-archive-o"></i></span>
                                     </div>
-                                    <div class="clear"></div>
+                                    <div class="clear"></div> --}}
 
                                 </div>
                             </div>

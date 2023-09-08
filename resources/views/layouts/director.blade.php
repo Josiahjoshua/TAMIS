@@ -74,22 +74,22 @@
                 <div class="left-custom-menu-adp-wrap">
                     <ul class="nav navbar-nav left-sidebar-menu-pro">
                         <li class="active">
-                            <a href="{{route('dashboard')}}" role="button" aria-expanded="false"><i class="fa big-icon fa-dashboard"></i> <span class="mini-dn"> Dashboard</span> </a>
+                            <a href="{{route('director.dashboard')}}" role="button" aria-expanded="false"><i class="fa big-icon fa-dashboard"></i> <span class="mini-dn"> Dashboard</span> </a>
                         </li>
                         <li>
-                            <a href="{{route('departmentoffice')}}" role="button" aria-expanded="false"><i class="fa big-icon fa-home"></i> <span class="mini-dn"> Department Office</span> </a>
+                            <a href="{{route('director.departmentoffice')}}" role="button" aria-expanded="false"><i class="fa big-icon fa-home"></i> <span class="mini-dn"> Department Office</span> </a>
                         </li>
                         <li>
-                            <a href="{{route('departmentreport')}}" role="button" aria-expanded="false"><i class="fa big-icon fa-home"></i> <span class="mini-dn"> Department Report</span> </a>
+                            <a href="{{route('director.departmentreport')}}" role="button" aria-expanded="false"><i class="fa big-icon fa-home"></i> <span class="mini-dn"> Department Report</span> </a>
                         </li>
                         <li>
-                            <a href="{{route('assetinfo')}}" role="button" aria-expanded="false"><i class="fa big-icon fa-folder-open"></i> <span class="mini-dn">Asset Information</span> </a>
+                            <a href="{{route('director.assetinfo')}}" role="button" aria-expanded="false"><i class="fa big-icon fa-folder-open"></i> <span class="mini-dn">Asset Information</span> </a>
                         </li>
                         <li>
-                            <a href="{{route('assethistory')}}" role="button" aria-expanded="false"><i class="fa big-icon fa-history"></i> <span class="mini-dn">Asset Transfer History</span> </a>
+                            <a href="{{route('director.assethistory')}}" role="button" aria-expanded="false"><i class="fa big-icon fa-history"></i> <span class="mini-dn">Asset Transfer History</span> </a>
                         </li>
                         <li>
-                            <a href="{{route('transferasset')}}" role="button" aria-expanded="false"><i class="fa big-icon fa-history"></i> <span class="mini-dn">Transfer Asset</span> </a>
+                            <a href="{{route('director.transferasset')}}" role="button" aria-expanded="false"><i class="fa big-icon fa-history"></i> <span class="mini-dn">Transfer Asset</span> </a>
                         </li>
                     </ul>
                 </div>
