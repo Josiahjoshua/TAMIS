@@ -66,9 +66,10 @@
                 <div class="sidebar-header">
                     <a href="#"><img src="{{asset('asset/img/1.jpg')}}" alt="" class="img-circle"     />
                     </a>
-                    <h3>User</h3>
+                    <h2 style="color:black"><b>TAMIS</b></h2>
+                    {{-- <h3>User</h3> --}}
                     <p>Director</p>
-                    <strong>TAMIS</strong>
+
                 </div>
                 <div class="left-custom-menu-adp-wrap">
                     <ul class="nav navbar-nav left-sidebar-menu-pro">
@@ -112,9 +113,9 @@
                             <div class="col-lg-6 col-md-1 col-sm-1 col-xs-12">
                                 <div class="header-top-menu tabl-d-n">
                                     <ul class="nav navbar-nav mai-top-nav">
-                                        <li class="nav-item"><a href="departmentreport" class="nav-link">Department Report List</a>
+                                        {{-- <li class="nav-item"><a href="departmentreport" class="nav-link">Department Report List</a> --}}
                                         </li>
-                                        <li class="nav-item"><a href="assethistory" class="nav-link">Assset History List</a>
+                                        {{-- <li class="nav-item"><a href="assethistory" class="nav-link">Assset History List</a> --}}
                                         </li>
                                     </ul>
                                 </div>

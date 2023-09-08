@@ -14,9 +14,9 @@
                                     </div>
                                     <div class="col-lg-6">
                                         <ul class="breadcome-menu">
-                                            <li><a href="#">Dashboard</a> <span class="bread-slash">/</span>
+                                            <li><a href="{{route('dashboard')}}">Dashboard</a> <span class="bread-slash">/</span>
                                             </li>
-                                            <li><span class="bread-blod">Asset Transfer History</span>
+                                            <li><span class="">Asset Transfer History</span>
                                             </li>
                                         </ul>
                                     </div>

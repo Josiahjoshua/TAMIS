@@ -86,9 +86,9 @@
                                 </div>
                             </div>
                         </div> --}}
-                        <div class="col-lg-3">
-                            <div class="income-dashone-total orders-monthly shadow-reset nt-mg-b-30">
-                                <div class="income-title">
+                        <div class = "col-lg-3">
+                            <div class = "income-dashone-total orders-monthly shadow-reset nt-mg-b-30">
+                                <div class="income-title ">
                                     <div class="main-income-head">
                                         <h2>Total</h2>
                                         <div class="main-income-phara order-cl">
@@ -107,7 +107,7 @@
                                     </div>
                                     <div class="income-range order-cl">
                                         <p>Total Department</p>
-                                        <span class="income-percentange">26% <i class="fa fa-institution"></i></span>
+                                        <span class="income-percentange"> 26% <i class="fa fa-institution"></i></span>
                                     </div>
                                     <div class="clear"></div>
                                 </div>
@@ -134,7 +134,7 @@
                                     </div>
                                     <div class="income-range visitor-cl">
                                         <p>Total Departments</p>
-                                        <span class="income-percentange">55% <i class="fa fa-home"></i></span>
+                                        <span class="income-percentange"> 55% <i class="fa fa-home"></i></span>
                                     </div>
                                     <div class="clear"></div>
                                 </div>
@@ -160,10 +160,54 @@
                                         </div>
                                     </div>
                                     <div class="income-range low-value-cl">
-                                        <p>Total Assets</p>
+                                        <p>Biological  Assets</p>
                                         <span class="income-percentange">89% <i class="fa fa-file-archive-o"></i></span>
                                     </div>
                                     <div class="clear"></div>
+                                    <div class="income-rate-total">
+                                        <div class="price-adminpro-rate">
+                                            <h3><span class="counter">3498</span></h3>
+                                        </div>
+                                        <div class="price-graph">
+                                            <span id="sparkline5"></span>
+                                        </div>
+                                    </div>
+                                    <div class="income-range low-value-cl">
+                                        <p> Furnature Assets</p>
+                                        <span class="income-percentange">89% <i class="fa fa-file-archive-o"></i></span>
+                                    </div>
+                                    <div class="clear"></div>
+
+                                    <div class="clear"></div>
+                                    <div class="income-rate-total">
+                                        <div class="price-adminpro-rate">
+                                            <h3><span class="counter">3498</span></h3>
+                                        </div>
+                                        <div class="price-graph">
+                                            <span id="sparkline5"></span>
+                                        </div>
+                                    </div>
+                                    <div class="income-range low-value-cl">
+                                        <p> Infrusturcture  Assets</p>
+                                        <span class="income-percentange">89% <i class="fa fa-file-archive-o"></i></span>
+                                    </div>
+                                    <div class="clear"></div>
+
+                                    <div class="clear"></div>
+                                    <div class="income-rate-total">
+                                        <div class="price-adminpro-rate">
+                                            <h3><span class="counter">3498</span></h3>
+                                        </div>
+                                        <div class="price-graph">
+                                            <span id="sparkline5"></span>
+                                        </div>
+                                    </div>
+                                    <div class="income-range low-value-cl">
+                                        <p> Books Assets</p>
+                                        <span class="income-percentange">89% <i class="fa fa-file-archive-o"></i></span>
+                                    </div>
+                                    <div class="clear"></div>
+
                                 </div>
                             </div>
                         </div>

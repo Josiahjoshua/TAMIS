@@ -14,7 +14,7 @@
                                     </div>
                                     <div class="col-lg-6">
                                         <ul class="breadcome-menu">
-                                            <li><a href="#">Dashboard</a> <span class="bread-slash">/</span>
+                                            <li><a href="{{route('dashboard')}}">Dashboard</a> <span class="bread-slash">/</span>
                                             </li>
                                             <li><span class="bread-blod">Department Report List</span>
                                             </li>
@@ -35,7 +35,7 @@
                             <div class="sparkline13-list shadow-reset">
                                 <div class="sparkline13-hd">
                                     <div class="main-sparkline13-hd">
-                                        <h1>Department Office <span class="table-project-n"> Encoding  </span> Form Table</h1>
+                                        <h1>Department Asset <span class="table-project-n"> Report</span> Form Table</h1>
                                         <div class="sparkline13-outline-icon">
                                             <span class="sparkline13-collapse-link"><i class="fa fa-chevron-up"></i></span>
                                             <span><i class="fa fa-wrench"></i></span>
@@ -63,23 +63,25 @@
                                                 <tr>
                                                     <th>Barcode </th>
                                                     <th>Asset Name</th>
+                                                    <th>Asset Location</th>
+                                                    <th>Asset Condition</th>
                                                     <th>Quantity</th>
-                                                    <th></th>
+
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                <tr>
+                                                {{-- <tr>
                                                     <td>||||||||||</td>
                                                     <td>Guaranteed investment accounts</td>
                                                     <td>33</td>
                                                     <td><button type="button" class="btn btn-primary btn-circle" data-toggle="modal" data-target="#edit"><i class="fa fa-edit"></i></button> <button type="button" class="btn btn-danger"><i class="fa fa-trash"></i></button></td>
-                                                </tr>
-                                                <tr>
+                                                </tr> --}}
+                                                {{-- <tr>
                                                     <td>||||||||||</td>
                                                     <td>Guaranteed investment accounts</td>
                                                     <td>33</td>
                                                     <td><button type="button" class="btn btn-primary btn-circle" data-toggle="modal" data-target="#edit"><i class="fa fa-edit"></i></button> <button type="button" class="btn btn-danger"><i class="fa fa-trash"></i></button></td>
-                                                </tr>
+                                                </tr> --}}
                                             </tbody>
                                         </table>
                                     </div>

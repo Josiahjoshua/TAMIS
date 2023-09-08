@@ -38,7 +38,7 @@
                                                         <div class="form-group-inner">
                                                             <div class="row">
                                                                 <div class="col-lg-4">
-                                                                    <label class="login2">Location : </label>
+                                                                    <label class="login2">Section : </label>
                                                                 </div>
                                                                 <div class="col-lg-8">
                                                                     <input type="text" class="form-control" placeholder="Enter Location" />
@@ -48,7 +48,7 @@
                                                         <div class="form-group-inner">
                                                             <div class="row">
                                                                 <div class="col-lg-4">
-                                                                    <label class="login2">Address : </label>
+                                                                    <label class="login2">Head of Section: </label>
                                                                 </div>
                                                                 <div class="col-lg-8">
                                                                     <input type="text" class="form-control" placeholder="Enter Address" />
@@ -85,7 +85,7 @@
                                     </div>
                                     <div class="col-lg-6">
                                         <ul class="breadcome-menu">
-                                            <li><a href="#">Dashboard</a> <span class="bread-slash">/</span>
+                                            <li><a href="{{route('dashboard')}}">Dashboard</a> <span class="bread-slash">/</span>
                                             </li>
                                             <li><span class="bread-blod">Brach Office</span>
                                             </li>
@@ -120,25 +120,31 @@
                                         <table id="table" data-toggle="table" data-pagination="true" data-search="true" data-show-columns="true"  data-show-refresh="true" data-key-events="true"  data-resizable="true"  data-click-to-select="true" >
                                             <thead>
                                                 <tr>
-                                                    <th data-editable="true">Location</th>
-                                                    <th data-editable="true">Address</th>
+                                                    <th data-editable="true">Section</th>
+                                                    <th data-editable="true">Head of section</th>
                                                     <th data-editable="true">Contact Information</th>
                                                     <th></th>
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                <tr>
-                                                    <td>U.S. Capitol</td>
-                                                    <td>Azusa New York 39531</td>
-                                                    <td>Web DevelopmentZendesk</td>
+                                                {{-- <tr>
+                                                    <td>ICT</td>
+                                                    <td></td>
+                                                    <td></td>
                                                     <td><button type="button" class="btn btn-primary btn-circle" data-toggle="modal" data-target="#edit"><i class="fa fa-edit"></i></button> <button type="button" class="btn btn-danger"><i class="fa fa-trash"></i></button></td>
                                                 </tr>
                                                 <tr>
-                                                    <td>Venezuela</td>
+                                                    <td>Electronics and instrumentation</td>
                                                     <td>Tamuning PA 10855</td>
                                                     <td>Jquery Advance</td>
                                                     <td><button type="button" class="btn btn-primary btn-circle" data-toggle="modal" data-target="#edit"><i class="fa fa-edit"></i></button> <button type="button" class="btn btn-danger"><i class="fa fa-trash"></i></button></td>
                                                 </tr>
+                                                <tr>
+                                                    <td>Technology Transfer</td>
+                                                    <td>Tamuning PA 10855</td>
+                                                    <td>Jquery Advance</td>
+                                                    <td><button type="button" class="btn btn-primary btn-circle" data-toggle="modal" data-target="#edit"><i class="fa fa-edit"></i></button> <button type="button" class="btn btn-danger"><i class="fa fa-trash"></i></button></td>
+                                                </tr> --}}
                                             </tbody>
                                         </table>
                                 <div id="edit" class="modal modal-adminpro-general fullwidth-popup-InformationproModal fade" role="dialog">
