@@ -14,7 +14,7 @@
                                     </div>
                                     <div class="col-lg-6">
                                         <ul class="breadcome-menu">
-                                            <li><a href="#">Dashboard</a> <span class="bread-slash"></span>
+                                            <li><a href="{{ route('stock_checker.dashboard') }}">Dashboard</a> <span class="bread-slash"></span>
                                             </li>
                                         </ul>
                                     </div>
@@ -65,22 +65,22 @@
                                     <div class="main-income-head">
                                         <h2>Total</h2>
                                         <div class="main-income-phara">
-                                            <p>Employee</p>
+                                            <p>Departments</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="income-dashone-pro">
                                     <div class="income-rate-total">
                                         <div class="price-adminpro-rate">
-                                            <h3><span class="counter">1,310</span></h3>
+                                            <h3><span class="counter">13</span></h3>
                                         </div>
                                         <div class="price-graph">
                                             <span id="sparkline1"></span>
                                         </div>
                                     </div>
                                     <div class="income-range">
-                                        <p>Total Employee</p>
-                                        <span class="income-percentange">98% <i class="fa fa-users"></i></span>
+                                        <p>Total Departments</p>
+                                        <span class="income-percentange">98% <i class="fa fa-institution"></i></span>
                                     </div>
                                     <div class="clear"></div>
                                 </div>
@@ -92,22 +92,52 @@
                                     <div class="main-income-head">
                                         <h2>Total</h2>
                                         <div class="main-income-phara order-cl">
-                                            <p>Department</p>
+                                            <p>Asset Category</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="income-dashone-pro">
                                     <div class="income-rate-total">
                                         <div class="price-adminpro-rate">
-                                            <h3><span class="counter">20</span></h3>
+                                            <h3><span class="counter">11,220</span></h3>
                                         </div>
                                         <div class="price-graph">
-                                            <span id="sparkline6"></span>
+                                            <span class="fa big-icon fa-flask" style="font-size: 28px; color: #fff;"></span>
                                         </div>
                                     </div>
                                     <div class="income-range order-cl">
-                                        <p>Total Department</p>
-                                        <span class="income-percentange">26% <i class="fa fa-institution"></i></span>
+                                        <p>Biological Assets</p>
+                                        <span class="income-percentange">26%</span>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                                <div class="income-dashone-pro">
+                                    <div class="income-rate-total">
+                                        <div class="price-adminpro-rate">
+                                            <h3><span class="counter">29,040</span></h3>
+                                        </div>
+                                        <div class="price-graph">
+                                            <span class="fa big-icon fa-flask" style="font-size: 28px; color: #fff;"></span>
+                                        </div>
+                                    </div>
+                                    <div class="income-range order-cl">
+                                        <p>Furnitures</p>
+                                        <span class="income-percentange">46%</span>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                                <div class="income-dashone-pro">
+                                    <div class="income-rate-total">
+                                        <div class="price-adminpro-rate">
+                                            <h3><span class="counter">29,040</span></h3>
+                                        </div>
+                                        <div class="price-graph">
+                                            <span class="fa big-icon fa-map" style="font-size: 28px; color: #fff;"></span>
+                                        </div>
+                                    </div>
+                                    <div class="income-range order-cl">
+                                        <p>Land</p>
+                                        <span class="income-percentange">46%</span>
                                     </div>
                                     <div class="clear"></div>
                                 </div>
