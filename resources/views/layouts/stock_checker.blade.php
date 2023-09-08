@@ -47,6 +47,8 @@
         <!-- style CSS
             ============================================ -->
         <link rel="stylesheet" href="{{asset('asset/css/style.css')}}">
+
+        <link rel="stylesheet" href="{{asset('asset/css/modals.css')}}">
         <!-- responsive CSS
             ============================================ -->
         <link rel="stylesheet" href="{{asset('asset/css/responsive.css')}}">
@@ -87,11 +89,11 @@
                         <li>
                             <a href="{{ route('stock-checker.assetcategory') }}" role="button" aria-expanded="false"><i class="fa big-icon fa-flask"></i> <span class="mini-dn"> Asset Category</span> </a>
                         </li>
-                       
+
                         {{-- <li>
                             <a href="employeeinfo.php" role="button" aria-expanded="false"><i class="fa big-icon fa-folder-open"></i> <span class="mini-dn">Employee Information</span> </a>
                         </li> --}}
-                       
+
                         {{-- <li>
                             <a href="assetassignment.php" role="button" aria-expanded="false"><i class="fa big-icon fa-list-alt"></i> <span class="mini-dn">Asset Assignment</span> </a>
                         </li> --}}
