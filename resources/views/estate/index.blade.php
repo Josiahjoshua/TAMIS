@@ -122,7 +122,7 @@
     <form class="form1">
       <input class="un " type="text" align="center" required="" placeholder="Username">
       <input class="pass" type="password" align="center" required="" placeholder="Password">
-      <a class="submit" align="center" href="{{route('dashboard')}}">Log in</a>
+      <a class="submit" align="center" href="{{route('estate.dashboard')}}">Log in</a>
       <p class="forgot" align="center"><a href="#">Forgot Password?</p>
             
                 
