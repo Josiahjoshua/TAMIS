@@ -174,3 +174,16 @@ Route::get('assethistory', [directorController::class, 'assethistory']) ->name('
 Route::get('assetassignment', [directorController::class, 'assetassignment']) ->name('assetassignment');
 
 Route::get('transferasset', [directorController::class, 'transferasset']) ->name('transferasset');
+
+
+
+                 //USER_DEPARTMENT
+Route::get('userdashboard',[user_departmentController::class,'dashboard']);
+Route::get('AssetInformation', [user_departmentController::class, 'assetInfo'])->name('assetInformation');
+Route::get('TransferHistory', [user_departmentController::class, 'transferasset'])->name('transferAsset');
+Route::get('assetreq',[user_departmentController::class,'assetreq']);
+Route::get('employee',[user_departmentController::class,'employeeinfo']);
+Route::get('assetassigment', [user_departmentController::class, 'assetAssigment']);
+Route::get('/create', 'HomeController@create')->name('create');
+Route::get('assignAsset', [user_departmentController::class, 'assignAsset'])->name('assignAsset');
+Route::get('transferasset', [user_departmentController::class, 'transferasset'])->name('transferasset');
