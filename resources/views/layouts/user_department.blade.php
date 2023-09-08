@@ -67,8 +67,8 @@
                     <a href="#"><img src="img/1.jpg" alt="" class="img-circle"     />
                     </a>
                     <h3>User</h3>
-                    <p>Team Leader</p>
-                    <strong>AMS</strong>
+                    <p>Department</p>
+                    <strong>TAMIS</strong>
                 </div>
                 <div class="left-custom-menu-adp-wrap">
                     <ul class="nav navbar-nav left-sidebar-menu-pro">
@@ -90,6 +90,9 @@
                         </li>
                         <li>
                             <a href="assetreq" role="button" aria-expanded="false"><i class="fa big-icon fa-users"></i> <span class="mini-dn">Asset Request</span> </a>
+                        </li>
+                        <li>
+                            <a href="transferasset" role="button" aria-expanded="false"><i class="fa big-icon fa-users"></i> <span class="mini-dn">Transfer Asset</span> </a>
                         </li>
                     </ul>
                 </div>

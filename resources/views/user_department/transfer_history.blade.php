@@ -42,9 +42,9 @@
                                     </div>
                                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
                                         <ul class="breadcome-menu">
-                                            <li><a href="#">Asset Transfer History</a> <span class="bread-slash">/</span>
+                                            <li><a href="#">Assign Asset</a> <span class="bread-slash">/</span>
                                             </li>
-                                            <li><span class="bread-blod">History</span>
+                                            <li><span class="bread-blod">Assign Asset</span>
                                             </li>
                                         </ul>
                                     </div>
@@ -54,7 +54,44 @@
                     </div>
                 </div>
             </div>
-            <table id="table" data-toggle="table" data-pagination="true" data-search="true" data-show-columns="true"  data-show-refresh="true" data-key-events="true"  data-resizable="true" data-cookie="true" data-cookie-id-table="saveId"  data-click-to-select="true" data-toolbar="#toolbar">
+
+
+            <div class="data-table-area mg-b-15">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="sparkline13-list shadow-reset">
+                                <div class="sparkline13-hd">
+                                    <div class="main-sparkline13-hd">
+                                        <h1>Asset Assignment to Employee  <span class="table-project-n"></span> Form Table</h1>
+                                        <div class="sparkline13-outline-icon">
+                                            <span class="sparkline13-collapse-link"><i class="fa fa-chevron-up"></i></span>
+                                            <span><i class="fa fa-wrench"></i></span>
+                                            <span class="sparkline13-collapse-close"><i class="fa fa-times"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sparkline13-graph">
+                                    <div class="datatable-dashv1-list custom-datatable-overright">
+
+                                        <div id="toolbar">
+                                            <form action="">
+                                            <select class="form-control">
+                                                <option value="">Select Item</option>
+                                                <option value="all">Item 1</option>
+                                                <option value="selected">Item 2</option>
+                                            </select>
+                                            <select class="form-control" style="margin-left: 105%; margin-top: -20.5%">
+                                                <option value="">Select Employee</option>
+                                                <option value="all">Employee 1</option>
+                                                <option value="selected">Employee 2</option>
+                                            </select>
+                                            <button type="submit" class="btn btn-info" style="margin-left: 210%; margin-top: -43%">Go!</button>
+                                            </form>
+                                        </div>
+
+                                        <table id="table" data-toggle="table" data-pagination="true" data-search="true" data-show-columns="true"  data-show-refresh="true" data-key-events="true"  data-resizable="true" data-cookie="true" data-cookie-id-table="saveId"  data-click-to-select="true" data-toolbar="#toolbar">
+                                            
                 <thead>
                     <tr>
                         <th>Asset No</th>

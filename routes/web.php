@@ -53,5 +53,6 @@ Route::get('employee',[user_departmentController::class,'employeeinfo']);
 Route::get('assetassigment', [user_departmentController::class, 'assetAssigment']);
 Route::get('/create', 'HomeController@create')->name('create');
 Route::get('assignAsset', [user_departmentController::class, 'assignAsset'])->name('assignAsset');
+Route::get('transferasset', [user_departmentController::class, 'transferasset'])->name('transferasset');
 
 
