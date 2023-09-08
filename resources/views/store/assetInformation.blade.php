@@ -37,9 +37,9 @@
                                                     <label class="login2">Condition : </label>
                                                 </div>
                                                 <div class="col-lg-4">
-                                                    <input type="text" class="form-control" placeholder="Enter Condition" style="width: 140%" />
+                                                    <input type="text" class="form-control" placeholder="Enter Condition" style="width: 121%" />
 
-                                                        <input type="number" class="form-control" placeholder="Qty" style="margin-left: 150%; margin-top: -28%; width: 75%">
+                                                        <input type="number" class="form-control" placeholder="Qty" style="margin-left: 130%; margin-top: -22%; width: 95%">
                                                 </div>
                                             </div>
                                         </div>
@@ -51,7 +51,7 @@
                                                 <div class="col-lg-4">
                                                     <input type="date" class="form-control" placeholder="Enter Date" style="width: 121%" />
 
-                                                        <input type="number" class="form-control" placeholder="Remarks" style="margin-left: 130%; margin-top: -28%; width: 95%">
+                                                        <input type="text" class="form-control" placeholder="Remarks" style="margin-left: 130%; margin-top: -22%; width: 95%">
                                                 </div>
                                             </div>
                                         </div>
@@ -62,7 +62,7 @@
                                                 </div>
                                                 <div class="col-lg-8">
                                                 <select class="form-control">
-                                <option value="">Select Name</option>
+                                <option value="">Select Item</option>
                                 <option value="all">Item 1</option>
                                 <option value="selected">Item 2</option>
                                                 </select>

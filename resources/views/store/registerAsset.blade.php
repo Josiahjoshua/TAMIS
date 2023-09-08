@@ -67,7 +67,7 @@
 	<!-- /.card-body -->
 
 	<div class="card-footer">
-		<div class="text-right"><input class="btn btn-primary" type="submit" value="Submit"></div>
+		<div class="text-left"><input class="btn btn-primary" type="submit" value="Submit"></div>
 
 	</div>
   </form>
