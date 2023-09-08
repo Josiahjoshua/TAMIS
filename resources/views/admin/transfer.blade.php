@@ -9,7 +9,7 @@
                             <div class="breadcome-list shadow-reset">
                                 <div class="row">
                                     <div class="col-lg-6">
-                                        <button class="btn btn-custon-rounded-three btn-success" data-toggle="modal" data-target="#InformationproModalalert"><i class="fa fa-plus"></i> Register</button>
+                                        <button class="btn btn-custon-rounded-three btn-success" data-toggle="modal" data-target="#InformationproModalalert"><i class="fa fa-plus"></i> Transfer</button>
                                          <div id="InformationproModalalert" class="modal modal-adminpro-general fullwidth-popup-InformationproModal zoomInUp" role="dialog">
                                 <div class="modal-dialog">
                                     <div class="modal-content">
@@ -105,7 +105,7 @@
                                         <ul class="breadcome-menu">
                                             <li><a href="#">Dashboard</a> <span class="bread-slash">/</span>
                                             </li>
-                                            <li><span class="bread-blod">User Information</span>
+                                            <li><span class="bread-blod">Employee Information</span>
                                             </li>
                                         </ul>
                                     </div>

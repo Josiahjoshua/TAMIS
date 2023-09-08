@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\StoreController;
+use App\Http\Controllers\AdminController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,29 +15,30 @@ use App\Http\Controllers\StoreController;
 |
 */
 
-Route::get('/', function () { return view('index');});
+// Route::get('/', function () { return view('index');});
 
-Route::get('assettassignment', function () { return view('assettassignment');});
+// Route::get('assettassignment', function () { return view('admin.assettassignment');});
 
-Route::get('assetcategory', function () { return view('assetcategory');});
+// Route::get('assetcategory', function () { return view('admin.assetcategory');});
 
-Route::get('assethistory', function () { return view('assethistory');});
+// Route::get('assethistory', function () { return view('admin.assethistory');});
 
-Route::get('/assetinfo', function () { return view('assetinfo');});
+// Route::get('/assetinfo', function () { return view('admin.assetinfo');});
 
-Route::get('branchoffice', function () { return view('branchoffice');});
+// Route::get('directorate', function () { return view('admin.directorate');});
 
-Route::get('branchreport', function () { return view('branchreport');});
+// Route::get('branchreport', function () { return view('admin.branchreport');});
 
 Route::get('dashboard', function () { return view('admin.dashboard');});
+// // Route::get('dashboard', function () { return view('admin.dashboard');});
 
-Route::get('department', function () { return view('department');});
+// Route::get('department', function () { return view('admin.department');});
 
-Route::get('employeeinfo', function () { return view('employeeinfo');});
+// Route::get('employeeinfo', function () { return view('admin.employeeinfo');});
 
-Route::get('employeereport', function () { return view('employeereport');});
+// Route::get('employeereport', function () { return view('admin.employeereport');});
 
-Route::get('transferasset', function () { return view('transferasset');});
+// Route::get('transferasset', function () { return view('admin.transferasset');});
 
 Route::get('user', function () { return view('admin.user');});
 
@@ -58,3 +60,32 @@ Route::get('/store/assetDisposition', [StoreController::class, 'assetDisposition
 ->name('store.assetDisposition');
 
 
+// Route::get('user', function () { return view('admin.user');});
+
+Route::get('admin/dashboard', [AdminController::class, 'dashboard'])
+->name('admin.dashboard');
+
+
+Route::get('admin/directorate', [AdminController::class, 'directorate'])
+->name('admin.directorate');
+
+Route::get('admin/assets', [AdminController::class, 'assets'])
+->name('admin.assets');
+
+Route::get('admin/assettype', [AdminController::class, 'assettype'])
+->name('admin.assettype');
+
+Route::get('index', [AdminController::class, 'index'])
+->name('index');
+
+Route::get('admin/department', [AdminController::class, 'department'])
+->name('admin.department');
+
+Route::get('admin/user', [AdminController::class, 'user'])
+->name('admin.user');
+
+Route::get('admin/transfer', [AdminController::class, 'transfer'])
+->name('admin.transfer');
+
+Route::get('admin/request', [AdminController::class, 'request'])
+->name('admin.request');
