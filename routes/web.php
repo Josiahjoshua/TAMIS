@@ -24,6 +24,7 @@ use App\Http\Controllers\AdminController;
 // Route::get('assethistory', function () { return view('admin.assethistory');});
 
 // Route::get('/assetinfo', function () { return view('admin.assetinfo');});
+Route::get('assetinfo', function () { return view('assetinfo');});
 
 // Route::get('directorate', function () { return view('admin.directorate');});
 
@@ -89,3 +90,40 @@ Route::get('admin/transfer', [AdminController::class, 'transfer'])
 
 Route::get('admin/request', [AdminController::class, 'request'])
 ->name('admin.request');
+Route::group(['prefix'=>'stock-checker'], function(){
+
+    Route::get('dashboard', function(){
+        return view('stock_checker.dashboard');
+    })->name('stock_checker.dashboard');
+
+    Route::get('assets_history', function(){
+        return view('stock_checker.assethistory');
+    })->name('stock-checker.assethistory');
+
+    Route::get('assets_category', function(){
+        return view('stock_checker.assetcategory');
+    })->name('stock-checker.assetcategory');
+
+    Route::get('assets_info', function(){
+        return view('stock_checker.assetinfo');
+    })->name('stock-checker.assetinfo');
+
+    Route::get('department', function(){
+        return view('stock_checker.department');
+    })->name('stock-checker.department');
+
+    Route::get('assets_disposal', function(){
+        return view('stock_checker.assetdisposal');
+    })->name('stock-checker.assetdisposal');
+
+    Route::get('assets_report', function() {
+        return view('stock_checker.report');
+    })->name('stock-checker.report');
+
+    Route::get('profile', function() {
+        return view('stock_checker.user');
+    })->name('stock_checker.profile');
+
+
+
+});
