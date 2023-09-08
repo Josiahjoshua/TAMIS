@@ -1,6 +1,6 @@
-@extends('layouts.admin')
+@extends('layouts.director')
 
-@section('admincontent')
+@section('directorcontent')
             <!-- Breadcome start-->
             <div class="breadcome-area mg-b-30 small-dn">
                 <div class="container-fluid">
@@ -82,13 +82,13 @@
                                                         <div class="form-group-inner">
                                                             <div class="row">
                                                                 <div class="col-lg-4">
-                                                                    <label class="login2">Branch : </label>
+                                                                    <label class="login2">Department : </label>
                                                                 </div>
                                                                 <div class="col-lg-8">
                                                                 <select class="form-control">
                                                 <option value="">Select Location</option>
-                                                <option value="all">Branch 1</option>
-                                                <option value="selected">Branch 2</option>
+                                                <option value="all">Department 1</option>
+                                                <option value="selected">Department 2</option>
                                                                 </select>
                                                                 </div>
                                                             </div>
@@ -142,7 +142,7 @@
                                     </div>
                                     <div class="col-lg-6">
                                         <ul class="breadcome-menu">
-                                            <li><a href="#">Dashboard</a> <span class="bread-slash">/</span>
+                                            <li><a href="{{route('dashboard')}}">Dashboard</a> <span class="bread-slash">/</span>
                                             </li>
                                             <li><span class="bread-blod">Asset Information</span>
                                             </li>
@@ -177,9 +177,9 @@
                                         <div id="toolbar">
                                             <form action="">
                                             <select class="form-control">
-                                                <option value="">Select Branch</option>
-                                                <option value="all">Branch 1</option>
-                                                <option value="selected">Branch 2</option>
+                                                <option value="">Select Department</option>
+                                                <option value="all">Department 1</option>
+                                                <option value="selected">Department 2</option>
                                             </select>
                                             <select class="form-control" style="margin-left: 105%; margin-top: -24.5%">
                                                 <option value="">Select Asset</option>
@@ -304,13 +304,13 @@
                                                         <div class="form-group-inner">
                                                             <div class="row">
                                                                 <div class="col-lg-4">
-                                                                    <label class="login2">Branch : </label>
+                                                                    <label class="login2">Department : </label>
                                                                 </div>
                                                                 <div class="col-lg-8">
                                                                 <select class="form-control">
                                                 <option value="">Select Location</option>
-                                                <option value="all">Branch 1</option>
-                                                <option value="selected">Branch 2</option>
+                                                <option value="all">Department 1</option>
+                                                <option value="selected">Department 2</option>
                                                                 </select>
                                                                 </div>
                                                             </div>

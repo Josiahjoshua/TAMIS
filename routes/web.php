@@ -1,5 +1,5 @@
 <?php
-
+use App\Http\Controllers\directorController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\StoreController;
 use App\Http\Controllers\AdminController;
@@ -130,7 +130,7 @@ Route::group(['prefix'=>'stock-checker'], function(){
 
 
 });
-//estate routes
+                    //estate routes
 
 Route::get('estate/category', function () { return view('estate.category');})->name('estate/category');
 Route::get('viewasset', function () {
@@ -153,3 +153,24 @@ Route::get('viewdepart/{departmentName}', function ($departmentName) {
  })->name('viewdepart');
 
  Route::get('requests', function () { return view('estate.estaterequests');})->name('requests');
+
+
+
+
+         //DIRECTOR ROUTES
+
+Route::get('/', [directorController::class, 'index']) ->name('index');
+
+Route::get('dashboard', [directorController::class, 'dashboard']) ->name('dashboard');
+
+Route::get('departmentoffice',[directorController::class, 'departmentoffice']) ->name('departmentoffice');
+
+Route::get('departmentreport', [directorController::class, 'departmentreport']) ->name('departmentreport');
+
+Route::get('assetinfo', [directorController::class, 'assetinfo']) ->name('assetinfo');
+
+Route::get('assethistory', [directorController::class, 'assethistory']) ->name('assethistory');
+
+Route::get('assetassignment', [directorController::class, 'assetassignment']) ->name('assetassignment');
+
+Route::get('transferasset', [directorController::class, 'transferasset']) ->name('transferasset');

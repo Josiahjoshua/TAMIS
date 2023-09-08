@@ -73,6 +73,7 @@
                 <div class="left-custom-menu-adp-wrap">
                     <ul class="nav navbar-nav left-sidebar-menu-pro">
                         <li class="active">
+<<<<<<< HEAD
                             <a href="{{route('admin.dashboard')}}" role="button" aria-expanded="false"><i class="fa big-icon fa-dashboard"></i> <span class="mini-dn"> Dashboard</span> </a>
                         </li>
                         <li>
@@ -95,6 +96,33 @@
                         </li>
                         <li>
                             <a href="{{route('admin.user')}}" role="button" aria-expanded="false"><i class="fa big-icon fa-history"></i> <span class="mini-dn">User</span> </a>
+=======
+                            <a href="dashboard" role="button" aria-expanded="false"><i class="fa big-icon fa-dashboard"></i> <span class="mini-dn"> Dashboard</span> </a>
+                        </li>
+                        <li>
+                            <a href="{{route('admin.directorate')}}" role="button" aria-expanded="false"><i class="fa big-icon fa-home"></i> <span class="mini-dn">  Directorates</span> </a>
+                        </li>
+                        <li>
+                            <a href="{{route('admin.department')}}" role="button" aria-expanded="false"><i class="fa big-icon fa-file-archive-o"></i> <span class="mini-dn">Departments</span> </a>
+                        </li>
+                        <li>
+                            <a href="{{route('admin.assets')}}" role="button" aria-expanded="false"><i class="fa big-icon fa-institution"></i> <span class="mini-dn">Assets </span> </a>
+                        </li>
+                        <li>
+                            <a href=" {{route('admin.assettype')}}" role="button" aria-expanded="false"><i class="fa big-icon fa-folder-open"></i> <span class="mini-dn">Asset Types</span> </a>
+                        </li>
+                        <li>
+                            <a href="{{route('admin.transfer')}}" role="button" aria-expanded="false"><i class="fa big-icon fa-folder-open"></i> <span class="mini-dn">Transfers</span> </a>
+                        </li>
+                        <li>
+                            <a href="{{route('admin.request')}}" role="button" aria-expanded="false"><i class="fa big-icon fa-list-alt"></i> <span class="mini-dn">Requests</span> </a>
+                        </li>
+                        <li>
+                            <a href="{{route('admin.user')}}" role="button" aria-expanded="false"><i class="fa big-icon fa-history"></i> <span class="mini-dn">User</span> </a>
+                        </li>
+                        <li>
+                            <a href="user" role="button" aria-expanded="false"><i class="fa big-icon fa-users"></i> <span class="mini-dn">User Information</span> </a>
+>>>>>>> origin/director
                         </li>
                         {{-- <li>
                             <a href="{{route('admin.user')}}" role="button" aria-expanded="false"><i class="fa big-icon fa-users"></i> <span class="mini-dn">User Information</span> </a>
