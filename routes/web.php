@@ -23,6 +23,7 @@ return view('index');
 
 //ADMIN ROUTES
 Route::group(['prefix'=>'admin'], function(){
+// Route::get('/', [directorController::class, 'index']) ->name('index');
 
         Route::get('dashboard', [AdminController::class, 'dashboard'])
         ->name('admin.dashboard');
@@ -125,6 +126,7 @@ Route::group(['prefix'=>'director'], function(){
         Route::get('departmentreport', [directorController::class, 'departmentreport']) ->name('director.departmentreport');
 
         Route::get('assetinfo', [directorController::class, 'assetinfo']) ->name('director.assetinfo');
+// Route::get('/', [directorController::class, 'index']) ->name('index');
 
         Route::get('assethistory', [directorController::class, 'assethistory']) ->name('director.assethistory');
 
