@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 //DIRECTOR ROUTES
 
-Route::get('/', [directorController::class, 'index']) ->name('index');
+// Route::get('/', [directorController::class, 'index']) ->name('index');
 
 Route::get('dashboard', [directorController::class, 'dashboard']) ->name('dashboard');
 
