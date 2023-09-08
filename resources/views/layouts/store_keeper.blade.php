@@ -87,7 +87,7 @@
 
 
                         <li>
-                            <a href="{{ route('store.gamisRegister') }}" role="button" aria-expanded="false"><i class="fa big-icon fa-folder-open"></i> <span class="mini-dn">Gamis register</span> </a>
+                            {{-- <a href="{{ route('store.gamisRegister') }}" role="button" aria-expanded="false"><i class="fa big-icon fa-folder-open"></i> <span class="mini-dn">Gamis register</span> </a> --}}
                         </li>
 
                         <li>

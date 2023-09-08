@@ -4,73 +4,71 @@
 
 
 
-<form class="container">
-    <div class="card">
-        <div class="card-body">
-            <h2 class="card-title">ASSET REGISTER FORM</h2>
 
+<form>
+	<div class="card-body" style="margin-top: 30px; margin-left:20px" >
 
-             <!-- Asset Cost, Accumulated Depreciation, Acquisition Date, and Acquisition Type -->
-             <div class="row form-group">
-                <div class="col-md-6 col-lg-3">
-                    <label for="cost">Asset Code</label>
-                    <input class="form-control" name="cost" id="cost" required>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <label for="accdeprc">Asset Description </label>
-                    <input class="form-control" name="accdeprc" id="accdeprc" required>
-                </div>
+		<h2>ASSET REGISTER FORM</h2>
+		<div class="row form-group">
+			<div class="col-lg-1"><label for="assetno">Asset Number.</label></div>
+			<div class="col-lg-4"><input class="form-control" type="number" name="assetno" id="assetno" required></div>
+			<div class="col-lg-1"><label for="assetnodesc">Asset Name.</label></div>
+			<div class="col-lg-4"><input class="form-control" name="assetnodesc" id="assetnodesc" required></div>
+		</div>
+		<div class="row form-group">
+			<div class="col-lg-1"><label for="asstype">Asset Type</label></div>
+			<div class="col-lg-4">
+				<select class="form-control" name="asstype" id="asstype" required>
+					<option value="" selected disabled>Select an Asset Type</option>
+					<option value="type1">BIOLOGICAL</option>
+					<option value="type2">BOOK</option>
+					<option value="type3">BUILDINGS</option>
+					<option value="type4">FURNITURE</option>
+					<option value="type5">INFRASTRUCTURE</option>
+					<option value="type6">INTANGIBLE</option>
+					<option value="type7">LAND</option>
+					<option value="type8">MPM</option>
+				</select>
+			</div>
+			<div class="col-lg-1"><label for="regdate">Registered date</label></div>
+			<div class="col-lg-4"><input class="form-control" name="regdate" id="regdate" required></div>
+		</div>
+		<div class="row form-group">
+			<div class="col-lg-1"><label for="classcode">Class Code.</label></div>
+			<div class="col-lg-4"><input class="form-control" name="classcode" id="classcode" required></div>
+			<div class="col-lg-1"><label for="condition">Condition</label></div>
+			<div class="col-lg-4"><input class="form-control" name="condition" id="condition" required></div>
+		</div>
 
-                <div class="col-md-6 col-lg-3">
-                    <label for="accdeprc">Location </label>
-                    <input class="form-control" name="accdeprc" id="accdeprc" required>
-                </div>
+		<div class="row form-group">
+			<div class="col-lg-1"><label for="cost">Cost</label></div>
+			<div class="col-lg-4"><input class="form-control" name="cost" id="cost" required></div>
+			<div class="col-lg-1"><label for="accdeprc">Accumulated depreciation</label></div>
+			<div class="col-lg-4"><input class="form-control" name="accdeprc" id="accdeprc" required></div>
+		</div>
+		<div class="row form-group">
+			<div class="col-lg-1"><label for="acqdate">Acquisition Date</label></div>
+			<div class="col-lg-4"><input class="form-control" name="acqdate" id="acqdate" type="date" required></div>
+			<div class="col-lg-1"><label for="acqtype">Acquisition Type</label></div>
+			<div class="col-lg-4"><input class="form-control" name="acqtype" id="acqtype" required></div>
+		</div>
+		<div class="row form-group">
+			<div class="col-lg-1"><label for="gfscode">GFS Code</label></div>
+			<div class="col-lg-4"><input class="form-control" name="gfscode" id="gfscode" required></div>
+			<div class="col-lg-1"><label for="gfsdesc">GFS Description</label></div>
+			<div class="col-lg-4"><input class="form-control" name="gfsdesc" id="gfsdesc" required></div>
+		</div>
 
-            </div>
+		<div class="row form-group">
+			<div class="col-lg-1"><label for="remarks">Remarks</label></div>
+			<div class="col-lg-9"><input class="form-control" name="remarks" id="remarks" required></div>
+		</div>
 
+	<!-- /.card-body -->
 
-            <!-- Asset Type, Registered Date, Class Code, and Condition -->
-            <div class="row form-group">
+	<div class="card-footer">
+		<div class="text-left"><input class="btn btn-primary" type="submit" value="Submit"></div>
 
-
-                <div class="col-md-6 col-lg-3">
-                    <label for="regdate">Registered Date</label>
-                    <input class="form-control" name="acqdate" id="acqdate" type="date" required>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <label for="classcode">Acquisition Cost</label>
-                    <input class="form-control" name="classcode" id="classcode" required>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <label for="condition">Condition</label>
-                    <input class="form-control" name="condition" id="condition" required>
-                </div>
-            </div>
-
-            <!-- Asset Cost, Accumulated Depreciation, Acquisition Date, and Acquisition Type -->
-            <div class="row form-group">
-                <div class="col-md-6 col-lg-3">
-                    <label for="cost">Serial Number</label>
-                    <input class="form-control" name="cost" id="cost" required>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <label for="acqdate">Quantity</label>
-                    <input class="form-control" name="acqdate" id="acqdate" type="date" required>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <label for="acqtype">Owner Name</label>
-                    <input class="form-control" name="acqtype" id="acqtype" required>
-                </div>
-            </div>
-
-
-
-        </div>
-
-        <div class="card-footer text-center">
-            <center> <input class="btn btn-primary" type="submit" value="Submit"></center>
-        </div>
-
-    </div>
-</form>
+	</div>
+  </form>
 @endsection
