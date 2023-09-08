@@ -168,7 +168,7 @@
                                         <div class="price-adminpro-rate">
                                             <h3><span class="counter">3498</span></h3>
                                         </div>
-                                        <div class="price-graph">
+                                        {{-- <div class="price-graph">
                                             <span id="sparkline5"></span>
                                         </div>
                                     </div>
@@ -176,7 +176,7 @@
                                         <p> Furnature Assets</p>
                                         <span class="income-percentange">89% <i class="fa fa-file-archive-o"></i></span>
                                     </div>
-                                    <div class="clear"></div>
+                                    <div class="clear"></div> --}}
 {{--
                                     <div class="clear"></div>
                                     <div class="income-rate-total">

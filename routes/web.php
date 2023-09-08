@@ -1,5 +1,6 @@
 <?php
 use App\Http\Controllers\directorController;
+use App\Http\Controllers\user_departmentController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\StoreController;
 use App\Http\Controllers\AdminController;
@@ -136,7 +137,7 @@ Route::group(['prefix'=>'director'], function(){
 
                  //USER_DEPARTMENT
 Route::group(['prefix'=>'user_department'], function(){
-    Route::get('userdashboard',[user_departmentController::class,'user_department.dashboard']);
+    Route::get('dashboard',[user_departmentController::class,'dashboard'])->name('user_department.dashboard');
     Route::get('AssetInformation', [user_departmentController::class, 'assetInfo'])->name('user_department.assetInformation');
     Route::get('TransferHistory', [user_departmentController::class, 'transferasset'])->name('user_department.transferAsset');
     Route::get('assetreq',[user_departmentController::class,'assetreq'])->name('user_department.assetreq');
