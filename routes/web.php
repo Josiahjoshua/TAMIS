@@ -137,13 +137,29 @@ Route::group(['prefix'=>'director'], function(){
                  //USER_DEPARTMENT
 Route::group(['prefix'=>'user_department'], function(){
     Route::get('userdashboard',[user_departmentController::class,'user_department.dashboard']);
-    Route::get('AssetInformation', [user_departmentController::class, 'assetInfo'])->name('user_department.assetInformation');
-    Route::get('TransferHistory', [user_departmentController::class, 'transferasset'])->name('user_department.transferAsset');
-    Route::get('assetreq',[user_departmentController::class,'assetreq'])->name('user_department.assetreq');
-    Route::get('employee',[user_departmentController::class,'employeeinfo'])->name('user_department.employeeinfo');
-    Route::get('assetassigment', [user_departmentController::class, 'assetAssigment'])->name('user_department.assetAssigment');
-    Route::get('create', [user_departmentController::class, 'create']) ->name('user_department.create');
-    Route::get('assignAsset', [user_departmentController::class, 'assignAsset'])->name('user_department.assignAsset');
-    Route::get('transferasset', [user_departmentController::class, 'transferasset'])->name('user_department.transferasset');
+
+    Route::get('AssetInformation', [user_departmentController::class, 'assetInfo'])
+    ->name('user_department.assetInformation');
+
+    Route::get('TransferHistory', [user_departmentController::class, 'transferasset'])
+    ->name('user_department.transferAsset');
+
+    Route::get('assetreq',[user_departmentController::class,'assetreq'])
+    ->name('user_department.assetreq');
+
+    Route::get('employee',[user_departmentController::class,'employeeinfo'])
+    ->name('user_department.employeeinfo');
+
+    Route::get('assetassigment', [user_departmentController::class, 'assetAssigment'])
+    ->name('user_department.assetAssigment');
+
+    Route::get('create', [user_departmentController::class, 'create']) 
+    ->name('user_department.create');
+
+    Route::get('assignAsset', [user_departmentController::class, 'assignAsset'])
+    ->name('user_department.assignAsset');
+    
+    Route::get('transferasset', [user_departmentController::class, 'transferasset'])
+    ->name('user_department.transferasset');
 });
 
