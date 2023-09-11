@@ -16,7 +16,11 @@ class user_departmentController extends Controller
     }
 
     public function transferasset(){
-        return view('user_department.transfer_history');
+        return view('user_department.transferAsset');
+    }
+
+    public function transferHistory(){
+        return view('user_department.transferHistory');
     }
 
     public function employeeinfo(){
@@ -39,5 +43,20 @@ class user_departmentController extends Controller
     public function assignAsset()
     {
         return view('user_department.assign_asset');
+    }
+
+    public function tempTransfer()
+    {
+        return view('user_department.tempTransfer');
+    }
+
+    public function office()
+    {
+        return view('user_department.office');
+    }
+
+    public function request()
+    {
+        return view('user_department.request');
     }
 }

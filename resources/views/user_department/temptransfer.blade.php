@@ -45,7 +45,7 @@
                                     </div>
                                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
                                         <ul class="breadcome-menu">
-                                            <li><a href="#">Assign Asset</a> <span class="bread-slash">/</span>
+                                            <li><a href="#">Transfer Asset</a> <span class="bread-slash">/</span>
                                             </li>
                                             <li><span class="bread-blod">Assign Asset</span>
                                             </li>
@@ -64,7 +64,7 @@
                             <div class="sparkline13-list shadow-reset">
                                 <div class="sparkline13-hd">
                                     <div class="main-sparkline13-hd">
-                                        <h1>Asset Assignment to Employee  <span class="table-project-n"></span> Form Table</h1>
+                                        <h1>Temporary Assignnment of an Asset  <span class="table-project-n"></span> Form</h1>
                                         <div class="sparkline13-outline-icon">
                                             <span class="sparkline13-collapse-link"><i class="fa fa-chevron-up"></i></span>
                                             <span><i class="fa fa-wrench"></i></span>
@@ -87,7 +87,7 @@
                             <div class="sparkline9-list shadow-reset">
                                 <div class="sparkline9-hd">
                                     <div class="main-sparkline9-hd">
-                                        <h1>Asset Assignment to Employee <span class="basic-ds-n">Form</span></h1>
+                                        <h1>Temporary Assignment of an Asset<span class="basic-ds-n"></span></h1>
 
                                     </div>
                                 </div>
@@ -128,7 +128,7 @@
                                                                     <label class="login2">Class : </label>
                                                                 </div>
                                                                 <div class="col-lg-4">
-                                                                    <select class="form-control">Condition
+                                                                    <select class="form-control">Asset Class
                                                                     <option value="biological">Biological Asset</option>
                                                                     <option value="books">Books</option>
                                                                     <option value="intangible">Intangible Asset</option>
@@ -258,8 +258,17 @@
                     </div>
                         </div>
                              <div class="modal-footer footer-modal-admin">
-                                <a href="{{url('TransferHistory')}}"> <button type="button" class="btn btn-outline">Cancel</button></a>
-                                <button type="button" class="btn btn-primary">Done</button></a>
+                                <a href="{{url('TempTransfer')}}"> <button type="button" class="btn btn-outline float-right">Cancel</button></a>
+                                <button id="showPopupButton" class="btn btn-primary float-left">Done</button>
+
+
+                                <script>
+                                    document.getElementById('showPopupButton').addEventListener('click', function() {
+                                    // Show the pop-up
+                                    $('#popupModal').modal('show');
+                                });
+                                </script>
+
                                         </div>
                                     </form>
                                     </div>

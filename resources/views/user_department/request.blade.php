@@ -45,9 +45,9 @@
                                     </div>
                                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
                                         <ul class="breadcome-menu">
-                                            <li><a href="#">Assign Asset</a> <span class="bread-slash">/</span>
+                                            <li><a href="#">Request Asset</a> <span class="bread-slash">/</span>
                                             </li>
-                                            <li><span class="bread-blod">Assign Asset</span>
+                                            <li><span class="bread-blod">Request Asset</span>
                                             </li>
                                         </ul>
                                     </div>
@@ -64,7 +64,7 @@
                             <div class="sparkline13-list shadow-reset">
                                 <div class="sparkline13-hd">
                                     <div class="main-sparkline13-hd">
-                                        <h1>Asset Assignment to Employee  <span class="table-project-n"></span> Form Table</h1>
+                                        <h1>Request an Asset  <span class="table-project-n"></span> Form</h1>
                                         <div class="sparkline13-outline-icon">
                                             <span class="sparkline13-collapse-link"><i class="fa fa-chevron-up"></i></span>
                                             <span><i class="fa fa-wrench"></i></span>
@@ -87,7 +87,7 @@
                             <div class="sparkline9-list shadow-reset">
                                 <div class="sparkline9-hd">
                                     <div class="main-sparkline9-hd">
-                                        <h1>Asset Assignment to Employee <span class="basic-ds-n">Form</span></h1>
+                                        <h1>Request an Asset<span class="basic-ds-n"></span></h1>
 
                                     </div>
                                 </div>
@@ -96,39 +96,14 @@
                                         <div class="row">
                                             <div class="col-lg-12">
                                                 <div class="basic-login-inner">
-                                                    <div class="form-group-inner">
-                                                        <div class="row">
-                                                            <div class="col-lg-4">
-                                                                <label class="login2">Asset no : </label>
-                                                            </div>
-                                                            <div class="col-lg-4">
-                                                                <input type="text" class="form-control" placeholder="Enter Asset " style="width: 121%" />
-                                                            </div>
-                                                        </div>
-
-
-                                                    </div>
-                                                    <div class="form-group-inner">
-                                                        <div class="row">
-                                                            <div class="col-lg-4">
-                                                                <label class="login2">Serial no : </label>
-                                                            </div>
-                                                            <div class="col-lg-4">
-                                                                <input type="text" class="form-control" placeholder="Enter Serial no " style="width: 121%" />
-                                                            </div>
-                                                        </div>
-
-
-                                                    </div>
-                                                </div>
                                                         <div class="form-group-inner">
                                                             <div class="row">
                                                                 <div class="row">
                                                                 <div class="col-lg-4">
-                                                                    <label class="login2">Class : </label>
+                                                                    <label class="login2">Asset Class : </label>
                                                                 </div>
                                                                 <div class="col-lg-4">
-                                                                    <select class="form-control">Condition
+                                                                    <select class="form-control">Asset Class
                                                                     <option value="biological">Biological Asset</option>
                                                                     <option value="books">Books</option>
                                                                     <option value="intangible">Intangible Asset</option>
@@ -165,7 +140,6 @@
                                                                 <div class="col-lg-4">
                                                                     <input type="date" class="form-control" placeholder="Enter Date" style="width: 121%" />
 
-                                                                        <input type="number" class="form-control" placeholder="Remarks" style="margin-left: 130%; margin-top: -28%; width: 95%">
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -186,7 +160,7 @@
                                                                     <label class="login2">Mobile Number : </label>
                                                                 </div>
                                                                 <div class="col-lg-8">
-                                                                    <input type="text" class="form-control" placeholder="Enter Mobile number" style="width: 100%" />
+                                                                    <input type="phone" class="form-control" placeholder="Enter Mobile number" style="width: 100%" />
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -194,61 +168,17 @@
                                                         <div class="form-group-inner">
                                                             <div class="row">
                                                                 <div class="col-lg-4">
-                                                                    <label class="login2">From : </label>
-                                                                </div>
-                                                                <div class="col-lg-2">
-                                                                <select class="form-control">Building
-                                                <option value="">Building 1</option>
-                                                <option value="all">Building 2</option>
-                                                <option value="selected">Building 3</option>
-                                                                </select>
-                                                                </div>
-                                                                <div class="col-lg-3">
-                                                                    <select class="form-control">Floor
-                                                    <option value="">Floor 1</option>
-                                                    <option value="all">Floor 2</option>
-                                                    <option value="selected">Floor 3</option>
-                                                                    </select>
-                                                                    </div>
-                                                                    <div class="col-lg-3">
-                                                                        <select class="form-control">Room
-                                                        <option value="">Room 1</option>
-                                                        <option value="all">Room 2</option>
-                                                        <option value="selected">Room 3</option>
-                                                                        </select>
-                                                                        </div>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="form-group-inner">
-                                                            <div class="row">
-                                                                <div class="col-lg-4">
-                                                                    <label class="login2">To : </label>
+                                                                    <label class="login2">Request To : </label>
                                                                 </div>
                                                                 <div class="col-lg-5">
-                                                                <select class="form-control" >
-                                                <option value="">Building</option>
-                                                <option value="all">Building 1</option>
-                                                <option value="selected">Building 2</option>
+                                                                <select class="form-control">Request To
+                                                <option value="directorate">Directorate</option>
+                                                <option value="store">Store</option>
+                                                <option value="estate">Estate</option>
                                                                 </select>
                                                                 </div>
-                                                                <div class="col-lg-4">
-                                                                    <select class="form-control">
-                                                    <option value="">Floor</option>
-                                                    <option value="all">Floor 1</option>
-                                                    <option value="selected">Floor 2</option>
-                                                                    </select>
-                                                                    </div>
-                                                                    <div class="col-lg-4">
-                                                                        <select class="form-control">
-                                                        <option value="">Room</option>
-                                                        <option value="all">Room 1</option>
-                                                        <option value="selected">Room 2</option>
-                                                                        </select>
-                                                                        </div>
-                                                            </div>
-                                                        </div>
-                                                </div>
+
+
                                             </div>
                                         </div>
                                     </div>
@@ -258,8 +188,17 @@
                     </div>
                         </div>
                              <div class="modal-footer footer-modal-admin">
-                                <a href="{{url('TransferHistory')}}"> <button type="button" class="btn btn-outline">Cancel</button></a>
-                                <button type="button" class="btn btn-primary">Done</button></a>
+                                <a href="{{url('requestAsset')}}"> <button type="button" class="btn btn-outline float-right">Cancel</button></a>
+                                <button id="showPopupButton" class="btn btn-primary float-left">Done</button>
+
+
+                                <script>
+                                    document.getElementById('showPopupButton').addEventListener('click', function() {
+                                    // Show the pop-up
+                                    $('#popupModal').modal('show');
+                                });
+                                </script>
+
                                         </div>
                                     </form>
                                     </div>
