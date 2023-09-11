@@ -45,14 +45,16 @@ Route::get('user', function () { return view('admin.user');});
 /////// user department/////////////////// user department///////////// user department////////////////////////////// user department
 ////////////////////////
 
-Route::get('userdashboard',[user_departmentController::class,'dashboard']);
+Route::get('userdashboard',[user_departmentController::class,'dashboard'])->name('dash');
 Route::get('AssetInformation', [user_departmentController::class, 'assetInfo'])->name('assetInformation');
-Route::get('TransferHistory', [user_departmentController::class, 'transferasset'])->name('transferAsset');
+Route::get('transferHistory', [user_departmentController::class, 'transferHistory'])->name('transferHistory');
 Route::get('assetreq',[user_departmentController::class,'assetreq']);
 Route::get('employee',[user_departmentController::class,'employeeinfo']);
 Route::get('assetassigment', [user_departmentController::class, 'assetAssigment']);
 Route::get('/create', 'HomeController@create')->name('create');
 Route::get('assignAsset', [user_departmentController::class, 'assignAsset'])->name('assignAsset');
 Route::get('transferasset', [user_departmentController::class, 'transferasset'])->name('transferasset');
-
-
+Route::post('/show-popup', 'PopupController@showPopup')->name('pop');
+Route::get('tempTransfer', [user_departmentController::class, 'tempTransfer'])->name('tempTransfer');
+Route::get('office',[user_departmentController::class,'office']);
+Route::get('request', [user_departmentController::class, 'request']);
