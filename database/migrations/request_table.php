@@ -13,7 +13,7 @@ return new class extends Migration
     {
 
         Schema::create('request', function (Blueprint $table) {
-            $table->id();
+            $table->bigIncrements('request_id');
             $table->string('request_description', 100);
             $table->enum('status',['Pending','Approved', 'Rejected'])->default('Pending');
             $table->unsignedBigInteger('user_id');
