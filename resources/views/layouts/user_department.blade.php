@@ -73,7 +73,7 @@
                 <div class="left-custom-menu-adp-wrap">
                     <ul class="nav navbar-nav left-sidebar-menu-pro">
                         <li class="active">
-                            <a href="{{route('dash')}}" role="button" aria-expanded="false"><i class="fa big-icon fa-dashboard"></i> <span class="mini-dn"> Dashboard</span> </a>
+                            <a href="{{route('user_department.dashboard')}}" role="button" aria-expanded="false"><i class="fa big-icon fa-dashboard"></i> <span class="mini-dn"> Dashboard</span> </a>
                         </li>
 
                         <!--comment asset information
