@@ -23,7 +23,7 @@
                             <div class="sparkline9-list shadow-reset">
                                 <div class="sparkline9-hd">
                                     <div class="main-sparkline9-hd">
-                                        <h1>User Information Encoding <span class="basic-ds-n">Form</span></h1>
+                                        <h1>Asset Information Encoding <span class="basic-ds-n">Form</span></h1>
 
                                     </div>
                                 </div>
@@ -36,20 +36,20 @@
                                                         <div class="form-group-inner">
                                                             <div class="row">
                                                                 <div class="col-lg-4">
-                                                                    <label class="login2">Full Name : </label>
+                                                                    <label class="login2">Asset Name : </label>
                                                                 </div>
                                                                 <div class="col-lg-8">
-                                                                    <input type="text" class="form-control" placeholder="Enter Employee Full Name" />
+                                                                    <input type="text" class="form-control" placeholder="Enter the New Asset Name" />
                                                                 </div>
                                                             </div>
                                                         </div>
                                                         <div class="form-group-inner">
                                                             <div class="row">
                                                                 <div class="col-lg-4">
-                                                                    <label class="login2">Username : </label>
+                                                                    <label class="login2">Asset Name : </label>
                                                                 </div>
                                                                 <div class="col-lg-8">
-                                                                    <input type="text" class="form-control" placeholder="Enter Username" />
+                                                                    <input type="text" class="form-control" placeholder="Enter Director Name" />
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -66,10 +66,10 @@
                                                         <div class="form-group-inner">
                                                             <div class="row">
                                                                 <div class="col-lg-4">
-                                                                    <label class="login2">Address : </label>
+                                                                    <label class="login2">Email Address : </label>
                                                                 </div>
                                                                 <div class="col-lg-8">
-                                                                    <input type="text" class="form-control" placeholder="Enter Address" />
+                                                                    <input type="text" class="form-control" placeholder="Enter Email Address" />
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -191,7 +191,7 @@
                                                         <div class="form-group-inner">
                                                             <div class="row">
                                                                 <div class="col-lg-4">
-                                                                    <label class="login2">Full Name : </label>
+                                                                    <label class="login2">Directorate Name : </label>
                                                                 </div>
                                                                 <div class="col-lg-8">
                                                                     <input type="text" class="form-control" placeholder="Enter Employee Full Name" />
