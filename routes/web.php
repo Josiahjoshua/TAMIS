@@ -58,5 +58,5 @@ Route::post('/show-popup', 'PopupController@showPopup')->name('pop');
 Route::get('tempTransfer', [user_departmentController::class, 'tempTransfer'])->name('tempTransfer');
 Route::get('office',[user_departmentController::class,'office']);
 Route::get('request', [user_departmentController::class, 'request']);
-// Route::get('user', function () { return view('admin.user');});
+//Route::get('user', function () { return view('admin.user');});
 
