@@ -23,7 +23,7 @@
                             <div class="sparkline9-list shadow-reset">
                                 <div class="sparkline9-hd">
                                     <div class="main-sparkline9-hd">
-                                        <h1>User Information Encoding <span class="basic-ds-n">Form</span></h1>
+                                        <h1>Directorate Information Encoding <span class="basic-ds-n">Form</span></h1>
 
                                     </div>
                                 </div>
@@ -36,28 +36,28 @@
                                                         <div class="form-group-inner">
                                                             <div class="row">
                                                                 <div class="col-lg-4">
-                                                                    <label class="login2">Full Name : </label>
+                                                                    <label class="login2">New Directorate Name : </label>
                                                                 </div>
                                                                 <div class="col-lg-8">
-                                                                    <input type="text" class="form-control" placeholder="Enter Employee Full Name" />
+                                                                    <input type="text" class="form-control" placeholder="Enter New Directorate  Name" />
                                                                 </div>
                                                             </div>
                                                         </div>
                                                         <div class="form-group-inner">
                                                             <div class="row">
                                                                 <div class="col-lg-4">
-                                                                    <label class="login2">Username : </label>
+                                                                    <label class="login2">Director Name : </label>
                                                                 </div>
                                                                 <div class="col-lg-8">
-                                                                    <input type="text" class="form-control" placeholder="Enter Username" />
+                                                                    <input type="text" class="form-control" placeholder="Enter Director name" />
                                                                 </div>
                                                             </div>
                                                         </div>
                                                         <div class="form-group-inner">
                                                         <div id="pwd-container3">
-                                                            <div class="form-group">
+                                                            {{-- <div class="form-group">
                                                                 <input type="password" class="form-control example3" id="password3" placeholder="Password">
-                                                            </div>
+                                                            </div> --}}
                                                             <div class="form-group">
                                                                 <div class="pwstrength_viewport_progress2"></div>
                                                             </div>
@@ -66,10 +66,10 @@
                                                         <div class="form-group-inner">
                                                             <div class="row">
                                                                 <div class="col-lg-4">
-                                                                    <label class="login2">Address : </label>
+                                                                    <label class="login2">Email Address : </label>
                                                                 </div>
                                                                 <div class="col-lg-8">
-                                                                    <input type="text" class="form-control" placeholder="Enter Address" />
+                                                                    <input type="text" class="form-control" placeholder="Enter Email Address" />
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -105,7 +105,7 @@
                                         <ul class="breadcome-menu">
                                             <li><a href="#">Dashboard</a> <span class="bread-slash">/</span>
                                             </li>
-                                            <li><span class="bread-blod">User Information</span>
+                                            <li><span class="bread-blod">Directorate Information</span>
                                             </li>
                                         </ul>
                                     </div>
@@ -124,7 +124,7 @@
                             <div class="sparkline13-list shadow-reset">
                                 <div class="sparkline13-hd">
                                     <div class="main-sparkline13-hd">
-                                        <h1>User Information <span class="table-project-n"> Encoding  </span> Form Table</h1>
+                                        <h1>Directorate Information <span class="table-project-n"> Encoding  </span> Form Table</h1>
                                         <div class="sparkline13-outline-icon">
                                             <span class="sparkline13-collapse-link"><i class="fa fa-chevron-up"></i></span>
                                             <span><i class="fa fa-wrench"></i></span>
@@ -138,10 +138,10 @@
                                         <table id="table" data-toggle="table" data-pagination="true" data-search="true" data-show-columns="true"  data-show-refresh="true" data-key-events="true"  data-resizable="true" data-cookie="true" data-cookie-id-table="saveId"  data-click-to-select="true" data-toolbar="#toolbar">
                                             <thead>
                                                 <tr>
-                                                    <th>Employee Name</th>
-                                                    <th >Username</th>
-                                                    <th >Password</th>
-                                                    <th >Address</th>
+                                                    <th>Directorate Name</th>
+                                                    <th >Director name</th>
+                                                    {{-- <th >Password</th> --}}
+                                                    <th >Email Address</th>
                                                     <th>Contact</th>
                                                     <th ></th>
                                                 </tr>

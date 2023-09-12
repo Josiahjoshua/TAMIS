@@ -66,39 +66,38 @@
                 <div class="sidebar-header">
                     <a href="#"><img src="img/1.jpg" alt="" class="img-circle"     />
                     </a>
-                    <h3>User</h3>
-                    <p>Team Leader</p>
+                    <h3>Admin</h3>
+                    <p>Joyce C</p>
                     <strong>AMS</strong>
                 </div>
                 <div class="left-custom-menu-adp-wrap">
                     <ul class="nav navbar-nav left-sidebar-menu-pro">
                         <li class="active">
-                            <a href="dashboard.php" role="button" aria-expanded="false"><i class="fa big-icon fa-dashboard"></i> <span class="mini-dn"> Dashboard</span> </a>
+                            <a href="{{route('admin.dashboard')}}" role="button" aria-expanded="false"><i class="fa big-icon fa-dashboard"></i> <span class="mini-dn"> Dashboard</span> </a>
                         </li>
                         <li>
-                            <a href="brachoffice.php" role="button" aria-expanded="false"><i class="fa big-icon fa-home"></i> <span class="mini-dn"> Branch Office</span> </a>
+                            <a href="{{route('admin.directorate')}}" role="button" aria-expanded="false"><i class="fa big-icon fa-home"></i> <span class="mini-dn">  Directorates</span> </a>
                         </li>
                         <li>
-                            <a href="assetcategory.php" role="button" aria-expanded="false"><i class="fa big-icon fa-file-archive-o"></i> <span class="mini-dn"> Asset Category</span> </a>
+                            <a href="{{route('admin.department')}}" role="button" aria-expanded="false"><i class="fa big-icon fa-file-archive-o"></i> <span class="mini-dn">Departments</span> </a>
                         </li>
                         <li>
-                            <a href="department.php" role="button" aria-expanded="false"><i class="fa big-icon fa-institution"></i> <span class="mini-dn"> Department</span> </a>
+                            <a href="{{route('admin.assets')}}" role="button" aria-expanded="false"><i class="fa big-icon fa-institution"></i> <span class="mini-dn">Assets </span> </a>
+                        <li>
+                            <a href=" {{route('admin.assettype')}}" role="button" aria-expanded="false"><i class="fa big-icon fa-folder-open"></i> <span class="mini-dn">Asset Types</span> </a>
                         </li>
                         <li>
-                            <a href="employeeinfo.php" role="button" aria-expanded="false"><i class="fa big-icon fa-folder-open"></i> <span class="mini-dn">Employee Information</span> </a>
+                            <a href="{{route('admin.transfer')}}" role="button" aria-expanded="false"><i class="fa big-icon fa-folder-open"></i> <span class="mini-dn">Transfers</span> </a>
                         </li>
                         <li>
-                            <a href="assetinfo.php" role="button" aria-expanded="false"><i class="fa big-icon fa-folder-open"></i> <span class="mini-dn">Asset Information</span> </a>
+                            <a href="{{route('admin.request')}}" role="button" aria-expanded="false"><i class="fa big-icon fa-list-alt"></i> <span class="mini-dn">Requests</span> </a>
                         </li>
                         <li>
-                            <a href="assetassignment.php" role="button" aria-expanded="false"><i class="fa big-icon fa-list-alt"></i> <span class="mini-dn">Asset Assignment</span> </a>
+                            <a href="{{route('admin.user')}}" role="button" aria-expanded="false"><i class="fa big-icon fa-history"></i> <span class="mini-dn">User</span> </a>
                         </li>
-                        <li>
-                            <a href="assethistory.php" role="button" aria-expanded="false"><i class="fa big-icon fa-history"></i> <span class="mini-dn">Asset Transfer History</span> </a>
-                        </li>
-                        <li>
-                            <a href="user.php" role="button" aria-expanded="false"><i class="fa big-icon fa-users"></i> <span class="mini-dn">User Information</span> </a>
-                        </li>
+                        {{-- <li>
+                            <a href="{{route('admin.user')}}" role="button" aria-expanded="false"><i class="fa big-icon fa-users"></i> <span class="mini-dn">User Information</span> </a>
+                        </li> --}}
                     </ul>
                 </div>
             </nav>
@@ -119,14 +118,14 @@
                                 </div>
                             </div>
                             <div class="col-lg-6 col-md-1 col-sm-1 col-xs-12">
-                                <div class="header-top-menu tabl-d-n">
+                                {{-- <div class="header-top-menu tabl-d-n">
                                     <ul class="nav navbar-nav mai-top-nav">
                                         <li class="nav-item"><a href="branchreport.php" class="nav-link">Brach Report List</a>
                                         </li>
                                         <li class="nav-item"><a href="employeereport.php" class="nav-link">Employee Report List</a>
                                         </li>
                                     </ul>
-                                </div>
+                                </div> --}}
                             </div>
                             <div class="col-lg-5 col-md-5 col-sm-6 col-xs-12" >
                                 <div class="header-right-info">
@@ -134,7 +133,7 @@
                                         <li class="nav-item">
                                             <a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="nav-link dropdown-toggle">
                                                 <span class="adminpro-icon adminpro-user-rounded header-riht-inf"></span>
-                                                <span class="admin-name">User</span>
+                                                <span class="admin-name">Profile</span>
                                                 <span class="author-project-icon adminpro-icon adminpro-down-arrow"></span>
                                             </a>
                                             <ul role="menu" class="dropdown-header-top author-log dropdown-menu animated flipInX">

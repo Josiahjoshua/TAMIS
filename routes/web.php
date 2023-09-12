@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\user_departmentController;
+use App\Http\Controllers\AdminController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,29 +14,29 @@ use App\Http\Controllers\user_departmentController;
 |
 */
 
-Route::get('/', function () { return view('index');});
+// Route::get('/', function () { return view('index');});
 
-Route::get('assettassignment', function () { return view('assettassignment');});
+// Route::get('assettassignment', function () { return view('admin.assettassignment');});
 
-Route::get('assetcategory', function () { return view('assetcategory');});
+// Route::get('assetcategory', function () { return view('admin.assetcategory');});
 
-Route::get('assethistory', function () { return view('assethistory');});
+// Route::get('assethistory', function () { return view('admin.assethistory');});
 
 Route::get('/assetinfo', function () { return view('admin.assetinfo');});
 
-Route::get('branchoffice', function () { return view('branchoffice');});
+// Route::get('directorate', function () { return view('admin.directorate');});
 
-Route::get('branchreport', function () { return view('branchreport');});
+// Route::get('branchreport', function () { return view('admin.branchreport');});
 
 Route::get('dashboard', function () { return view('admin.dashboard');});
 
-Route::get('department', function () { return view('department');});
+// Route::get('department', function () { return view('admin.department');});
 
-Route::get('employeeinfo', function () { return view('employeeinfo');});
+// Route::get('employeeinfo', function () { return view('admin.employeeinfo');});
 
-Route::get('employeereport', function () { return view('employeereport');});
+// Route::get('employeereport', function () { return view('admin.employeereport');});
 
-Route::get('transferasset', function () { return view('transferasset');});
+// Route::get('transferasset', function () { return view('admin.transferasset');});
 
 Route::get('user', function () { return view('admin.user');});
 
@@ -58,3 +58,5 @@ Route::post('/show-popup', 'PopupController@showPopup')->name('pop');
 Route::get('tempTransfer', [user_departmentController::class, 'tempTransfer'])->name('tempTransfer');
 Route::get('office',[user_departmentController::class,'office']);
 Route::get('request', [user_departmentController::class, 'request']);
+// Route::get('user', function () { return view('admin.user');});
+
