@@ -53,6 +53,12 @@
         <!-- modernizr JS
             ============================================ -->
         <script src="{{asset('asset/js/vendor/modernizr-2.8.3.min.js')}}"></script>
+
+
+        <!-- Add these lines to your main Blade layout file -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/js/bootstrap.bundle.min.js"></script>
+
 </head>
 
 <body class="materialdesign">
@@ -66,39 +72,33 @@
                 <div class="sidebar-header">
                     <a href="#"><img src="img/1.jpg" alt="" class="img-circle"     />
                     </a>
-                    <h3>User</h3>
-                    <p>Team Leader</p>
+                    <h3>STORE</h3>
+                    <p>Store Keeper</p>
                     <strong>AMS</strong>
                 </div>
                 <div class="left-custom-menu-adp-wrap">
                     <ul class="nav navbar-nav left-sidebar-menu-pro">
                         <li class="active">
-                            <a href="dashboard.php" role="button" aria-expanded="false"><i class="fa big-icon fa-dashboard"></i> <span class="mini-dn"> Dashboard</span> </a>
+                            <a href="{{ route('store.dashboard') }}" role="button" aria-expanded="false"><i class="fa big-icon fa-dashboard"></i> <span class="mini-dn"> Dashboard</span> </a>
                         </li>
+                        <li class="active">
+                            <a href="{{ route('store.registerAsset') }}" role="button" aria-expanded="false"><i class="fa big-icon fa-dashboard"></i> <span class="mini-dn"> Register Asset</span> </a>
+                        </li>
+
+
                         <li>
-                            <a href="brachoffice.php" role="button" aria-expanded="false"><i class="fa big-icon fa-home"></i> <span class="mini-dn"> Branch Office</span> </a>
+                            {{-- <a href="{{ route('store.gamisRegister') }}" role="button" aria-expanded="false"><i class="fa big-icon fa-folder-open"></i> <span class="mini-dn">Gamis register</span> </a> --}}
                         </li>
+
                         <li>
-                            <a href="assetcategory.php" role="button" aria-expanded="false"><i class="fa big-icon fa-file-archive-o"></i> <span class="mini-dn"> Asset Category</span> </a>
+                            <a href="{{ route('store.assetInformation') }}" role="button" aria-expanded="false"><i class="fa big-icon fa-folder-open"></i> <span class="mini-dn">Asset Information</span> </a>
                         </li>
+
                         <li>
-                            <a href="department.php" role="button" aria-expanded="false"><i class="fa big-icon fa-institution"></i> <span class="mini-dn"> Department</span> </a>
+                            <a href="{{ route('store.assetDisposition') }}"  role="button" aria-expanded="false"><i class="fa big-icon fa-list-alt"></i> <span class="mini-dn">Asset Disposition</span> </a>
                         </li>
-                        <li>
-                            <a href="employeeinfo.php" role="button" aria-expanded="false"><i class="fa big-icon fa-folder-open"></i> <span class="mini-dn">Employee Information</span> </a>
-                        </li>
-                        <li>
-                            <a href="assetinfo.php" role="button" aria-expanded="false"><i class="fa big-icon fa-folder-open"></i> <span class="mini-dn">Asset Information</span> </a>
-                        </li>
-                        <li>
-                            <a href="assetassignment.php" role="button" aria-expanded="false"><i class="fa big-icon fa-list-alt"></i> <span class="mini-dn">Asset Assignment</span> </a>
-                        </li>
-                        <li>
-                            <a href="assethistory.php" role="button" aria-expanded="false"><i class="fa big-icon fa-history"></i> <span class="mini-dn">Asset Transfer History</span> </a>
-                        </li>
-                        <li>
-                            <a href="user.php" role="button" aria-expanded="false"><i class="fa big-icon fa-users"></i> <span class="mini-dn">User Information</span> </a>
-                        </li>
+
+
                     </ul>
                 </div>
             </nav>
@@ -152,7 +152,7 @@
             </div>
             <!-- Header top area end-->
 
-            @yield('usercontent')
+            @yield('storecontent')
 
         </div>
     </div>
