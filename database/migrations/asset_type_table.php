@@ -12,8 +12,8 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('asset_type', function (Blueprint $table) {
-           
-            $table->id('assettype_id')->primary();
+
+            $table->id();
             $table->string('assettype_name', 30);
             $table->rememberToken();
             $table->timestamps();

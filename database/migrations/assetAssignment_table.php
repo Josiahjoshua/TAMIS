@@ -14,7 +14,7 @@ return new class extends Migration
 
         Schema::create('asset_assignment', function (Blueprint $table) {
 
-            $table->id('assetAssignment_id')->primary();
+            $table->id();
             $table->string('remarks');
             $table->unsignedBigInteger('asset_id');
             $table->unsignedBigInteger('user_id');

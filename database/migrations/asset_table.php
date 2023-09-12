@@ -11,9 +11,9 @@ return new class extends Migration
      */
     public function up(): void
     {
-        
+
         Schema::create('asset', function (Blueprint $table) {
-            $table->id('asset_id');
+            $table->id();
             $table->string('asset_no', 50)->primary();
             $table->string('asset_description', 100);
             $table->string('serial_no', 30)->nullable();
