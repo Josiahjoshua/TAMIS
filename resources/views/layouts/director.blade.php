@@ -4,12 +4,12 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Dashboard v.2.0 | Adminpro - Admin Template</title>
+    <title>DIRECTOR</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
  <!-- favicon
 		============================================ -->
-        <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+        <link rel="shortcut icon" type="image/x-icon" href="{{asset('asset/img/favicon.ico')}}">
         <!-- Google Fonts
             ============================================ -->
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i,800" rel="stylesheet">
@@ -37,7 +37,7 @@
         <!-- normalize CSS
             ============================================ -->
         <link rel="stylesheet" href="{{asset('asset/css/data-table/bootstrap-table.css')}}">
-        <link rel="stylesheet" href="css/data-table/bootstrap-editable.css">
+        <link rel="stylesheet" href="{{asset('asset/css/data-table/bootstrap-editable.css')}}">
         <!-- normalize CSS
             ============================================ -->
         <link rel="stylesheet" href="{{asset('asset/css/normalize.css')}}">
@@ -64,40 +64,32 @@
         <div class="left-sidebar-pro">
             <nav id="sidebar">
                 <div class="sidebar-header">
-                    <a href="#"><img src="img/1.jpg" alt="" class="img-circle"     />
+                    <a href="#"><img src="{{asset('asset/img/1.jpg')}}" alt="" class="img-circle"     />
                     </a>
-                    <h3>User</h3>
-                    <p>Team Leader</p>
-                    <strong>AMS</strong>
+                    <h2 style="color:black"><b>TAMIS</b></h2>
+                    {{-- <h3>User</h3> --}}
+                    <p>Director</p>
+
                 </div>
                 <div class="left-custom-menu-adp-wrap">
                     <ul class="nav navbar-nav left-sidebar-menu-pro">
                         <li class="active">
-                            <a href="dashboard.php" role="button" aria-expanded="false"><i class="fa big-icon fa-dashboard"></i> <span class="mini-dn"> Dashboard</span> </a>
+                            <a href="{{route('director.dashboard')}}" role="button" aria-expanded="false"><i class="fa big-icon fa-dashboard"></i> <span class="mini-dn"> Dashboard</span> </a>
                         </li>
                         <li>
-                            <a href="brachoffice.php" role="button" aria-expanded="false"><i class="fa big-icon fa-home"></i> <span class="mini-dn"> Branch Office</span> </a>
+                            <a href="{{route('director.departmentoffice')}}" role="button" aria-expanded="false"><i class="fa big-icon fa-home"></i> <span class="mini-dn"> Department Office</span> </a>
                         </li>
                         <li>
-                            <a href="assetcategory.php" role="button" aria-expanded="false"><i class="fa big-icon fa-file-archive-o"></i> <span class="mini-dn"> Asset Category</span> </a>
+                            <a href="{{route('director.departmentreport')}}" role="button" aria-expanded="false"><i class="fa big-icon fa-home"></i> <span class="mini-dn"> Department Report</span> </a>
                         </li>
                         <li>
-                            <a href="department.php" role="button" aria-expanded="false"><i class="fa big-icon fa-institution"></i> <span class="mini-dn"> Department</span> </a>
+                            <a href="{{route('director.assetinfo')}}" role="button" aria-expanded="false"><i class="fa big-icon fa-folder-open"></i> <span class="mini-dn">Asset Information</span> </a>
                         </li>
                         <li>
-                            <a href="employeeinfo.php" role="button" aria-expanded="false"><i class="fa big-icon fa-folder-open"></i> <span class="mini-dn">Employee Information</span> </a>
+                            <a href="{{route('director.assethistory')}}" role="button" aria-expanded="false"><i class="fa big-icon fa-history"></i> <span class="mini-dn">Asset Transfer History</span> </a>
                         </li>
                         <li>
-                            <a href="assetinfo.php" role="button" aria-expanded="false"><i class="fa big-icon fa-folder-open"></i> <span class="mini-dn">Asset Information</span> </a>
-                        </li>
-                        <li>
-                            <a href="assetassignment.php" role="button" aria-expanded="false"><i class="fa big-icon fa-list-alt"></i> <span class="mini-dn">Asset Assignment</span> </a>
-                        </li>
-                        <li>
-                            <a href="assethistory.php" role="button" aria-expanded="false"><i class="fa big-icon fa-history"></i> <span class="mini-dn">Asset Transfer History</span> </a>
-                        </li>
-                        <li>
-                            <a href="user.php" role="button" aria-expanded="false"><i class="fa big-icon fa-users"></i> <span class="mini-dn">User Information</span> </a>
+                            <a href="{{route('director.transferasset')}}" role="button" aria-expanded="false"><i class="fa big-icon fa-history"></i> <span class="mini-dn">Transfer Asset</span> </a>
                         </li>
                     </ul>
                 </div>
@@ -114,16 +106,16 @@
                                     <i class="fa fa-bars"></i>
                                 </button>
                                 <div class="admin-logo logo-wrap-pro">
-                                    <a href="#"><img src="img/logo/log.png" alt="" />
+                                    <a href="#"><img src="{{asset('asset/img/logo/log.png')}}" alt="" />
                                     </a>
                                 </div>
                             </div>
                             <div class="col-lg-6 col-md-1 col-sm-1 col-xs-12">
                                 <div class="header-top-menu tabl-d-n">
                                     <ul class="nav navbar-nav mai-top-nav">
-                                        <li class="nav-item"><a href="branchreport.php" class="nav-link">Brach Report List</a>
+                                        {{-- <li class="nav-item"><a href="departmentreport" class="nav-link">Department Report List</a> --}}
                                         </li>
-                                        <li class="nav-item"><a href="employeereport.php" class="nav-link">Employee Report List</a>
+                                        {{-- <li class="nav-item"><a href="assethistory" class="nav-link">Assset History List</a> --}}
                                         </li>
                                     </ul>
                                 </div>
@@ -138,7 +130,7 @@
                                                 <span class="author-project-icon adminpro-icon adminpro-down-arrow"></span>
                                             </a>
                                             <ul role="menu" class="dropdown-header-top author-log dropdown-menu animated flipInX">
-                                                <li><a href="index.php"><span class="adminpro-icon adminpro-locked author-log-ic"></span>Log Out</a>
+                                                <li><a href="index"><span class="adminpro-icon adminpro-locked author-log-ic"></span>Log Out</a>
                                                 </li>
                                             </ul>
                                         </li>
@@ -152,7 +144,7 @@
             </div>
             <!-- Header top area end-->
 
-            @yield('usercontent')
+            @yield('directorcontent')
 
         </div>
     </div>
