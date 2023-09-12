@@ -19,7 +19,7 @@ return new class extends Migration
 
             $table->string('remarks');
             $table->unsignedBigInteger('asset_id');
-            $table->unsignedBigInteger('user_id');
+            $table->unsignedBigInteger('assettype_id');
             $table->unsignedBigInteger('condition_id');
             $table->unsignedBigInteger('employee_id');
 

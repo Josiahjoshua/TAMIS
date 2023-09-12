@@ -14,7 +14,7 @@ return new class extends Migration
 
         Schema::create('asset', function (Blueprint $table) {
             $table->bigIncrements('asset_id');
-            $table->string('asset_no', 50)->primary();
+            $table->string('asset_no', 50);
             $table->string('asset_description', 100);
             $table->string('serial_no', 30)->nullable();
             $table->float('cost');

@@ -14,7 +14,7 @@ return new class extends Migration
     Schema::create('section', function (Blueprint $table) {
         $table->bigIncrements('section_id');
         $table->string('section_name');
-        $table->primary('section_id');
+        // $table->primary('section_id');
         $table->unsignedBigInteger('user_id');
         $table->unsignedBigInteger('department_id');
         $table->index('user_id');
