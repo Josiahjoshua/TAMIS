@@ -11,26 +11,27 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('user', function (Blueprint $table) {
-
-            $table->string(`user_id`)->primary();
-            $table->string('full_name');
-            $table->string('username')->nullable();
-            $table->string('password');
+        Schema::create('employee', function (Blueprint $table) {
+            $table->id(`employee_id`)->primary();
+            $table->string('name');
             $table->string('phone')->nullable();
-            $table->unsignedBigInteger('role_id');
-            $table->index('role_id');
-
+            $table->unsignedBigInteger('department_id');
+            $table->unsignedBigInteger('section_id');
+            $table->unsignedBigInteger('user_id');
+            $table->index('department_id');
+            $table->index('section_id');
+            $table->index('user_id');
             $table->rememberToken();
             $table->timestamps();
         });
     }
-
-            // $table->string('photo')->nullable();
-            // $table->string('address')->nullable();
-            // $table->enum('status',['active','inactive'])->default('active');
             // $table->string('email')->unique();
             // $table->timestamp('email_verified_at')->nullable();
+
+            // $table->string('photo')->nullable();
+
+            // $table->string('address')->nullable();
+            // $table->enum('status',['active','inactive'])->default('active');
 
 
     /**
@@ -38,6 +39,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('user');
+        Schema::dropIfExists('employee');
     }
 };
