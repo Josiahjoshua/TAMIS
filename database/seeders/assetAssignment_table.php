@@ -18,10 +18,10 @@ return new class extends Migration
             $table->bigIncrements('asset_assignment_id');
 
             $table->string('remarks');
-            // $table->unsignedBigInteger('asset_id');
-            // $table->unsignedBigInteger('assettype_id');
-            // $table->unsignedBigInteger('condition_id');
-            // $table->unsignedBigInteger('employee_id');
+            $table->unsignedBigInteger('asset_id');
+            $table->unsignedBigInteger('assettype_id');
+            $table->unsignedBigInteger('condition_id');
+            $table->unsignedBigInteger('employee_id');
 
             // $table->index('assettype_id');
             // $table->index('condition_id');
@@ -38,7 +38,7 @@ return new class extends Migration
 
             $table->foreign('condition_id')
                 ->references('condition_id')
-                ->on('conditions')
+                ->on('condition')
                 ->cascadeOnDelete();
 
 
@@ -50,7 +50,7 @@ return new class extends Migration
 
                 $table->foreign('employee_id')
                 ->references('employee_id')
-                ->on('conditions')
+                ->on('condition')
                 ->cascadeOnDelete();
         });
     }

@@ -15,15 +15,16 @@ return new class extends Migration
             $table->bigIncrements('room_id');
             $table->string('room_name');
             $table->string('room_capacity');
+            $table->unsignedBigInteger('floor_id');
 
             $table->foreign('floor_id')
                     ->references('floor_id')
                     ->on('floor')
                     ->cascadeOnDelete();
-            $table->foreign('building_id')
-                    ->references('building_id')
-                    ->on('building')
-                    ->cascadeOnDelete();
+            // $table->foreign('building_id')
+            //         ->references('building_id')
+            //         ->on('building')
+            //         ->cascadeOnDelete();
 
             // $table->unsignedBigInteger('floor_id');
             // $table->unsignedBigInteger('building_id');

@@ -15,9 +15,9 @@ return new class extends Migration
             $table->bigIncrements('employee_id');
             $table->string('name');
             $table->string('phone')->nullable();
-            // $table->unsignedBigInteger('department_id');
-            // $table->unsignedBigInteger('section_id');
-            // $table->unsignedBigInteger('user_id');
+            $table->unsignedBigInteger('department_id');
+            $table->unsignedBigInteger('section_id');
+            $table->unsignedBigInteger('user_id');
             // $table->index('department_id');
             // $table->index('section_id');
             // $table->index('user_id');
@@ -36,7 +36,7 @@ return new class extends Migration
                 ->cascadeOnDelete();
 
                 $table->foreign('user_id')
-                ->references('user_id')
+                ->references('user')
                 ->on('user')
                 ->cascadeOnDelete();
 

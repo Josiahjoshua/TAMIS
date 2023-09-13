@@ -17,6 +17,10 @@ return new class extends Migration
             $table->string('transferred_to', 100);
             $table->string('quantity');
             $table->string('date_transferred');
+            $table->unsignedBigInteger('user_id');
+            $table->unsignedBigInteger('asset_id');
+            $table->unsignedBigInteger('condition_id');
+            $table->unsignedBigInteger('room_id');
 
             $table->foreign('asset_id')
                     ->references('asset_id')
@@ -27,7 +31,7 @@ return new class extends Migration
                     ->on('user')
                     ->cascadeOnDelete();
             $table->foreign('condition_id')
-                    ->references('id')
+                    ->references('condition_id')
                     ->on('condition')
                     ->cascadeOnDelete();
             $table->foreign('room_id')
