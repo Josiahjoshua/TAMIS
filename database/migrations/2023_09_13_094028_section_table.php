@@ -14,6 +14,7 @@ return new class extends Migration
     Schema::create('section', function (Blueprint $table) {
         $table->id();
         $table->string('section_name');
+        $table->unsignedBigInteger('user_id');
         $table->unsignedBigInteger('department_id');
         $table->rememberToken();
         $table->timestamps();
@@ -23,8 +24,9 @@ return new class extends Migration
                     ->references('id')
                     ->on('user')
                     ->cascadeOnDelete();
+
         $table->foreign('department_id')
-                    ->references('department_id')
+                    ->references('id')
                     ->on('department')
                     ->cascadeOnDelete();
 

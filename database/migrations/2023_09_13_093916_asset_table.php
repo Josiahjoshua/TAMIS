@@ -33,7 +33,7 @@ return new class extends Migration
 
              $table->foreign('condition_id')
                ->references('id')
-               ->on('conditions')
+               ->on('condition')
                ->cascadeOnDelete();
 
 
