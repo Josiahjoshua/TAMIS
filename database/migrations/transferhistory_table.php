@@ -17,23 +17,12 @@ return new class extends Migration
             $table->string('transferred_to', 100);
             $table->string('quantity');
             $table->string('date_transferred');
+            $table->unsignedBigInteger('asset_id');
+            $table->unsignedBigInteger('user_id');
+            $table->unsignedBigInteger('condition_id');
+            $table->unsignedBigInteger('room_id');
 
-            $table->foreign('asset_id')
-                    ->references('asset_id')
-                    ->on('asset')
-                    ->cascadeOnDelete();
-            $table->foreign('user_id')
-                    ->references('id')
-                    ->on('user')
-                    ->cascadeOnDelete();
-            $table->foreign('condition_id')
-                    ->references('id')
-                    ->on('condition')
-                    ->cascadeOnDelete();
-            $table->foreign('room_id')
-                    ->references('room_id')
-                    ->on('room')
-                    ->cascadeOnDelete();
+
             // $table->index('asset_id');
             // $table->index('user_id');
             // $table->index('condition_id');
@@ -41,6 +30,23 @@ return new class extends Migration
 
             $table->rememberToken();
             $table->timestamps();
+
+            $table->foreign('asset_id')
+            ->references('asset_id')
+            ->on('asset')
+            ->cascadeOnDelete();
+    $table->foreign('user_id')
+            ->references('id')
+            ->on('user')
+            ->cascadeOnDelete();
+    $table->foreign('condition_id')
+            ->references('condition_id')
+            ->on('condition')
+            ->cascadeOnDelete();
+    $table->foreign('room_id')
+            ->references('room_id')
+            ->on('room')
+            ->cascadeOnDelete();
 
         });
     }

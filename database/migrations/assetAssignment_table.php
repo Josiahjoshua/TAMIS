@@ -13,29 +13,37 @@ return new class extends Migration
     {
 
         Schema::create('asset_assignment', function (Blueprint $table) {
-
-            // $table->id();
             $table->bigIncrements('asset_assignment_id');
-
             $table->string('remarks');
             $table->unsignedBigInteger('asset_id');
             $table->unsignedBigInteger('assettype_id');
             $table->unsignedBigInteger('condition_id');
             $table->unsignedBigInteger('employee_id');
-
-            $table->index('assettype_id');
-            $table->index('condition_id');
-            $table->index('asset_id');
-            $table->index('employee_id');
             $table->rememberToken();
             $table->timestamps();
 
-            // Define foreign key constraints if needed
-            // $table->foreign('assettype_id')->references('id')->on('assettypes');
-            // $table->foreign('condition_id')->references('id')->on('conditions');
+            // Define foreign key constraints
+            $table->foreign('assettype_id')
+                ->references('assettype_id')
+                ->on('asset_type') // Corrected table name
+                ->onDelete('cascade');
+
+            $table->foreign('condition_id')
+                ->references('condition_id')
+                ->on('conditions')
+                ->onDelete('cascade');
+
+            $table->foreign('asset_id')
+                ->references('asset_id')
+                ->on('asset') // Corrected table name
+                ->onDelete('cascade');
+
+            $table->foreign('employee_id')
+                ->references('employee_id')
+                ->on('employee')
+                ->onDelete('cascade');
         });
     }
-
 
     public function down()
     {

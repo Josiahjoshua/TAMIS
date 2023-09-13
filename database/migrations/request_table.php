@@ -16,6 +16,10 @@ return new class extends Migration
             $table->bigIncrements('request_id');
             $table->string('request_description', 100);
             $table->enum('status',['Pending','Approved', 'Rejected'])->default('Pending');
+            $table->unsignedBigInteger('user_id');
+            $table->unsignedBigInteger('department_id');
+            $table->unsignedBigInteger('asset_id');
+            $table->unsignedBigInteger('assettype_id');
 
             $table->foreign('user_id')
                     ->references('id')
@@ -34,10 +38,7 @@ return new class extends Migration
                     ->on('asset_type')
                     ->cascadeOnDelete();
 
-            // $table->unsignedBigInteger('user_id');
-            // $table->unsignedBigInteger('department_id');
-            // $table->unsignedBigInteger('asset_id');
-            // $table->unsignedBigInteger('assettype_id');
+
             // $table->index('user_id');
             // $table->index('department_id');
             // $table->index('asset_id');
