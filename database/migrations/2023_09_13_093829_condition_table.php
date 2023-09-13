@@ -11,21 +11,13 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('floor', function (Blueprint $table) {
-            $table->bigIncrements('floor_id');
-            $table->string('floor_name');
-            $table->unsignedBigInteger('building_id');
-
+        Schema::create('condition', function (Blueprint $table) {
+            $table->id();
+            $table->string('condition_name', 30);
             $table->rememberToken();
             $table->timestamps();
 
-            $table->foreign('building_id')
-            ->references('building_id')
-            ->on('building')
-            ->cascadeOnDelete();
-
         });
-
     }
 
     /**
@@ -33,6 +25,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('floor');
+        Schema::dropIfExists('condition');
     }
 };
