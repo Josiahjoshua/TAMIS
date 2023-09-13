@@ -169,17 +169,7 @@
                         </div>
                         {{-- profile infomation space  --}}
                         <div class="d-flex justify-content-around">
-                            {{-- profile image section  --}}
-                            <div class="card" style="width: 18rem">
-                                <div class="card-body">
-                                    <img src="/" alt="" width="800px" height="800px" class="p-2">
-                                </div>
-                            </div>
-                            <div class="card" style="width: 18rem">
-                                <div class="card-body">
-                                    <h1>user info</h1>
-                                </div>
-                            </div>
+                          
                         </div>
                     </div>
                 </div>
