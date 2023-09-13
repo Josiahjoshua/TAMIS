@@ -27,7 +27,8 @@ return new class extends Migration
 
             // Define foreign key constraints
              $table->foreign('assettype_id')
-               ->references('assettype_id')->on('asset_type')
+               ->references('assettype_id')
+               ->on('asset_type')
                ->cascadeOnDelete();
 
              $table->foreign('condition_id')
