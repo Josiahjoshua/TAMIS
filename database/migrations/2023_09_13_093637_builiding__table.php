@@ -11,12 +11,11 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('condition', function (Blueprint $table) {
-            $table->bigIncrements('condition_id');
-            $table->string('condition_name', 30);
+        Schema::create('building', function (Blueprint $table) {
+            $table->id();
+            $table->string('building_name', 100);
             $table->rememberToken();
             $table->timestamps();
-
         });
     }
 
@@ -25,6 +24,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('condition');
+        Schema::dropIfExists('building');
     }
 };
