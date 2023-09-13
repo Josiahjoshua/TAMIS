@@ -83,7 +83,6 @@
                         </li>
                         <li>
                             <a href="{{route('admin.assets')}}" role="button" aria-expanded="false"><i class="fa big-icon fa-institution"></i> <span class="mini-dn">Assets </span> </a>
-                        </li>
                         <li>
                             <a href=" {{route('admin.assettype')}}" role="button" aria-expanded="false"><i class="fa big-icon fa-folder-open"></i> <span class="mini-dn">Asset Types</span> </a>
                         </li>
