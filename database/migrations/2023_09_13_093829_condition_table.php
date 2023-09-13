@@ -12,7 +12,7 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('condition', function (Blueprint $table) {
-            $table->bigIncrements('condition_id');
+            $table->id();
             $table->string('condition_name', 30);
             $table->rememberToken();
             $table->timestamps();

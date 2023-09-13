@@ -12,7 +12,7 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('transfer_history', function (Blueprint $table) {
-            $table->bigIncrements('transfer_history_id');
+            $table->id();
             $table->string('transferred_from', 100);
             $table->string('transferred_to', 100);
             $table->string('quantity');
@@ -23,25 +23,24 @@ return new class extends Migration
             $table->unsignedBigInteger('room_id');
 
             $table->foreign('asset_id')
-                    ->references('asset_id')
-                    ->on('asset')
-                    ->cascadeOnDelete();
+                ->references('id')
+                ->on('asset')
+                ->cascadeOnDelete();
+
             $table->foreign('user_id')
-                    ->references('id')
-                    ->on('user')
-                    ->cascadeOnDelete();
+                ->references('id')
+                ->on('user')
+                ->cascadeOnDelete();
+
             $table->foreign('condition_id')
-                    ->references('condition_id')
-                    ->on('condition')
-                    ->cascadeOnDelete();
+                ->references('id')
+                ->on('condition')
+                ->cascadeOnDelete();
+
             $table->foreign('room_id')
-                    ->references('room_id')
-                    ->on('room')
-                    ->cascadeOnDelete();
-            // $table->index('asset_id');
-            // $table->index('user_id');
-            // $table->index('condition_id');
-            // $table->index('room_id');
+                ->references('id')
+                ->on('room')
+                ->cascadeOnDelete();
 
             $table->rememberToken();
             $table->timestamps();

@@ -12,7 +12,7 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('room', function (Blueprint $table) {
-            $table->bigIncrements('room_id');
+            $table->id();
             $table->string('room_name');
             $table->string('room_capacity');
             $table->unsignedBigInteger('floor_id');
@@ -33,6 +33,7 @@ return new class extends Migration
 
             $table->rememberToken();
             $table->timestamps();
+
         });
     }
 

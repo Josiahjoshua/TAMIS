@@ -12,7 +12,7 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('employee', function (Blueprint $table) {
-            $table->bigIncrements('employee_id');
+            $table->id();
             $table->string('name');
             $table->string('phone')->nullable();
             $table->unsignedBigInteger('department_id');
@@ -26,17 +26,18 @@ return new class extends Migration
 
             // Define foreign key constraints if needed
             $table->foreign('department_id')
-                ->references('department_id')
+                ->references('id')
                 ->on('department')
                 ->cascadeOnDelete();
 
                 $table->foreign('section_id')
-                ->references('section_id')
+                ->references('id')
                 ->on('section')
                 ->cascadeOnDelete();
 
                 $table->foreign('user_id')
                 ->references('user')
+                ->references('id')
                 ->on('user')
                 ->cascadeOnDelete();
 

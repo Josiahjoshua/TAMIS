@@ -18,9 +18,9 @@ return new class extends Migration
 
 
             $table->foreign('building_id')
-                    ->references('building_id')
-                    ->on('building')
-                    ->cascadeOnDelete();
+            ->references('id')
+            ->on('building')
+            ->cascadeOnDelete();
 
             // $table->unsignedBigInteger('building_id');
             // $table->index('building_id');

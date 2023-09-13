@@ -13,10 +13,7 @@ return new class extends Migration
     {
 
         Schema::create('asset_assignment', function (Blueprint $table) {
-
-            // $table->id();
-            $table->bigIncrements('asset_assignment_id');
-
+            $table->id();
             $table->string('remarks');
             $table->unsignedBigInteger('asset_id');
             $table->unsignedBigInteger('assettype_id');
@@ -30,11 +27,16 @@ return new class extends Migration
             $table->rememberToken();
             $table->timestamps();
 
-            // Define foreign key constraints if needed
+            // Define foreign key constraints
+            $table->foreign('asset_id')
+            ->references('id')
+            ->on('asset') // Corrected table name
+            ->onDelete('cascade');
+
             $table->foreign('assettype_id')
-                ->references('assettype_id')
-                ->on('asset_type')
-                ->cascadeOnDelete();
+                ->references('id')
+                ->on('asset_type') // Corrected table name
+                ->onDelete('cascade');
 
             $table->foreign('condition_id')
                 ->references('condition_id')
@@ -52,9 +54,13 @@ return new class extends Migration
                 ->references('employee_id')
                 ->on('condition')
                 ->cascadeOnDelete();
+
+            $table->foreign('employee_id')
+                ->references('id')
+                ->on('employee')
+                ->onDelete('cascade');
         });
     }
-
 
     public function down()
     {
