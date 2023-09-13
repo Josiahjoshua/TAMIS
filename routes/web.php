@@ -141,7 +141,7 @@ Route::group(['prefix'=>'director'], function(){
 Route::group(['prefix'=>'user_department'], function(){
     Route::get('dashboard',[user_departmentController::class,'dashboard'])->name('user_department.dashboard');
     Route::get('AssetInformation', [user_departmentController::class, 'assetInfo'])->name('user_department.assetInformation');
-    Route::get('transferHistory', [user_departmentController::class, 'transferasset'])->name('user_department.transferAsset');
+    Route::get('transferHistory', [user_departmentController::class, 'transferHistory'])->name('user_department.transferHistory');
     Route::get('assetreq',[user_departmentController::class,'assetreq'])->name('user_department.assetreq');
     Route::get('employee',[user_departmentController::class,'employeeinfo'])->name('user_department.employeeinfo');
     Route::get('assetassigment', [user_departmentController::class, 'assetAssigment'])->name('user_department.assetAssigment');
@@ -150,8 +150,8 @@ Route::group(['prefix'=>'user_department'], function(){
     Route::get('transferasset', [user_departmentController::class, 'transferasset'])->name('user_department.transferasset');
     Route::post('/show-popup', 'PopupController@showPopup')->name('user_department.pop');
     Route::get('tempTransfer', [user_departmentController::class, 'tempTransfer'])->name('user_department.tempTransfer');
-    Route::get('office',[user_departmentController::class,'user_department.office']);
-    Route::get('request', [user_departmentController::class, 'user_department.request']);
-    Route::get('transferHistory',[user_departmentController::class, 'transferHistory'])->name('user_department.transferHistory1');
+    Route::get('office',[user_departmentController::class,'office'])->name('user_department.office');
+    Route::get('request', [user_departmentController::class, 'request']);
+    Route::get('transferHistory','user_departmentController@transferHistory')->name('user_department.transferHistory');
 
 });
