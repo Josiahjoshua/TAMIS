@@ -23,10 +23,10 @@ return new class extends Migration
             $table->timestamps();
 
             // Define foreign key constraints
-            $table->foreign('assettype_id')
-                ->references('assettype_id')
-                ->on('asset_type') // Corrected table name
-                ->onDelete('cascade');
+            // $table->foreign('assettype_id')
+            //     ->references('id')
+            //     ->on('asset_type') // Corrected table name
+            //     ->onDelete('cascade');
 
             $table->foreign('condition_id')
                 ->references('condition_id')
@@ -41,6 +41,11 @@ return new class extends Migration
             $table->foreign('employee_id')
                 ->references('employee_id')
                 ->on('employee')
+                ->onDelete('cascade');
+
+            $table->foreign('assettype_id')
+                ->references('id')
+                ->on('asset_type')
                 ->onDelete('cascade');
         });
     }

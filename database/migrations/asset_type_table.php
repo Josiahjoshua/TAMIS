@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('asset_type', function (Blueprint $table) {
 
-            $table->bigIncrements('assettype_id');
+            $table->id();
             $table->string('assettype_name', 30);
             $table->rememberToken();
             $table->timestamps();
