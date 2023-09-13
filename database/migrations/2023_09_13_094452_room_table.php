@@ -18,19 +18,10 @@ return new class extends Migration
             $table->unsignedBigInteger('floor_id');
 
             $table->foreign('floor_id')
-                    ->references('floor_id')
-                    ->on('floor')
-                    ->cascadeOnDelete();
-            // $table->foreign('building_id')
-            //         ->references('building_id')
-            //         ->on('building')
-            //         ->cascadeOnDelete();
-
-            // $table->unsignedBigInteger('floor_id');
-            // $table->unsignedBigInteger('building_id');
-            // $table->index('floor_id');
-            // $table->index('building_id');
-
+                ->references('floor_id')
+                ->on('floor')
+                ->cascadeOnDelete();
+          
             $table->rememberToken();
             $table->timestamps();
 

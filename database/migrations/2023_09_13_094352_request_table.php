@@ -27,19 +27,22 @@ return new class extends Migration
                     ->references('id')
                     ->on('user')
                     ->cascadeOnDelete();
+                    
             $table->foreign('department_id')
                     ->references('id')
                     ->on('department')
                     ->cascadeOnDelete();
+
             $table->foreign('asset_id')
                     ->references('id')
                     ->on('asset')
                     ->cascadeOnDelete();
+
             $table->foreign('assettype_id')
                     ->references('id')
                     ->on('asset_type')
                     ->cascadeOnDelete();
-                    
+
         });
     }
 

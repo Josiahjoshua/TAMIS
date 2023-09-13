@@ -20,23 +20,21 @@ return new class extends Migration
             $table->float('cost');
             $table->unsignedBigInteger('assettype_id');
             $table->unsignedBigInteger('condition_id');
-            // $table->index('assettype_id');
-            // $table->index('condition_id');
+            
             $table->rememberToken();
             $table->timestamps();
 
             // Define foreign key constraints
              $table->foreign('assettype_id')
-               ->references('id')
-               ->on('asset_type')
-               ->cascadeOnDelete();
+                ->references('id')
+                ->on('asset_type')
+                ->cascadeOnDelete();
 
              $table->foreign('condition_id')
-               ->references('condition_id')
-               ->references('id')
-               ->on('condition')
-               ->cascadeOnDelete();
-
+                ->references('condition_id')
+                ->references('id')
+                ->on('condition')
+                ->cascadeOnDelete();
 
         });
     }

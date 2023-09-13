@@ -15,10 +15,8 @@ return new class extends Migration
             $table->id();
             $table->string('department_name', 15);
             $table->unsignedBigInteger('user_id');
-            // $table->index('user_id');
             $table->rememberToken();
             $table->timestamps();
-
 
             // Define foreign key constraints if needed
             $table->foreign('user_id')

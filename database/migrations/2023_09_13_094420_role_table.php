@@ -17,9 +17,7 @@ return new class extends Migration
             $table->string('role_name', 100);
             $table->rememberToken();
             $table->timestamps();
-            // Define foreign key constraints if needed
-            // $table->foreign('assettype_id')->references('id')->on('assettypes');
-            // $table->foreign('condition_id')->references('id')->on('conditions');
+            
         });
     }
 

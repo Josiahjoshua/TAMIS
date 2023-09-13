@@ -20,18 +20,14 @@ return new class extends Migration
             $table->unsignedBigInteger('condition_id');
             $table->unsignedBigInteger('employee_id');
 
-            // $table->index('assettype_id');
-            // $table->index('condition_id');
-            // $table->index('asset_id');
-            // $table->index('employee_id');
             $table->rememberToken();
             $table->timestamps();
 
             // Define foreign key constraints
             $table->foreign('asset_id')
-            ->references('id')
-            ->on('asset') // Corrected table name
-            ->onDelete('cascade');
+                ->references('id')
+                ->on('asset') // Corrected table name
+                ->onDelete('cascade');
 
             $table->foreign('assettype_id')
                 ->references('id')
@@ -39,19 +35,7 @@ return new class extends Migration
                 ->onDelete('cascade');
 
             $table->foreign('condition_id')
-                ->references('condition_id')
-                ->on('condition')
-                ->cascadeOnDelete();
-
-
-                $table->foreign('asset_id')
-                ->references('asset_id')
-                ->on('employee')
-                ->cascadeOnDelete();
-
-
-                $table->foreign('employee_id')
-                ->references('employee_id')
+                ->references('id')
                 ->on('condition')
                 ->cascadeOnDelete();
 

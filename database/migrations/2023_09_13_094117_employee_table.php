@@ -18,9 +18,7 @@ return new class extends Migration
             $table->unsignedBigInteger('department_id');
             $table->unsignedBigInteger('section_id');
             $table->unsignedBigInteger('user_id');
-            // $table->index('department_id');
-            // $table->index('section_id');
-            // $table->index('user_id');
+          
             $table->rememberToken();
             $table->timestamps();
 
@@ -30,17 +28,16 @@ return new class extends Migration
                 ->on('department')
                 ->cascadeOnDelete();
 
-                $table->foreign('section_id')
+            $table->foreign('section_id')
                 ->references('id')
                 ->on('section')
                 ->cascadeOnDelete();
 
-                $table->foreign('user_id')
+            $table->foreign('user_id')
                 ->references('user')
                 ->references('id')
                 ->on('user')
                 ->cascadeOnDelete();
-
 
         });
     }

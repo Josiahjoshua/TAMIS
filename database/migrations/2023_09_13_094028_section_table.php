@@ -20,7 +20,6 @@ return new class extends Migration
         $table->rememberToken();
         $table->timestamps();
 
-
         $table->foreign('user_id')
                     ->references('id')
                     ->on('user')
@@ -30,14 +29,6 @@ return new class extends Migration
                     ->references('id')
                     ->on('department')
                     ->cascadeOnDelete();
-
-        // $table->unsignedBigInteger('user_id');
-        // $table->unsignedBigInteger('department_id');
-        // $table->index('user_id');
-        // $table->index('department_id');
-
-
-
 
      });
     }
