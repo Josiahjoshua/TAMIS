@@ -59,4 +59,15 @@ class user_departmentController extends Controller
     {
         return view('user_department.request');
     }
+
+    public function addoffice()
+    {
+        return view('user_department.addoffice');
+    }
+
+
+    public function pending()
+    {
+        return view('user_department.pending');
+    }
 }

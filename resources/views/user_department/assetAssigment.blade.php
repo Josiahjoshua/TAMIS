@@ -66,7 +66,7 @@
                                         <h2>View assigned assets</h2>
                                         <br>
                                         <div class="main-income-phara">
-                                            <a href="{{route()}}"> <button type="button" class="btn btn-outline-primary float-right">View</button></a>
+                                            <a href="{{route('user_department.transferHistory')}}"> <button type="button" class="btn btn-outline-primary float-right">View</button></a>
                                         </div>
                                     </div>
                                 </div>
@@ -122,8 +122,9 @@
                                         <h2>Pending Assignments</h2>
                                         <br>
                                         <div class="main-income-phara order-cl">
-                                            <button type="button" class="btn btn-primary btn-circle" onclick="/assign_asset.blade.php">Assign<i class="fa fa-list"></i>
-                                        </div>
+                                            <a href="{{route('user_department.pending')}}"> <button type="button" class="btn btn-outline-primary float-right">View</button></a>
+
+                                            </div>
                                     </div>
                                 </div>
                                 <div class="income-dashone-pro">

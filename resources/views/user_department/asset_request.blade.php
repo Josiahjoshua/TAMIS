@@ -10,6 +10,7 @@
                                 <div class="row">
                                     <div class="col-lg-6">
                                         <div class="breadcome-heading">
+
                                         </div>
                                     </div>
                                     <div class="col-lg-6">
@@ -65,7 +66,7 @@
                                         <h2>Request an Asset</h2>
                                         <br>
                                         <div class="main-income-phara order-cl">
-                                            <a href="{{url('request')}}"> <button type="button" id="showPopupButton" class="btn btn-outline-primary float-right">Request</button></a>
+                                            <a href="{{route('user_department.request')}}"> <button type="button" id="showPopupButton" class="btn btn-outline-primary float-right">Request</button></a>
 
                                             <script>
                                                 document.getElementById('showPopupButton').addEventListener('click', function() {
@@ -100,7 +101,7 @@
                                         <h2>View Pending Requests</h2>
                                         <br>
                                         <div class="main-income-phara visitor-cl">
-                                            <a href="{{url('request')}}"> <button type="button" class="btn btn-outline-primary float-right">View</button></a>
+                                            <a href="{{route('user_department.pending')}}"> <button type="button" class="btn btn-outline-primary float-right">View</button></a>
                                             </div>
                                     </div>
                                 </div>

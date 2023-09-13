@@ -66,7 +66,7 @@
                                         <h2>Temporary Transfer</h2>
                                         <br>
                                         <div class="main-income-phara order-cl">
-                                            <a href="{{url('tempTransfer')}}"> <button type="button" id="showPopupButton" class="btn btn-outline-primary float-right">Transfer</button></a>
+                                            <a href="{{route('user_department.tempTransfer')}}"> <button type="button" id="showPopupButton" class="btn btn-outline-primary float-right">Transfer</button></a>
 
                                             <script>
                                                 document.getElementById('showPopupButton').addEventListener('click', function() {
@@ -101,7 +101,7 @@
                                         <h2>Permanent Transfer</h2>
                                         <br>
                                         <div class="main-income-phara visitor-cl">
-                                            <a href="{{url('assignAsset')}}"> <button type="button" class="btn btn-outline-primary float-right">Transfer</button></a>
+                                            <a href="{{route('user_department.assignAsset')}}"> <button type="button" class="btn btn-outline-primary float-right">Transfer</button></a>
                                             </div>
                                     </div>
                                 </div>
