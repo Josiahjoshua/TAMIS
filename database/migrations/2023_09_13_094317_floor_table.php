@@ -11,13 +11,21 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('asset_type', function (Blueprint $table) {
+        Schema::create('floor', function (Blueprint $table) {
+            $table->bigIncrements('floor_id');
+            $table->string('floor_name');
+            $table->unsignedBigInteger('building_id');
 
-            $table->bigIncrements('assettype_id');
-            $table->string('assettype_name', 30);
             $table->rememberToken();
             $table->timestamps();
+
+            $table->foreign('building_id')
+            ->references('id')
+            ->on('building')
+            ->cascadeOnDelete();
+
         });
+
     }
 
     /**
@@ -25,6 +33,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('asset_type');
+        Schema::dropIfExists('floor');
     }
 };

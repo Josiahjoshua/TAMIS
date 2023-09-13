@@ -13,7 +13,7 @@ return new class extends Migration
     {
 
         Schema::create('asset', function (Blueprint $table) {
-            $table->bigIncrements('asset_id');
+            $table->id();
             $table->string('asset_no', 50);
             $table->string('asset_description', 100);
             $table->string('serial_no', 30)->nullable();
@@ -27,13 +27,13 @@ return new class extends Migration
 
             // Define foreign key constraints
              $table->foreign('assettype_id')
-               ->references('assettype_id')
+               ->references('id')
                ->on('asset_type')
                ->cascadeOnDelete();
 
              $table->foreign('condition_id')
-               ->references('condition_id')
-               ->on('conditions')
+               ->references('id')
+               ->on('condition')
                ->cascadeOnDelete();
 
 
