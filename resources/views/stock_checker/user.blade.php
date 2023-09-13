@@ -172,7 +172,7 @@
                             {{-- profile image section  --}}
                             <div class="card" style="width: 18rem">
                                 <div class="card-body">
-                                    <h1>img</h1>
+                                    <img src="/" alt="" width="800px" height="800px" class="p-2">
                                 </div>
                             </div>
                             <div class="card" style="width: 18rem">
