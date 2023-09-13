@@ -66,7 +66,7 @@
                                         <h2>View assigned assets</h2>
                                         <br>
                                         <div class="main-income-phara">
-                                            <a href="{{url('TransferHistory')}}"> <button type="button" class="btn btn-outline-primary float-right">View</button></a>
+                                            <a href="{{route('user_department.transferHistory1')}}"> <button type="button" class="btn btn-outline-primary float-right">View</button></a>
                                         </div>
                                     </div>
                                 </div>
@@ -94,7 +94,7 @@
                                         <h2>Asset Assignment</h2>
                                         <br>
                                         <div class="main-income-phara order-cl">
-                                            <a href="{{url('assignAsset')}}"> <button type="button" class="btn btn-outline-primary float-right">View</button></a>
+                                            <a href="{{route('user_department.assignAsset')}}"> <button type="button" class="btn btn-outline-primary float-right">Assign</button></a>
                                         </div>
                                     </div>
                                 </div>
