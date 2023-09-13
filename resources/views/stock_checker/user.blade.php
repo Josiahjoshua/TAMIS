@@ -177,7 +177,7 @@
                             </div>
                             <div class="card" style="width: 18rem">
                                 <div class="card-body">
-                                    <h1>img</h1>
+                                    <h1>user info</h1>
                                 </div>
                             </div>
                         </div>
