@@ -23,7 +23,7 @@
                             <div class="sparkline9-list shadow-reset">
                                 <div class="sparkline9-hd">
                                     <div class="main-sparkline9-hd">
-                                        <h1>User Information Encoding <span class="basic-ds-n">Form</span></h1>
+                                        <h1>Department Encoding <span class="basic-ds-n">Form</span></h1>
 
                                     </div>
                                 </div>
@@ -33,6 +33,8 @@
                                             <div class="col-lg-12">
                                                 <div class="basic-login-inner">
                                                     <h3>Fill In : </h3>
+
+
                                                         <div class="form-group-inner">
                                                             <div class="row">
                                                                 <div class="col-lg-4">
@@ -40,46 +42,6 @@
                                                                 </div>
                                                                 <div class="col-lg-8">
                                                                     <input type="text" class="form-control" placeholder="Enter Employee Full Name" />
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group-inner">
-                                                            <div class="row">
-                                                                <div class="col-lg-4">
-                                                                    <label class="login2">Username : </label>
-                                                                </div>
-                                                                <div class="col-lg-8">
-                                                                    <input type="text" class="form-control" placeholder="Enter Username" />
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group-inner">
-                                                        <div id="pwd-container3">
-                                                            <div class="form-group">
-                                                                <input type="password" class="form-control example3" id="password3" placeholder="Password">
-                                                            </div>
-                                                            <div class="form-group">
-                                                                <div class="pwstrength_viewport_progress2"></div>
-                                                            </div>
-                                                        </div>
-                                                        </div>
-                                                        <div class="form-group-inner">
-                                                            <div class="row">
-                                                                <div class="col-lg-4">
-                                                                    <label class="login2">Address : </label>
-                                                                </div>
-                                                                <div class="col-lg-8">
-                                                                    <input type="text" class="form-control" placeholder="Enter Address" />
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group-inner">
-                                                            <div class="row">
-                                                                <div class="col-lg-4">
-                                                                    <label class="login2">Contact : </label>
-                                                                </div>
-                                                                <div class="col-lg-8">
-                                                                    <input type="number" class="form-control" placeholder="Enter Contact Number" />
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -135,7 +97,7 @@
                                 <div class="sparkline13-graph">
                                     <div class="datatable-dashv1-list custom-datatable-overright">
 
-                                        <table id="table" data-toggle="table" data-pagination="true" data-search="true" data-show-columns="true"  data-show-refresh="true" data-key-events="true"  data-resizable="true" data-cookie="true" data-cookie-id-table="saveId"  data-click-to-select="true" data-toolbar="#toolbar">
+                                        <table id="table" data-toggle="table" data-pagination="true" data-search="true" data-show-columns="true"  data-show-refresh="true" data-key-events="true"  data-resizable="true"  data-click-to-select="true" >
                                             <thead>
                                                 <tr>
                                                     <th>Employee Name</th>
@@ -178,7 +140,7 @@
                             <div class="sparkline9-list shadow-reset">
                                 <div class="sparkline9-hd">
                                     <div class="main-sparkline9-hd">
-                                        <h1>User Information Encoding <span class="basic-ds-n">Form</span></h1>
+                                        <h1>Department Encoding <span class="basic-ds-n">Form</span></h1>
 
                                     </div>
                                 </div>
@@ -188,6 +150,8 @@
                                             <div class="col-lg-12">
                                                 <div class="basic-login-inner">
                                                     <h3>Update : </h3>
+
+
                                                         <div class="form-group-inner">
                                                             <div class="row">
                                                                 <div class="col-lg-4">
@@ -195,48 +159,6 @@
                                                                 </div>
                                                                 <div class="col-lg-8">
                                                                     <input type="text" class="form-control" placeholder="Enter Employee Full Name" />
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group-inner">
-                                                            <div class="row">
-                                                                <div class="col-lg-4">
-                                                                    <label class="login2">Username : </label>
-                                                                </div>
-                                                                <div class="col-lg-8">
-                                                                    <input type="text" class="form-control" placeholder="Enter Username" />
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group-inner">
-                                                    <div id="pwd-container4">
-                                                        <div class="form-group">
-                                                            <label for="password4">Password</label>
-                                                            <input type="password" class="form-control example4" id="password4" placeholder="Password">
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <span class="font-bold pwstrength_viewport_verdict4"></span>
-                                                            <span class="pwstrength_viewport_progress4"></span>
-                                                        </div>
-                                                    </div>
-                                                        </div>
-                                                        <div class="form-group-inner">
-                                                            <div class="row">
-                                                                <div class="col-lg-4">
-                                                                    <label class="login2">Address : </label>
-                                                                </div>
-                                                                <div class="col-lg-8">
-                                                                    <input type="text" class="form-control" placeholder="Enter Address" />
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="form-group-inner">
-                                                            <div class="row">
-                                                                <div class="col-lg-4">
-                                                                    <label class="login2">Contact : </label>
-                                                                </div>
-                                                                <div class="col-lg-8">
-                                                                    <input type="number" class="form-control" placeholder="Enter Contact Number" />
                                                                 </div>
                                                             </div>
                                                         </div>

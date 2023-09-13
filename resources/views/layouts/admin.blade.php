@@ -95,9 +95,8 @@
                         <li>
                             <a href="{{route('admin.user')}}" role="button" aria-expanded="false"><i class="fa big-icon fa-history"></i> <span class="mini-dn">User</span> </a>
                         </li>
-                        {{-- <li>
-                            <a href="{{route('admin.user')}}" role="button" aria-expanded="false"><i class="fa big-icon fa-users"></i> <span class="mini-dn">User Information</span> </a>
-                        </li> --}}
+
+
                     </ul>
                 </div>
             </nav>

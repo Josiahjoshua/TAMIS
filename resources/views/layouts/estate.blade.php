@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Dashboard v.2.0 | Adminpro - Admin Template</title>
+    <title>Estate.portal</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
  <!-- favicon
@@ -66,39 +66,26 @@
                 <div class="sidebar-header">
                     <a href="#"><img src="img/1.jpg" alt="" class="img-circle"     />
                     </a>
-                    <h3>User</h3>
-                    <p>Team Leader</p>
-                    <strong>AMS</strong>
+                    <h3>freeman</h3>
+                    <p>Estate Manager</p>
+                    <strong>TAMIS</strong>
                 </div>
                 <div class="left-custom-menu-adp-wrap">
                     <ul class="nav navbar-nav left-sidebar-menu-pro">
                         <li class="active">
-                            <a href="dashboard.php" role="button" aria-expanded="false"><i class="fa big-icon fa-dashboard"></i> <span class="mini-dn"> Dashboard</span> </a>
+                            <a href="{{ route('estate/department') }}" role="button" aria-expanded="false"><i class="fa big-icon fa-dashboard"></i> <span class="mini-dn"> Dashboard</span> </a>
                         </li>
                         <li>
-                            <a href="brachoffice.php" role="button" aria-expanded="false"><i class="fa big-icon fa-home"></i> <span class="mini-dn"> Branch Office</span> </a>
+                            <a href="{{ route('requests') }}" role="button" aria-expanded="false"><i class="fa big-icon fa-users"></i> <span class="mini-dn">Pending</span> </a>
                         </li>
-                        <li>
-                            <a href="assetcategory.php" role="button" aria-expanded="false"><i class="fa big-icon fa-file-archive-o"></i> <span class="mini-dn"> Asset Category</span> </a>
+                       
+                        <li class="active">
+                            <a href="{{ route('estate/category') }}" role="button" aria-expanded="false"><i class="fa big-icon fa-dashboard"></i> <span class="mini-dn"> Asset Category</span> </a>
                         </li>
-                        <li>
-                            <a href="department.php" role="button" aria-expanded="false"><i class="fa big-icon fa-institution"></i> <span class="mini-dn"> Department</span> </a>
+                         <li>
+                            <a href="#" role="button" aria-expanded="false"><i class="fa big-icon fa-history"></i> <span class="mini-dn">Transfer History</span> </a>
                         </li>
-                        <li>
-                            <a href="employeeinfo.php" role="button" aria-expanded="false"><i class="fa big-icon fa-folder-open"></i> <span class="mini-dn">Employee Information</span> </a>
-                        </li>
-                        <li>
-                            <a href="assetinfo.php" role="button" aria-expanded="false"><i class="fa big-icon fa-folder-open"></i> <span class="mini-dn">Asset Information</span> </a>
-                        </li>
-                        <li>
-                            <a href="assetassignment.php" role="button" aria-expanded="false"><i class="fa big-icon fa-list-alt"></i> <span class="mini-dn">Asset Assignment</span> </a>
-                        </li>
-                        <li>
-                            <a href="assethistory.php" role="button" aria-expanded="false"><i class="fa big-icon fa-history"></i> <span class="mini-dn">Asset Transfer History</span> </a>
-                        </li>
-                        <li>
-                            <a href="user.php" role="button" aria-expanded="false"><i class="fa big-icon fa-users"></i> <span class="mini-dn">User Information</span> </a>
-                        </li>
+                       
                     </ul>
                 </div>
             </nav>
@@ -152,7 +139,7 @@
             </div>
             <!-- Header top area end-->
 
-            @yield('usercontent')
+            @yield('estatecontent')
 
         </div>
     </div>
