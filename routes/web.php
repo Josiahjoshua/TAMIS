@@ -2,16 +2,8 @@
 use App\Http\Controllers\directorController;
 use App\Http\Controllers\user_departmentController;
 use Illuminate\Support\Facades\Route;
-<<<<<<< HEAD
-<<<<<<< HEAD
-use App\Http\Controllers\StoreController;
-=======
-use App\Http\Controllers\AdminController;
->>>>>>> 60360494aeadb5b3f7a2bf1488eaf080c582508c
-=======
 use App\Http\Controllers\StoreController;
 use App\Http\Controllers\AdminController;
->>>>>>> origin/main
 
 /*
 |--------------------------------------------------------------------------
@@ -30,10 +22,10 @@ return view('index');
 } ) ->name('index');
 
 //ADMIN ROUTES
-Route::group(['prefix'=>'admin'], function(){
+// Route::group(['prefix'=>'admin'], function(){
 // Route::get('/', [directorController::class, 'index']) ->name('index');
 
-<<<<<<< HEAD
+
 // Route::get('assetcategory', function () { return view('admin.assetcategory');});
 
 // Route::get('assethistory', function () { return view('admin.assethistory');});
@@ -44,11 +36,7 @@ Route::group(['prefix'=>'admin'], function(){
 
 // Route::get('branchreport', function () { return view('admin.branchreport');});
 
-<<<<<<< HEAD
-Route::get('dashboard', function () { return view('admin.dashboard');});
-=======
-// // Route::get('dashboard', function () { return view('admin.dashboard');});
->>>>>>> 60360494aeadb5b3f7a2bf1488eaf080c582508c
+// Route::get('dashboard', function () { return view('admin.dashboard');});
 
 // Route::get('department', function () { return view('admin.department');});
 
@@ -58,65 +46,12 @@ Route::get('dashboard', function () { return view('admin.dashboard');});
 
 // Route::get('transferasset', function () { return view('admin.transferasset');});
 
-<<<<<<< HEAD
-Route::get('user', function () { return view('admin.user');});
 
-
-//routes for store
-Route::get('/store/dashboard', [StoreController::class, 'storeDashboard'])
-->name('store.dashboard');
-
-Route::get('/store/registerAsset', [StoreController::class, 'RegisterAsset'])
-->name('store.registerAsset');
-
-Route::get('/store/gamisRegister', [StoreController::class, 'gamisRegister'])
-->name('store.gamisRegister');
-
-Route::get('/store/assetInformation', [StoreController::class, 'assetInformation'])
-->name('store.assetInformation');
-
-Route::get('/store/assetDisposition', [StoreController::class, 'assetDisposition'])
-->name('store.assetDisposition');
-
-
-=======
 // Route::get('user', function () { return view('admin.user');});
 
-Route::get('admin/dashboard', [AdminController::class, 'dashboard'])
-->name('admin.dashboard');
-=======
-        Route::get('dashboard', [AdminController::class, 'dashboard'])
-        ->name('admin.dashboard');
->>>>>>> origin/main
 
 
-        Route::get('directorate', [AdminController::class, 'directorate'])
-        ->name('admin.directorate');
-
-        Route::get('admin/assets', [AdminController::class, 'assets'])
-        ->name('admin.assets');
-
-        Route::get('assettype', [AdminController::class, 'assettype'])
-        ->name('admin.assettype');
-
-        Route::get('department', [AdminController::class, 'department'])
-        ->name('admin.department');
-
-        Route::get('/user', [AdminController::class, 'user'])
-        ->name('admin.user');
-
-        Route::get('transfer', [AdminController::class, 'transfer'])
-        ->name('admin.transfer');
-
-        Route::get('request', [AdminController::class, 'request'])
-        ->name('admin.request');
-
-<<<<<<< HEAD
-Route::get('admin/request', [AdminController::class, 'request'])
-->name('admin.request');
->>>>>>> 60360494aeadb5b3f7a2bf1488eaf080c582508c
-=======
-});
+// Route::get('user', function () { return view('admin.user');});
 
 
 //routes for store
@@ -135,6 +70,19 @@ Route::group(['prefix'=>'store'], function(){
 
     Route::get('assetDisposition', [StoreController::class, 'assetDisposition'])
     ->name('store.assetDisposition');
+
+    Route::get('registeredAsset', [StoreController::class, 'registeredAsset'])
+    ->name('store.registeredAsset');
+
+    Route::get('assignAsset', [StoreController::class, 'assignAsset'])
+    ->name('store.assignAsset');
+
+    Route::post('registerAsset',[StoreController::class,'store'])
+    ->name('assetregisterform');
+    Route::get('assetregister', [registerController::class,'assetregister'])
+    ->name('assetregister');
+
+
 });
 
 //STOCK_CHECKER
@@ -220,4 +168,3 @@ Route::group(['prefix'=>'user_department'], function(){
     Route::get('request', [user_departmentController::class, 'user_department.request']);
 
 });
->>>>>>> origin/main

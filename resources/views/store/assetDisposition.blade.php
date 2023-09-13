@@ -22,7 +22,7 @@
                 <div class="sparkline9-list shadow-reset">
                     <div class="sparkline9-hd">
                         <div class="main-sparkline9-hd">
-                            <h1>Asset Disposal Information <span class="basic-ds-n">Form</span></h1>
+                            <h1> <span class="basic-ds-n"></span></h1>
 
                         </div>
                     </div>
@@ -123,7 +123,7 @@
                 <div class="sparkline13-list shadow-reset">
                     <div class="sparkline13-hd">
                         <div class="main-sparkline13-hd">
-                            <h1>Asset <span class="table-project-n"> Disposition</span> Form Table</h1>
+                            <h1>Asset <span class="table-project-n"> Disposition</span> Table</h1>
                             <div class="sparkline13-outline-icon">
                                 <span class="sparkline13-collapse-link"><i class="fa fa-chevron-up"></i></span>
                                 <span><i class="fa fa-wrench"></i></span>

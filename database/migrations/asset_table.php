@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('asset_description', 100);
             $table->string('serial_no', 30)->nullable();
             $table->float('cost');
+        
             $table->unsignedBigInteger('assettype_id');
             $table->unsignedBigInteger('condition_id');
             $table->index('assettype_id');
