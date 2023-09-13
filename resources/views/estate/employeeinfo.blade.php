@@ -175,7 +175,7 @@
                                 <div class="sparkline9-hd">
                                     <div class="main-sparkline9-hd">
                                         <h1>Employee Information Encoding <span class="basic-ds-n">Form</span></h1>
-                                        
+
                                     </div>
                                 </div>
                                 <div class="sparkline9-graph">
@@ -184,8 +184,8 @@
                                             <div class="col-lg-12">
                                                 <div class="basic-login-inner">
                                                     <h3>Fill In : </h3>
-                                                    
-                                                    
+
+
                                                         <div class="form-group-inner">
                                                             <div class="row">
                                                                 <div class="col-lg-4">
@@ -219,7 +219,7 @@
                                                                 </select>
                                                                 </div>
                                                             </div>
-                                                        </div> 
+                                                        </div>
                                                         <div class="form-group-inner">
                                                             <div class="row">
                                                                 <div class="col-lg-4">
@@ -233,7 +233,7 @@
                                                                 </select>
                                                                 </div>
                                                             </div>
-                                                        </div>                                                    
+                                                        </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -285,7 +285,7 @@
                                 </div>
                                 <div class="sparkline13-graph">
                                     <div class="datatable-dashv1-list custom-datatable-overright">
-                                        
+
                                         <div id="toolbar">
                                             <form action="">
                                             <select class="form-control">
@@ -301,7 +301,7 @@
                                             <button type="submit" class="btn btn-info" style="margin-left: 210%; margin-top: -43%">Go!</button>
                                             </form>
                                         </div>
-                                    
+
                                         <table id="table" data-toggle="table" data-pagination="true" data-search="true" data-show-columns="true"  data-show-refresh="true" data-key-events="true"  data-resizable="true" data-cookie="true" data-cookie-id-table="saveId"  data-click-to-select="true" data-toolbar="#toolbar">
                                             <thead>
                                                 <tr>
@@ -343,7 +343,7 @@
                                 <div class="sparkline9-hd">
                                     <div class="main-sparkline9-hd">
                                         <h1>Employee Information Encoding <span class="basic-ds-n">Form</span></h1>
-                                        
+
                                     </div>
                                 </div>
                                 <div class="sparkline9-graph">
@@ -352,8 +352,8 @@
                                             <div class="col-lg-12">
                                                 <div class="basic-login-inner">
                                                     <h3>Update : </h3>
-                                                    
-                                                    
+
+
                                                         <div class="form-group-inner">
                                                             <div class="row">
                                                                 <div class="col-lg-4">
@@ -387,7 +387,7 @@
                                                                 </select>
                                                                 </div>
                                                             </div>
-                                                        </div> 
+                                                        </div>
                                                         <div class="form-group-inner">
                                                             <div class="row">
                                                                 <div class="col-lg-4">
@@ -401,7 +401,7 @@
                                                                 </select>
                                                                 </div>
                                                             </div>
-                                                        </div>                                                    
+                                                        </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -418,7 +418,7 @@
                                     </form>
                                     </div>
                                 </div>
-                            </div>                                    
+                            </div>
                         </div>
                                 </div>
                             </div>
