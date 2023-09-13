@@ -77,7 +77,9 @@
 
                                 <div class="modal-dialog">
                                     <div class="modal-content">
-                                            <form action="">
+                                            <form action="{{route('assign_assetReceive')}}" method="POST">
+                                                @csrf
+
                                         <div class="modal-close-area modal-close-df">
                                             <a class="close" data-dismiss="modal" href="#"><i class="fa fa-close"></i></a>
                                         </div>
@@ -88,7 +90,6 @@
                                 <div class="sparkline9-hd">
                                     <div class="main-sparkline9-hd">
                                         <h1>Asset Assignment to Employee <span class="basic-ds-n">Form</span></h1>
-
                                     </div>
                                 </div>
                                 <div class="sparkline9-graph">
@@ -102,7 +103,7 @@
                                                                 <label class="login2">Asset no : </label>
                                                             </div>
                                                             <div class="col-lg-4">
-                                                                <input type="text" class="form-control" placeholder="Enter Asset " style="width: 121%" />
+                                                                <input type="text" name="asset_no" class="form-control" placeholder="Enter Asset " style="width: 121%" />
                                                             </div>
                                                         </div>
 
@@ -114,7 +115,7 @@
                                                                 <label class="login2">Serial no : </label>
                                                             </div>
                                                             <div class="col-lg-4">
-                                                                <input type="text" class="form-control" placeholder="Enter Serial no " style="width: 121%" />
+                                                                <input type="text" name="serial_no" class="form-control" placeholder="Enter Serial no " style="width: 121%" />
                                                             </div>
                                                         </div>
 
@@ -125,16 +126,13 @@
                                                             <div class="row">
                                                                 <div class="row">
                                                                 <div class="col-lg-4">
-                                                                    <label class="login2">Class : </label>
+                                                                    <label class="login2">Asset category : </label>
                                                                 </div>
                                                                 <div class="col-lg-4">
-                                                                    <select class="form-control">Condition
-                                                                    <option value="biological">Biological Asset</option>
-                                                                    <option value="books">Books</option>
-                                                                    <option value="intangible">Intangible Asset</option>
-                                                                    <option value="infrastructure">Infrastructure</option>
-                                                                    <option value="mpm">MPM</option>
-                                                                    <option value="electronics">Electronics</option>
+                                                                    <select class="form-control">Assets Category
+                                                                        @foreach ($info as $info)
+                                                                        <option value="{{$info->assettype_id}}" name="{{$info->assettype_name}}">{{$info->assettype_name}}</option>
+                                                                        @endforeach
                                                                     </select>
                                                                 </div>
                                                             </div>
@@ -146,12 +144,10 @@
                                                                     <label class="login2">Condition : </label>
                                                                 </div>
                                                                 <div class="col-lg-4">
-                                                                    <select class="form-control">Condition
-                                                                    <option value="new">New</option>
-                                                                    <option value="good">Good</option>
-                                                                    <option value="fair">Fair</option>
-                                                                    <option value="poor">Poor</option>
-                                                                    <option value="absolute">Absolute</option>
+                                                                    <select class="form-control">Select Condition
+                                                                        @foreach ($list as $item)
+                                                                        <option value="{{$item->condition_id}}" name="{{$item->condition_name}}">{{$item->condition_name}}</option>
+                                                                        @endforeach
                                                                     </select>
                                                                 </div>
                                                             </div>
@@ -165,7 +161,7 @@
                                                                 <div class="col-lg-4">
                                                                     <input type="date" class="form-control" placeholder="Enter Date" style="width: 121%" />
 
-                                                                        <input type="number" class="form-control" placeholder="Remarks" style="margin-left: 130%; margin-top: -28%; width: 95%">
+                                                                        <input type="number" name="date_assigned" class="form-control" placeholder="Remarks" style="margin-left: 130%; margin-top: -28%; width: 95%">
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -176,7 +172,7 @@
                                                                     <label class="login2">Employee : </label>
                                                                 </div>
                                                                 <div class="col-lg-8">
-                                                                    <input type="text" class="form-control" placeholder="Enter Employee name" style="width: 100%" />
+                                                                    <input type="text" name="employee" class="form-control" placeholder="Enter Employee name" style="width: 100%" />
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -186,7 +182,7 @@
                                                                     <label class="login2">Mobile Number : </label>
                                                                 </div>
                                                                 <div class="col-lg-8">
-                                                                    <input type="text" class="form-control" placeholder="Enter Mobile number" style="width: 100%" />
+                                                                    <input type="text" name="mobile_number" class="form-control" placeholder="Enter Mobile number" style="width: 100%" />
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -198,16 +194,15 @@
                                                                 </div>
                                                                 <div class="col-lg-2">
                                                                 <select class="form-control">Building
-                                                <option value="">Building 1</option>
-                                                <option value="all">Building 2</option>
-                                                <option value="selected">Building 3</option>
+                                                                    @foreach ($build as $build)
+                                                                         <option value="{{$build->building_id}}" name="{{$build->building_name}}">{{$build->building_name}}</option>
+                                                                    @endforeach
+
                                                                 </select>
                                                                 </div>
                                                                 <div class="col-lg-3">
                                                                     <select class="form-control">Floor
-                                                    <option value="">Floor 1</option>
-                                                    <option value="all">Floor 2</option>
-                                                    <option value="selected">Floor 3</option>
+
                                                                     </select>
                                                                     </div>
                                                                     <div class="col-lg-3">
@@ -259,7 +254,7 @@
                         </div>
                              <div class="modal-footer footer-modal-admin">
                                 <a href="{{url('TransferHistory')}}"> <button type="button" class="btn btn-outline">Cancel</button></a>
-                                <button type="button" class="btn btn-primary">Done</button></a>
+                                <button type="submit" class="btn btn-primary">Done</button></a>
                                         </div>
                                     </form>
                                     </div>

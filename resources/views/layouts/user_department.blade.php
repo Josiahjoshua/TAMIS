@@ -138,7 +138,7 @@
                                                 <span class="author-project-icon adminpro-icon adminpro-down-arrow"></span>
                                             </a>
                                             <ul role="menu" class="dropdown-header-top author-log dropdown-menu animated flipInX">
-                                                <li><a href="index.php"><span class="adminpro-icon adminpro-locked author-log-ic"></span>Log Out</a>
+                                                <li><a href="{{route('index')}}"><span class="adminpro-icon adminpro-locked author-log-ic"></span>Log Out</a>
                                                 </li>
                                             </ul>
                                         </li>

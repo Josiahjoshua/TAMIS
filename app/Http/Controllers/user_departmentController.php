@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
+use Illuminate\Support\Facades\DB;
 
 use Illuminate\Http\Request;
 
@@ -32,6 +33,7 @@ class user_departmentController extends Controller
     }
 
     public function assetAssigment(){
+
         return view('user_department.assetAssigment');
     }
 
@@ -42,8 +44,25 @@ class user_departmentController extends Controller
 
     public function assignAsset()
     {
-        return view('user_department.assign_asset');
+         //retrival data from database of condition
+         $data =array(
+            'list'=>DB::table('condition')->get(),
+            'info'=>DB::table('asset_type')->get(),
+            'build'=>DB::table('building')->get()
+        );
+        return view('user_department.assign_asset', $data);
     }
+
+    //receive from form of assignAsset
+    public function assign_assetReceive(Request $request){
+        return $request->input();
+    }
+
+    //retive the condition
+
+    // public function condition(){
+
+    // }
 
     public function tempTransfer()
     {

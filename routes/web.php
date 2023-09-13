@@ -156,3 +156,7 @@ Route::group(['prefix'=>'user_department'], function(){
     Route::get('addoffice',[user_departmentController::class, 'addoffice'])->name('user_department.addoffice');
     Route::get('pending', [user_departmentController::class, 'pending'])->name('user_department.pending');
 });
+
+
+//manage the receive function in the form
+Route::post('assign_assetReceive', [user_departmentController::class, 'assign_assetReceive'])->name('assign_assetReceive');
