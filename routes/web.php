@@ -152,5 +152,6 @@ Route::group(['prefix'=>'user_department'], function(){
     Route::get('tempTransfer', [user_departmentController::class, 'tempTransfer'])->name('user_department.tempTransfer');
     Route::get('office',[user_departmentController::class,'user_department.office']);
     Route::get('request', [user_departmentController::class, 'user_department.request']);
+    Route::get('transferHistory',[user_departmentController::class, 'transferHistory'])->name('user_department.transferHistory1');
 
 });
