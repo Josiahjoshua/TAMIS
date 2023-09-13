@@ -24,22 +24,22 @@ return new class extends Migration
 
             // Define foreign key constraints
             $table->foreign('assettype_id')
-                ->references('assettype_id')
+                ->references('id')
                 ->on('asset_type') // Corrected table name
                 ->onDelete('cascade');
 
             $table->foreign('condition_id')
-                ->references('condition_id')
+                ->references('id')
                 ->on('conditions')
                 ->onDelete('cascade');
 
             $table->foreign('asset_id')
-                ->references('asset_id')
+                ->references('id')
                 ->on('asset') // Corrected table name
                 ->onDelete('cascade');
 
             $table->foreign('employee_id')
-                ->references('employee_id')
+                ->references('id')
                 ->on('employee')
                 ->onDelete('cascade');
         });

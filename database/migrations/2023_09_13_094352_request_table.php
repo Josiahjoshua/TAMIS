@@ -20,35 +20,28 @@ return new class extends Migration
             $table->unsignedBigInteger('department_id');
             $table->unsignedBigInteger('asset_id');
             $table->unsignedBigInteger('assettype_id');
+            $table->rememberToken();
+            $table->timestamps();
 
             $table->foreign('user_id')
                     ->references('id')
                     ->on('user')
                     ->cascadeOnDelete();
             $table->foreign('department_id')
-                    ->references('department_id')
+                    ->references('id')
                     ->on('department')
                     ->cascadeOnDelete();
             $table->foreign('asset_id')
-                    ->references('asset_id')
+                    ->references('id')
                     ->on('asset')
                     ->cascadeOnDelete();
             $table->foreign('assettype_id')
-                    ->references('assettype_id')
+                    ->references('id')
                     ->on('asset_type')
                     ->cascadeOnDelete();
 
 
-            // $table->index('user_id');
-            // $table->index('department_id');
-            // $table->index('asset_id');
-            // $table->index('assettype_id');
 
-            $table->rememberToken();
-            $table->timestamps();
-            // Define foreign key constraints if needed
-            // $table->foreign('assettype_id')->references('id')->on('assettypes');
-            // $table->foreign('condition_id')->references('id')->on('conditions');
         });
     }
 

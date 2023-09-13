@@ -12,9 +12,13 @@ return new class extends Migration
     public function up(): void
     {
     Schema::create('section', function (Blueprint $table) {
-        $table->bigIncrements('section_id');
+        $table->id();
         $table->string('section_name');
-        
+        $table->unsignedBigInteger('department_id');
+        $table->rememberToken();
+        $table->timestamps();
+
+
         $table->foreign('user_id')
                     ->references('id')
                     ->on('user')
@@ -31,8 +35,6 @@ return new class extends Migration
 
 
 
-        $table->rememberToken();
-        $table->timestamps();
 
      });
     }

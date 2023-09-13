@@ -30,8 +30,9 @@ return new class extends Migration
             ->references('floor_id')
             ->on('floor')
             ->cascadeOnDelete();
+
     $table->foreign('building_id')
-            ->references('building_id')
+            ->references('id')
             ->on('building')
             ->cascadeOnDelete();
 
