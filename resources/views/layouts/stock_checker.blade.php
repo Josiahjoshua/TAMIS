@@ -7,6 +7,12 @@
     <title>Stock Checker Dashboard</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {{-- bootstrap cdn links  --}}
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js">
+
+
  <!-- favicon
 		============================================ -->
         <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
@@ -47,6 +53,8 @@
         <!-- style CSS
             ============================================ -->
         <link rel="stylesheet" href="{{asset('asset/css/style.css')}}">
+
+        <link rel="stylesheet" href="{{asset('asset/css/modals.css')}}">
         <!-- responsive CSS
             ============================================ -->
         <link rel="stylesheet" href="{{asset('asset/css/responsive.css')}}">
@@ -87,11 +95,11 @@
                         <li>
                             <a href="{{ route('stock-checker.assetcategory') }}" role="button" aria-expanded="false"><i class="fa big-icon fa-flask"></i> <span class="mini-dn"> Asset Category</span> </a>
                         </li>
-                       
+
                         {{-- <li>
                             <a href="employeeinfo.php" role="button" aria-expanded="false"><i class="fa big-icon fa-folder-open"></i> <span class="mini-dn">Employee Information</span> </a>
                         </li> --}}
-                       
+
                         {{-- <li>
                             <a href="assetassignment.php" role="button" aria-expanded="false"><i class="fa big-icon fa-list-alt"></i> <span class="mini-dn">Asset Assignment</span> </a>
                         </li> --}}
