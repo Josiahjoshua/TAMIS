@@ -14,8 +14,15 @@ return new class extends Migration
         Schema::create('floor', function (Blueprint $table) {
             $table->bigIncrements('floor_id');
             $table->string('floor_name');
-            $table->unsignedBigInteger('building_id');
-            $table->index('building_id');
+
+            $table->foreign('building_id')
+                    ->references('building_id')
+                    ->on('building')
+                    ->cascadeOnDelete();
+
+            // $table->unsignedBigInteger('building_id');
+            // $table->index('building_id');
+
             $table->rememberToken();
             $table->timestamps();
         });
