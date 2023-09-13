@@ -18,15 +18,24 @@ return new class extends Migration
             $table->string('asset_description', 100);
             $table->string('serial_no', 30)->nullable();
             $table->float('cost');
-            $table->unsignedBigInteger('assettype_id');
-            $table->unsignedBigInteger('condition_id');
-            $table->index('assettype_id');
-            $table->index('condition_id');
+            // $table->unsignedBigInteger('assettype_id');
+            // $table->unsignedBigInteger('condition_id');
+            // $table->index('assettype_id');
+            // $table->index('condition_id');
             $table->rememberToken();
             $table->timestamps();
-            // Define foreign key constraints if needed
-            // $table->foreign('assettype_id')->references('id')->on('assettypes');
-            // $table->foreign('condition_id')->references('id')->on('conditions');
+
+            // Define foreign key constraints
+             $table->foreign('assettype_id')
+               ->references('assettype_id')->on('asset_type')
+               ->cascadeOnDelete();
+
+             $table->foreign('condition_id')
+               ->references('condition_id')
+               ->on('conditions')
+               ->cascadeOnDelete();
+
+
         });
     }
 
