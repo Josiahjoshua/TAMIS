@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('department', function (Blueprint $table) {
             $table->bigIncrements('department_id');
             $table->string('department_name', 15);
-            // $table->unsignedBigInteger('user_id');
+            $table->unsignedBigInteger('user_id');
             // $table->index('user_id');
             $table->rememberToken();
             $table->timestamps();
