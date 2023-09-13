@@ -22,11 +22,6 @@ return new class extends Migration
             $table->unsignedBigInteger('assettype_id');
             $table->unsignedBigInteger('condition_id');
             $table->unsignedBigInteger('employee_id');
-
-            // $table->index('assettype_id');
-            // $table->index('condition_id');
-            // $table->index('asset_id');
-            // $table->index('employee_id');
             $table->rememberToken();
             $table->timestamps();
 
@@ -44,13 +39,13 @@ return new class extends Migration
 
                 $table->foreign('asset_id')
                 ->references('asset_id')
-                ->on('employee')
+                ->on('asset')
                 ->cascadeOnDelete();
 
 
                 $table->foreign('employee_id')
                 ->references('employee_id')
-                ->on('conditions')
+                ->on('employee')
                 ->cascadeOnDelete();
         });
     }
