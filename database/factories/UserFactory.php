@@ -19,15 +19,19 @@ class UserFactory extends Factory
     {
         return [
             'name' => fake()->name(),
-            'email' => fake()->unique()->safeEmail(),
-            'email_verified_at' => now(),
+            'username' => fake()->username(),
             'password' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', // password
             'phone' => fake()->phoneNumber,
+
+
+                // 'email' => fake()->unique()->safeEmail(),
+                // 'email_verified_at' => now(),
             // 'photo' => fake()->imageUrl('60','60'),
             // 'address' => fake()->address,
             // 'role' => fake()->randomElement(['admin', 'agent', 'user']),
             // 'status' => fake()->randomElement(['active', 'inactive']),
             'remember_token' => Str::random(10),
+
         ];
     }
 

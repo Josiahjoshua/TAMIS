@@ -1,7 +1,9 @@
 <?php
+
+use App\Http\Controllers\ProfileController;
+use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\directorController;
 use App\Http\Controllers\user_departmentController;
-use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\StoreController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\stockCheckerController;
@@ -19,10 +21,14 @@ use App\Mode\Asset;
 |
 */
 
-//Login
+
+
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 Route::get('/', function(){
-return view('index');
-} ) ->name('index');
+    return view('index');
+    } ) ->name('index');
 
 //ADMIN ROUTES
 // Route::group(['prefix'=>'admin'], function(){
