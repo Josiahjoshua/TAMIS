@@ -12,18 +12,31 @@ return new class extends Migration
     public function up(): void
     {
     Schema::create('section', function (Blueprint $table) {
-        $table->bigIncrements('section_id');
+        $table->id();
         $table->string('section_name');
-        // $table->primary('section_id');
         $table->unsignedBigInteger('user_id');
         $table->unsignedBigInteger('department_id');
-        $table->index('user_id');
-        $table->index('department_id');
-
-
-
         $table->rememberToken();
         $table->timestamps();
+
+
+        $table->foreign('user_id')
+                    ->references('id')
+                    ->on('user')
+                    ->cascadeOnDelete();
+
+        $table->foreign('department_id')
+                    ->references('id')
+                    ->on('department')
+                    ->cascadeOnDelete();
+
+        // $table->unsignedBigInteger('user_id');
+        // $table->unsignedBigInteger('department_id');
+        // $table->index('user_id');
+        // $table->index('department_id');
+
+
+
 
      });
     }
