@@ -23,7 +23,7 @@ return new class extends Migration
             // Define foreign key constraints if needed
             $table->foreign('user_id')
                 ->references('id')
-                ->on('user')
+                ->on('users')
                 ->cascadeOnDelete();
         });
     }

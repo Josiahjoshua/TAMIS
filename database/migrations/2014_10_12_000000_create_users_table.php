@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('user', function (Blueprint $table) {
+        Schema::create('users', function (Blueprint $table) {
             $table->id();
             // $table->id(`user_id`);
             $table->string('full_name');
@@ -25,7 +25,7 @@ return new class extends Migration
             $table->timestamps();
         });
     }
-    
+
 
             // $table->string('photo')->nullable();
             // $table->string('address')->nullable();

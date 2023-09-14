@@ -1,4 +1,5 @@
 <?php
+// namespace App\Http\Controllers;
 
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
@@ -6,6 +7,7 @@ use App\Http\Controllers\directorController;
 use App\Http\Controllers\user_departmentController;
 use App\Http\Controllers\StoreController;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\UserLoginController;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,12 +25,13 @@ use App\Http\Controllers\AdminController;
 // Route::get('/', function () {
 //     return view('welcome');
 // });
+Route::post('/user/login', [UserLoginController::class, 'authenticated'])->name('user.login');
 Route::get('/', function(){
     return view('index');
     } ) ->name('index');
 
     //ADMIN ROUTES
-    Route::group(['prefix'=>'admin'], function(){
+    Route::group(['prefix'=>'admin', 'middleware' => 'auth'], function(){
     // Route::get('/', [directorController::class, 'index']) ->name('index');
 
             // Route::get('welcome', [AdminController::class, 'welcome'])
@@ -63,7 +66,7 @@ Route::get('/', function(){
 
 
     //routes for store
-    Route::group(['prefix'=>'store'], function(){
+    Route::group(['prefix'=>'store','middleware' => 'auth'], function(){
         Route::get('dashboard', [StoreController::class, 'storeDashboard'])
         ->name('store.dashboard');
 
@@ -81,7 +84,7 @@ Route::get('/', function(){
     });
 
     //STOCK_CHECKER
-    Route::group(['prefix'=>'stock-checker'], function(){
+    Route::group(['prefix'=>'stock-checker', 'middleware' => 'auth'], function(){
 
         Route::get('dashboard', function(){   return view('stock_checker.dashboard');})
         ->name('stock_checker.dashboard');
@@ -109,7 +112,7 @@ Route::get('/', function(){
     });
 
     //estate routes
-    Route::group(['prefix'=>'estate'], function(){
+    Route::group(['prefix'=>'estate', 'middleware' => 'auth'], function(){
         Route::get('category', function () { return view('estate.category');})->name('estate/category');
         Route::get('viewasset', function () {return view('estate.assetviews');});
 
@@ -127,7 +130,7 @@ Route::get('/', function(){
 
 
              //DIRECTOR ROUTES
-    Route::group(['prefix'=>'director'], function(){
+    Route::group(['prefix'=>'director', 'middleware' => 'auth'], function(){
             Route::get('dashboard', [directorController::class, 'dashboard']) ->name('director.dashboard');
 
             Route::get('departmentoffice',[directorController::class, 'departmentoffice']) ->name('director.departmentoffice');
@@ -147,7 +150,7 @@ Route::get('/', function(){
 
 
                      //USER_DEPARTMENT
-    Route::group(['prefix'=>'user_department'], function(){
+    Route::group(['prefix'=>'user_department', 'middleware' => 'auth'], function(){
         Route::get('dashboard',[user_departmentController::class,'dashboard'])->name('user_department.dashboard');
         Route::get('AssetInformation', [user_departmentController::class, 'assetInfo'])->name('user_department.assetInformation');
         Route::get('transferHistory', [user_departmentController::class, 'transferasset'])->name('user_department.transferAsset');
@@ -174,7 +177,15 @@ Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+
+
+Route::get('/admin', 'AdminController@index')->middleware('auth', 'role:admin');
+Route::get('/user', 'UserController@index')->middleware('auth', 'role:user');
 });
+
+
+
+
 
 require __DIR__.'/auth.php';
 

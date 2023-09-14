@@ -22,7 +22,7 @@ return new class extends Migration
 
         $table->foreign('user_id')
                     ->references('id')
-                    ->on('user')
+                    ->on('users')
                     ->cascadeOnDelete();
 
         $table->foreign('department_id')

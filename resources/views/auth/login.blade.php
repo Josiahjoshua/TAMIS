@@ -118,10 +118,11 @@
 <body>
   <div class="main">
     <p class="sign" align="center">Login Form</p>
-    <form class="form1">
-      <input class="un " type="text" align="center" required="required" name="username" placeholder="Username">
-      <input class="pass" type="password" align="center" required="required" name="password5" placeholder="Password">
-      <a class="submit" align="center" href="dashboard.php">Log in</a>
+    <form class="form1" action="{{ route('user.login') }}" method="POST">
+        @csrf
+      <input class="un " type="email" align="center" required="required" name="email" placeholder="Username">
+      <input class="pass" type="password" align="center" required="required" name="password" placeholder="Password">
+      <button type="submit" class="submit" align="center">Log in</button>
       <p class="forgot" align="center"><a href="#">Forgot Password?</p>
 
 
