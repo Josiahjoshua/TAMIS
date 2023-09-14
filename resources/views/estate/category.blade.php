@@ -6,6 +6,7 @@
         <div class="row">
             <div class="col-lg-12">
                
+<div><br><h2> Asset Category</h2></div>
             </div>
         </div>
     </div>
@@ -68,11 +69,7 @@
                                 <div class="income-rate-total">
                                     <div class="price-adminpro-rate">
                                         <h3><span class="counter">1,310</span></h3>
-                                    </div>
-                                    <div class="price-graph">
-                                        <span id="sparkline1"></span>
-                                    </div>
-                                </div>
+                                    </div>                                </div>
                                 <div class="income-range">
                                     <p>Total {{ $assetName }}</p>
                                    

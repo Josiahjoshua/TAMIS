@@ -119,6 +119,15 @@ Route::group(['prefix'=>'estate'], function(){
     })->name('viewdepart');
     
     Route::get('requests', [estateController::class, 'requestedasset'])->name('requests');
+
+    
+    Route::get('trasferhistory', [estateController::class, 'trasferhistory'])->name('trasferhistory');
+
+
+    
+    Route::get('getpdf', [estateController::class, 'getpdf'])->name('getpdf');
+
+    Route::get('dashboard', [estateController::class, 'dashboard'])->name('dashboard');
     
 
 });

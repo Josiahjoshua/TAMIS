@@ -66,18 +66,18 @@
                 <div class="sidebar-header">
                     <a href="#"><img src="img/1.jpg" alt="" class="img-circle"     />
                     </a>
-                    <h3>freeman</h3>
-                    <p>Estate Manager</p>
+                    <h3>Estate</h3>
+                    <p></p>
                     <strong>TAMIS</strong>
                 </div>
                 <div class="left-custom-menu-adp-wrap">
                     <ul class="nav navbar-nav left-sidebar-menu-pro">
                         
                         <li class="active">
-                            <a href="#" role="button" aria-expanded="false"><i class="fa big-icon fa-dashboard"></i> <span class="mini-dn"> Dashboard</span> </a>
+                            <a href="{{ route('dashboard') }}" role="button" aria-expanded="false"><i class="fa big-icon fa-dashboard"></i> <span class="mini-dn"> Dashboard</span> </a>
                         </li>
                         <li>
-                            <a href="#" role="button" aria-expanded="false"><i class="fa big-icon fa-history"></i> <span class="mini-dn">Transfer History</span> </a>
+                            <a href="{{ route('trasferhistory') }}" role="button" aria-expanded="false"><i class="fa big-icon fa-history"></i> <span class="mini-dn">Transfer History</span> </a>
                         </li>
                         <li>
                             <a href="{{ route('requests') }}" role="button" aria-expanded="false"><i class="fa big-icon fa-users"></i> <span class="mini-dn">Requests</span> </a>

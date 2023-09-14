@@ -4,12 +4,31 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Assetdata;
-
 use Illuminate\Support\Facades\DB; 
+
+use Barryvdh\DomPDF\Facade as PDF; 
  // Import the Assetdata model
+
  
  class estateController extends Controller
  {
+
+
+
+    public function getpdf(){
+
+         // Load HTML content into PDF
+         $pdf = PDF::loadHTML('<h1>Test</h1>');
+
+         // Get the PDF content
+         $pdfContent = $pdf->output();
+ 
+         return new Response($pdfContent, 200, [
+             'Content-Type' => 'application/pdf',
+             'Content-Disposition' => 'inline; filename="test.pdf"'
+         ]);
+
+    }
 
     public function getNow(Request $request, $assetName)
     {
@@ -42,7 +61,28 @@ use Illuminate\Support\Facades\DB;
     }
     
 
+    public function trasferhistory()
+    {
+        $transferHistory = DB::table('transfer_history')
+            ->select(
+                'transfer_history_id',
+                'transferred_from',
+                'transferred_to',
+                'quantity',
+                'date_transferred',
+                'asset_id',
+                'user_id',
+                'condition_id',
+                'room_id'
+            )
+            ->get();
 
+        return view('estate.assetviews.transferhistory', ['transferHistory' => $transferHistory]);
+    }
+
+    public function dashboard(){
+        return view('estate.assetviews.dashboard');
+    }
     public function requestedasset()
     {
         // Fetch data from the 'asset_type' table
