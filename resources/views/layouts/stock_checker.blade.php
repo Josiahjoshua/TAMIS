@@ -93,7 +93,7 @@
                             <a href="brachoffice.php" role="button" aria-expanded="false"><i class="fa big-icon fa-home"></i> <span class="mini-dn"> Branch Office</span> </a>
                         </li> --}}
                         <li>
-                            <a href="{{ route('stock-checker.assetcategory') }}" role="button" aria-expanded="false"><i class="fa big-icon fa-flask"></i> <span class="mini-dn"> Asset Category</span> </a>
+                            <a href="{{ route('stock-checker.assettype') }}" role="button" aria-expanded="false"><i class="fa big-icon fa-flask"></i> <span class="mini-dn"> Asset Type</span> </a>
                         </li>
 
                         {{-- <li>

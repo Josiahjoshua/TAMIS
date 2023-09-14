@@ -92,7 +92,7 @@
                                     <div class="main-income-head">
                                         <h2>Total</h2>
                                         <div class="main-income-phara order-cl">
-                                            <p>Asset Category</p>
+                                            <p>Asset Type</p>
                                         </div>
                                     </div>
                                 </div>
