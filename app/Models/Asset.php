@@ -31,6 +31,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Asset extends Model
 {
+    protected $table = 'asset';
     use HasFactory; // Add this line if you intend to use factory methods
 
     protected $fillable = [
@@ -40,11 +41,12 @@ class Asset extends Model
         'cost',
         'assettype_id',
         'condition_id',
-        'accumulated_depreciation',
-        'acquisition_date',
-        'acquisition_type',
         'gfs_code',
         'gfs_description',
+        'accumulated_depriciation',
+        'acquisition_type',
+        'acquisition_date',
+        'registered_date',
         'remarks',
     ];
 }

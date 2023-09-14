@@ -4,7 +4,7 @@ use App\Http\Controllers\user_departmentController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\StoreController;
 use App\Http\Controllers\AdminController;
-
+use App\Mode\Asset;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -56,11 +56,17 @@ return view('index');
 
 //routes for store
 Route::group(['prefix'=>'store'], function(){
+
+
+
     Route::get('dashboard', [StoreController::class, 'storeDashboard'])
     ->name('store.dashboard');
 
     Route::get('registerAsset', [StoreController::class, 'RegisterAsset'])
     ->name('store.registerAsset');
+
+    Route::post('registerAsset', [StoreController::class, 'formSubmission'])
+    ->name('registerAsset');
 
     Route::get('gamisRegister', [StoreController::class, 'gamisRegister'])
     ->name('store.gamisRegister');
@@ -76,11 +82,6 @@ Route::group(['prefix'=>'store'], function(){
 
     Route::get('assignAsset', [StoreController::class, 'assignAsset'])
     ->name('store.assignAsset');
-
-    Route::post('registerAsset',[StoreController::class,'store'])
-    ->name('assetregisterform');
-    Route::get('Asset', [StoreController::class,'Asset'])
-    ->name('Asset');
 
 
 });

@@ -25,6 +25,7 @@ return new class extends Migration
             $table->string('gfs_code');
             $table->string('gfs_description');
             $table->float('accumulated_depriciation');
+            $table->string('acquisition_type');
             $table->string('acquisition_date');
             $table->string('registered_date');
 
