@@ -23,6 +23,7 @@ class directorController extends Controller
     }
 
     public function assethistory(){
+
         return view('director.assethistory');
     }
 

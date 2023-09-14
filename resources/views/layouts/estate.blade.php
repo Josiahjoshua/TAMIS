@@ -66,24 +66,40 @@
                 <div class="sidebar-header">
                     <a href="#"><img src="img/1.jpg" alt="" class="img-circle"     />
                     </a>
-                    <h3>freeman</h3>
-                    <p>Estate Manager</p>
+                    <h3>Estate</h3>
+                    <p></p>
                     <strong>TAMIS</strong>
                 </div>
                 <div class="left-custom-menu-adp-wrap">
                     <ul class="nav navbar-nav left-sidebar-menu-pro">
+                        
                         <li class="active">
-                            <a href="{{ route('estate/department') }}" role="button" aria-expanded="false"><i class="fa big-icon fa-dashboard"></i> <span class="mini-dn"> Dashboard</span> </a>
+                            <a href="{{ route('dashboard') }}" role="button" aria-expanded="false"><i class="fa big-icon fa-dashboard"></i> <span class="mini-dn"> Dashboard</span> </a>
                         </li>
                         <li>
-                            <a href="{{ route('requests') }}" role="button" aria-expanded="false"><i class="fa big-icon fa-users"></i> <span class="mini-dn">Pending</span> </a>
+                            <a href="{{ route('trasferhistory') }}" role="button" aria-expanded="false"><i class="fa big-icon fa-history"></i> <span class="mini-dn">Transfer History</span> </a>
+                        </li>
+                        <li>
+                            <a href="{{ route('requests') }}" role="button" aria-expanded="false"><i class="fa big-icon fa-users"></i> <span class="mini-dn">Requests</span> </a>
                         </li>
                        
-                        <li class="active">
-                            <a href="{{ route('estate/category') }}" role="button" aria-expanded="false"><i class="fa big-icon fa-dashboard"></i> <span class="mini-dn"> Asset Category</span> </a>
-                        </li>
-                         <li>
-                            <a href="#" role="button" aria-expanded="false"><i class="fa big-icon fa-history"></i> <span class="mini-dn">Transfer History</span> </a>
+                        <li class="dropdown">
+                            <a href="#" role="button" aria-expanded="false" class="dropdown-toggle" data-toggle="dropdown">
+                                <i class="fa big-icon fa-dashboard"></i> <span class="mini-dn">View Asset</span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="{{ route('estate/department') }}">
+                                         <span class="mini-dn">Department</span>
+                                    </a>
+                                </li>
+                                <li>
+                                   
+                                    <a href="{{ route('estate/category') }}">
+                                       <span class="mini-dn">Asset Category</span>
+                                    </a>
+                                </li>
+                            </ul>
                         </li>
                        
                     </ul>
@@ -108,10 +124,7 @@
                             <div class="col-lg-6 col-md-1 col-sm-1 col-xs-12">
                                 <div class="header-top-menu tabl-d-n">
                                     <ul class="nav navbar-nav mai-top-nav">
-                                        <li class="nav-item"><a href="branchreport.php" class="nav-link">Brach Report List</a>
-                                        </li>
-                                        <li class="nav-item"><a href="employeereport.php" class="nav-link">Employee Report List</a>
-                                        </li>
+                                        
                                     </ul>
                                 </div>
                             </div>
