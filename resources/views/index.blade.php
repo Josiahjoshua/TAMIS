@@ -112,16 +112,15 @@
         .main {
             border-radius: 0px;
         }
-
-    }
+  }
 
 </style>
 <body>
   <div class="main">
     <p class="sign" align="center">Login Form</p>
     <form class="form1">
-      <input class="un " type="text" align="center" required="" placeholder="Username">
-      <input class="pass" type="password" align="center" required="" placeholder="Password">
+      <input class="un " type="text" align="center" required="required" name="username" placeholder="Username">
+      <input class="pass" type="password" align="center" required="required" name="password5" placeholder="Password">
       <a class="submit" align="center" href="dashboard.php">Log in</a>
       <p class="forgot" align="center"><a href="#">Forgot Password?</p>
 
