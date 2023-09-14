@@ -1,11 +1,11 @@
 @extends('layouts.store_keeper')
 @section('storecontent')
-<div class="breadcome-area mg-b-30 small-dn">
+{{-- <div class="breadcome-area mg-b-30 small-dn">
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-12">
-                <div class="breadcome-list shadow-reset">
-                    <div class="row">
+                <div class="breadcome-list shadow-reset"> --}}
+                    {{-- <div class="row">
                         <div class="col-lg-6">
                             <button class="btn btn-custon-rounded-three btn-success" data-toggle="modal" data-target="#InformationproModalalert"><i class="fa fa-plus"></i>Assign Asset</button>
                              <div id="InformationproModalalert" class="modal modal-adminpro-general fullwidth-popup-InformationproModal zoomInUp" role="dialog">
@@ -24,8 +24,8 @@
                             <h1>Asset Assignment  <span class="basic-ds-n">Form</span></h1>
 
                         </div>
-                    </div>
-                    <div class="sparkline9-graph">
+                    </div> --}}
+                    {{-- <div class="sparkline9-graph">
                         <div class="basic-login-form-ad">
                             <div class="row">
                                 <div class="col-lg-12">
@@ -114,13 +114,13 @@
                         </div>
                     </div>
                 </div>
-                        </div>
-                        <div class="col-lg-6">
+                        </div> --}}
+                        {{-- <div class="col-lg-6">
                             <ul class="breadcome-menu">
                                 {{-- <li><a href="#">Dashboard</a> <span class="bread-slash">/</span> --}}
                                 </li>
                                 {{-- <li><span class="bread-blod">Employee Information</span> --}}
-                                </li>
+                                {{-- </li>
                             </ul>
                         </div>
                     </div>
@@ -128,10 +128,10 @@
             </div>
         </div>
     </div>
-</div>
+</div> --}}
 <!-- Breadcome End-->
 <!-- Static Table Start -->
-<div class="data-table-area mg-b-15">
+<div class="data-table-area mg-b-15" style="margin-top: 30px">
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-12">

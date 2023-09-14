@@ -11,10 +11,9 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('asset_type', function (Blueprint $table) {
-
-            $table->bigIncrements('assettype_id');
-            $table->string('assettype_name', 30);
+        Schema::create('building', function (Blueprint $table) {
+            $table->id();
+            $table->string('building_name', 100);
             $table->rememberToken();
             $table->timestamps();
         });
@@ -25,6 +24,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('asset_type');
+        Schema::dropIfExists('building');
     }
 };

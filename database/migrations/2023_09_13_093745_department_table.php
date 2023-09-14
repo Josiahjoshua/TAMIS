@@ -11,22 +11,27 @@ return new class extends Migration
      */
     public function up(): void
     {
-
-        Schema::create('role', function (Blueprint $table) {
-            $table->bigIncrements('role_id');
-            $table->string('role_name', 100);
+        Schema::create('department', function (Blueprint $table) {
+            $table->id();
+            $table->string('department_name', 15);
+            $table->unsignedBigInteger('user_id');
             $table->rememberToken();
             $table->timestamps();
+
             // Define foreign key constraints if needed
-            // $table->foreign('assettype_id')->references('id')->on('assettypes');
-            // $table->foreign('condition_id')->references('id')->on('conditions');
+            $table->foreign('user_id')
+                ->references('id')
+                ->on('user')
+                ->cascadeOnDelete();
         });
     }
 
 
+
+
     public function down()
     {
-        Schema::dropIfExists('role');
+        Schema::dropIfExists('department');
     }
 };
 

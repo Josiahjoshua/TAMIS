@@ -11,27 +11,20 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('department', function (Blueprint $table) {
-            $table->bigIncrements('department_id');
-            $table->string('department_name', 15);
-            $table->unsignedBigInteger('user_id');
-            $table->index('user_id');
+        Schema::create('condition', function (Blueprint $table) {
+            $table->id();
+            $table->string('condition_name', 30);
             $table->rememberToken();
             $table->timestamps();
+
         });
     }
-
-
-
-
-    public function down()
-    {
-        Schema::dropIfExists('department');
-    }
-};
 
     /**
      * Reverse the migrations.
      */
-
-
+    public function down(): void
+    {
+        Schema::dropIfExists('condition');
+    }
+};

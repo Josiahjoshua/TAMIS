@@ -12,26 +12,35 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('employee', function (Blueprint $table) {
-            $table->bigIncrements('employee_id');
+            $table->id();
             $table->string('name');
             $table->string('phone')->nullable();
             $table->unsignedBigInteger('department_id');
             $table->unsignedBigInteger('section_id');
             $table->unsignedBigInteger('user_id');
-            $table->index('department_id');
-            $table->index('section_id');
-            $table->index('user_id');
+          
             $table->rememberToken();
             $table->timestamps();
+
+            // Define foreign key constraints if needed
+            $table->foreign('department_id')
+                ->references('id')
+                ->on('department')
+                ->cascadeOnDelete();
+
+            $table->foreign('section_id')
+                ->references('id')
+                ->on('section')
+                ->cascadeOnDelete();
+
+            $table->foreign('user_id')
+                ->references('user')
+                ->references('id')
+                ->on('user')
+                ->cascadeOnDelete();
+
         });
     }
-            // $table->string('email')->unique();
-            // $table->timestamp('email_verified_at')->nullable();
-
-            // $table->string('photo')->nullable();
-
-            // $table->string('address')->nullable();
-            // $table->enum('status',['active','inactive'])->default('active');
 
 
     /**
