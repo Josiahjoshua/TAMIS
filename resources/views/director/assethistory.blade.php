@@ -52,10 +52,10 @@
                                                 <tr>
                                                     <th>Transferred From</th>
                                                     <th >Transferred To</th>
-                                                    <th >Item Name</th>
+                                                    <th >Asset Name</th>
                                                     <th >Quantity Transferred</th>
                                                     <th >Date Transferred</th>
-                                                    <th >Remarks</th>
+                                                    <th >Condition</th>
                                                     <th ></th>
                                                 </tr>
                                             </thead>
