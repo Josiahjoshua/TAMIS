@@ -193,33 +193,27 @@
                                         <table id="table" data-toggle="table" data-pagination="true" data-search="true" data-show-columns="true"  data-show-refresh="true" data-key-events="true"  data-resizable="true" data-cookie="true" data-cookie-id-table="saveId"  data-click-to-select="true" data-toolbar="#toolbar">
                                             <thead>
                                                 <tr>
-                                                    <th >SN</th>
-                                                    <th>Asset code</th>
+                                                   
+                                                    <th>SN</th>
                                                     <th >Description</th>
-                                                    <th >Location</th>
-                                                    <th >Acq. Cost</th>
-                                                    <th >Condition</th>
-                                                    <th >Quantity</th>
-                                                    <th >Serial No</th>
-                                                    <th >Date</th>
-                                                    <th >Assigned to</th>
-                                                    <th >Signature</th>
+                                                    <th >Transferred from</th>
+                                                    <th >Transferred to</th>
+                                                    <th >Asset_Type ID</th>
+                                                    <th >Condition ID</th>
+                                                    
                                                     <th ></th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr>
-                                                    <td>1</td>
-                                                    <td>TIRDO 2203</td>
-                                                    <td>ICT Set</td>
-                                                    <td >Msasani</td>
-                                                    <td>850,000</td>
-                                                    <td>Poor</td>
-                                                    <td>2</td>
+                                                    
                                                     <td></td>
-                                                    <td>22/03/2023</td>
-                                                    <td>Tenacious</td>
-                                                    <td>10nacious10</td>
+                                                    <td>ICT Set</td>
+                                                    <td >2</td>
+                                                    <td>9</td>
+                                                    <td>3</td>
+                                                    <td>2</td>
+                                                   
                                                     <td><button type="button" class="btn btn-primary btn-circle" data-toggle="modal" data-target="#edit"><i class="fa fa-edit"></i></button> <button type="button" class="btn btn-danger"><i class="fa fa-trash"></i></button></td>
                                                 </tr>
                                             </tbody>

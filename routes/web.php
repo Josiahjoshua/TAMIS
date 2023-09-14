@@ -94,8 +94,8 @@ Route::group(['prefix'=>'stock-checker'], function(){
     Route::get('assets_history', function(){ return view('stock_checker.assethistory');})
     ->name('stock-checker.assethistory');
 
-    Route::get('assets_category', function(){ return view('stock_checker.assetcategory');})
-    ->name('stock-checker.assetcategory');
+    Route::get('assets_type', function(){ return view('stock_checker.assettype');})
+    ->name('stock-checker.assettype');
 
     Route::get('assets_info', function(){  return view('stock_checker.assetinfo'); })
     ->name('stock-checker.assetinfo');

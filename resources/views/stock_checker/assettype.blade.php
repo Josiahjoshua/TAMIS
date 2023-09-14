@@ -88,7 +88,7 @@
                                         <ul class="breadcome-menu">
                                             <li><a href="{{ route('stock_checker.dashboard') }}">Dashboard</a> <span class="bread-slash">/</span>
                                             </li>
-                                            <li><span class="bread-blod">Asset Category</span>
+                                            <li><span class="bread-blod">Asset Types</span>
                                             </li>
                                         </ul>
                                     </div>
@@ -121,17 +121,17 @@
                                         <table id="table" data-toggle="table" data-pagination="true" data-search="true" data-show-columns="true"  data-show-refresh="true" data-key-events="true"  data-resizable="true"  data-click-to-select="true" >
                                             <thead>
                                                 <tr>
-                                                    <th >SN</th>
-                                                    <th >Category Name</th>
-                                                    <th >Description</th>
+                                                    
+                                                    <th >Asset_Type Name</th>
+                                                    
                                                     <th></th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr>
-                                                    <td >1</td>
+                                                    
                                                     <td>Guaranteed investment accounts</td>
-                                                    <td>A guaranteed investment contract (GIC) is an insurance company provision that guarantees a rate of return in exchange for keeping a deposit for a certain</td>
+                                                    
                                                     <td><button type="button" class="btn btn-primary btn-circle" data-toggle="modal" data-target="#edit"><i class="fa fa-edit"></i></button> <button type="button" class="btn btn-danger"><i class="fa fa-trash"></i></button></td>
                                                 </tr>
                                             </tbody>
