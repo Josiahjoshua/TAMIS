@@ -95,7 +95,7 @@ Route::group(['prefix'=>'stock-checker'], function(){
     Route::get('assets_transfer_history', [stockCheckerController::class, 'assetsTransferHistory'])
     ->name('stock-checker.assethistory');
 
-    Route::get('assets_type', function(){ return view('stock_checker.assettype');})
+    Route::get('assets_type', [stockCheckerController::class, 'assetsType'])
     ->name('stock-checker.assettype');
 
     Route::get('assets_info', [stockCheckerController::class, 'assetInfo'])
@@ -112,7 +112,7 @@ Route::group(['prefix'=>'stock-checker'], function(){
 
     Route::get('profile', [stockCheckerController::class, 'userProfile'])
     ->name('stock_checker.profile');
-    
+
 });
 
 //estate routes
@@ -162,38 +162,38 @@ Route::group(['prefix'=>'user_department'], function(){
     ->name('user_department.dashboard');
     Route::get('AssetInformation', [user_departmentController::class, 'assetInfo'])
     ->name('user_department.assetInformation');
-    
+
     Route::get('transferHistory', [user_departmentController::class, 'transferasset'])
     ->name('user_department.transferAsset');
-    
+
     Route::get('assetreq',[user_departmentController::class,'assetreq'])
     ->name('user_department.assetreq');
-    
+
     Route::get('employee',[user_departmentController::class,'employeeinfo'])
     ->name('user_department.employeeinfo');
-    
+
     Route::get('assetassigment', [user_departmentController::class, 'assetAssigment'])
     ->name('user_department.assetAssigment');
-    
-    Route::get('create', [user_departmentController::class, 'create']) 
+
+    Route::get('create', [user_departmentController::class, 'create'])
     ->name('user_department.create');
-    
+
     Route::get('assignAsset', [user_departmentController::class, 'assignAsset'])
     ->name('user_department.assignAsset');
-    
+
     Route::get('transferasset', [user_departmentController::class, 'transferasset'])
     ->name('user_department.transferasset');
-    
+
     Route::post('/show-popup', 'PopupController@showPopup')
     ->name('user_department.pop');
-    
+
     Route::get('tempTransfer', [user_departmentController::class, 'tempTransfer'])
     ->name('user_department.tempTransfer');
-    
+
     Route::get('office',[user_departmentController::class,'user_department.office']);
-    
+
     Route::get('request', [user_departmentController::class, 'user_department.request']);
-    
+
     Route::get('transferHistory',[user_departmentController::class, 'transferHistory'])->name('user_department.transferHistory1');
 
 

@@ -16,7 +16,7 @@ class stockCheckerController extends Controller
     }
 
     public function assetsType(){
-        return view('stock_checker.assethistory');
+        return view('stock_checker.assettype');
     }
 
     public function assetInfo(){
@@ -36,7 +36,7 @@ class stockCheckerController extends Controller
     }
 
     public function userProfile(){
-        
+
         return view('stock_checker.user');
     }
 
