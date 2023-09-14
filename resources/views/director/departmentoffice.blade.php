@@ -13,7 +13,7 @@
                             <div id="InformationproModalalert" class="modal modal-adminpro-general fullwidth-popup-InformationproModal zoomInUp" role="dialog">
                                 <div class="modal-dialog">
                                     <div class="modal-content">
-                                            <form action="">
+                                            <form action="{{ route('addData') }}" method="post">
                                         <div class="modal-close-area modal-close-df">
                                             <a class="close" data-dismiss="modal" href="#"><i class="fa fa-close"></i></a>
                                         </div>
@@ -23,7 +23,7 @@
                             <div class="sparkline9-list shadow-reset">
                                 <div class="sparkline9-hd">
                                     <div class="main-sparkline9-hd">
-                                        <h1>Department Office Encoding <span class="basic-ds-n">Form</span></h1>
+                                        <h1>Section Office Encoding <span class="basic-ds-n">Form</span></h1>
 
                                     </div>
                                 </div>
