@@ -45,10 +45,7 @@ return new class extends Migration
                 ->on('employee')
                 ->onDelete('cascade');
 
-            $table->foreign('assettype_id')
-                ->references('id')
-                ->on('asset_type')
-                ->onDelete('cascade');
+        
         });
     }
 

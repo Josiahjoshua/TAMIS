@@ -133,6 +133,7 @@ Route::group(['prefix'=>'director'], function(){
         Route::get('assetassignment', [directorController::class, 'assetassignment']) ->name('director.assetassignment');
 
         Route::get('transferasset', [directorController::class, 'transferasset']) ->name('director.transferasset');
+        Route::post('addData', [directorController::class, 'addData']);
 });
 
 
