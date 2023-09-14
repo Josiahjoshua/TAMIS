@@ -4,6 +4,7 @@ use App\Http\Controllers\user_departmentController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\StoreController;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\stockCheckerController;
 
 /*
 |--------------------------------------------------------------------------
@@ -88,29 +89,30 @@ Route::group(['prefix'=>'store'], function(){
 //STOCK_CHECKER
 Route::group(['prefix'=>'stock-checker'], function(){
 
-    Route::get('dashboard', function(){   return view('stock_checker.dashboard');})
+    Route::get('dashboard', [stockCheckerController::class, 'stockCheckerDashboard'])
     ->name('stock_checker.dashboard');
 
-    Route::get('assets_history', function(){ return view('stock_checker.assethistory');})
+    Route::get('assets_transfer_history', [stockCheckerController::class, 'assetsTransferHistory'])
     ->name('stock-checker.assethistory');
 
     Route::get('assets_category', function(){ return view('stock_checker.assetcategory');})
     ->name('stock-checker.assetcategory');
 
-    Route::get('assets_info', function(){  return view('stock_checker.assetinfo'); })
+    Route::get('assets_info', [stockCheckerController::class, 'assetInfo'])
     ->name('stock-checker.assetinfo');
 
-    Route::get('department', function(){ return view('stock_checker.department');})
+    Route::get('department', [stockCheckerController::class, 'department'])
     ->name('stock-checker.department');
 
-    Route::get('assets_disposal', function(){ return view('stock_checker.assetdisposal'); })
+    Route::get('assets_disposal', [stockCheckerController::class, 'assetDisposal'])
     ->name('stock-checker.assetdisposal');
 
-    Route::get('assets_report', function() { return view('stock_checker.report');})
+    Route::get('assets_report', [stockCheckerController::class, 'report'])
     ->name('stock-checker.report');
 
-    Route::get('profile', function() {return view('stock_checker.user'); })
+    Route::get('profile', [stockCheckerController::class, 'userProfile'])
     ->name('stock_checker.profile');
+    
 });
 
 //estate routes

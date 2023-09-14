@@ -16,7 +16,9 @@
                                     role="dialog">
                                     <div class="modal-dialog">
                                         <div class="modal-content">
-                                            <form action="">
+                                            <form method="post" action="">
+                                                @csrf
+
                                                 <div class="modal-close-area modal-close-df">
                                                     <a class="close" data-dismiss="modal" href="#"><i
                                                             class="fa fa-close"></i></a>
@@ -27,9 +29,7 @@
                                                             <div class="sparkline9-list shadow-reset">
                                                                 <div class="sparkline9-hd">
                                                                     <div class="main-sparkline9-hd">
-                                                                        <h1>User Information Encoding <span
-                                                                                class="basic-ds-n">Form</span></h1>
-
+                                                                        <h1>Update Profile</h1>
                                                                     </div>
                                                                 </div>
                                                                 <div class="sparkline9-graph">
@@ -37,22 +37,8 @@
                                                                         <div class="row">
                                                                             <div class="col-lg-12">
                                                                                 <div class="basic-login-inner">
-                                                                                    <h3>Update Info : </h3>
-                                                                        {{-- form for profile upation ////////////////////////////////////////  --}}
-                                                                                    <form action="/profile-info" method="post">
-                                                                                        @csrf
-                                                                                        <div class="form-group-inner">
-                                                                                            <div class="row">
-                                                                                                <div class="col-lg-4">
-                                                                                                    <label class="login2">Profile imge: </label>
-                                                                                                </div>
-                                                                                                <div class="col-lg-8">
-                                                                                                    <input type="file" name="profile-img"
-                                                                                                        class="form-control"
-                                                                                                        placeholder="Enter Employee Full Name" />
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </div>
+                                                                                    {{-- form fields --}}
+
                                                                                         <div class="form-group-inner">
                                                                                             <div class="row">
                                                                                                 <div class="col-lg-4">
@@ -80,7 +66,19 @@
                                                                                                 </div>
                                                                                             </div>
                                                                                         </div>
-                                                                                        <div class="form-group-inner">
+                                                                                        {{-- <div class="form-group-inner">
+                                                                                            <div class="row">
+                                                                                                <div class="col-lg-4">
+                                                                                                    <label class="login2">Photo: </label>
+                                                                                                </div>
+                                                                                                <div class="col-lg-8">
+                                                                                                    <input type="file" name="profile-img"
+                                                                                                        class="form-control"
+                                                                                                        placeholder="Enter Employee Full Name" />
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div> --}}
+                                                                                        {{-- <div class="form-group-inner">
                                                                                             <div class="row">
                                                                                                 <div class="col-lg-4">
                                                                                                     <label class="login2">New password: </label>
@@ -91,8 +89,8 @@
                                                                                                         placeholder="Enter New password" />
                                                                                                 </div>
                                                                                             </div>
-                                                                                        </div>
-                                                                                        <div class="form-group-inner">
+                                                                                        </div> --}}
+                                                                                        {{-- <div class="form-group-inner">
                                                                                             <div class="row">
                                                                                                 <div class="col-lg-4">
                                                                                                     <label
@@ -105,12 +103,12 @@
                                                                                                         placeholder="Enter Address" />
                                                                                                 </div>
                                                                                             </div>
-                                                                                        </div>
+                                                                                        </div> --}}
                                                                                         <div class="form-group-inner">
                                                                                             <div class="row">
                                                                                                 <div class="col-lg-4">
                                                                                                     <label
-                                                                                                        class="login2">Contact :
+                                                                                                        class="login2">Phone number:
                                                                                                     </label>
                                                                                                 </div>
                                                                                                 <div class="col-lg-8">
@@ -120,8 +118,8 @@
                                                                                                 </div>
                                                                                             </div>
                                                                                         </div>
-                                                                                    </form>
-                                                                                    {{-- end //////////////////////////////////////////  --}}
+
+                                                                                    {{-- form fields end --}}
                                                                                 </div>
                                                                             </div>
                                                                         </div>
@@ -163,17 +161,46 @@
                 <div class="col-lg-12">
                     <div class="sparkline13-list shadow-reset">
                         <div class="sparkline13-hd">
-                            <div class="main-sparkline13-hd">
-                                <h1>Currently User Profile Info</h1>
+                            <div class="main-sparkline13-hd pt-3 pb-5">
+                                <h1 class="mt-3 mb-5">Profile Info</h1>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="card">
+                                            <div class="card-body justify-content-center">
+                                                <img src="{{ asset('asset/img/profile/1.jpg') }}" alt="user-image" width="400px" height="auto">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="card">
+                                            <div class="card-body mt-5 mb-5 mx-4">
+                                                <div class="row">
+                                                    <div class="col-md-4 fw-bold">Name:</div>
+                                                    <div class="col-md-5">Ally Juma Hassani</div>
+                                                </div>
+                                                <div class="row mt-5">
+                                                    <div class="col-md-4 fw-bold">Username:</div>
+                                                    <div class="col-md-5">Ally</div>
+                                                </div>
+                                                <div class="row mt-5">
+                                                    <div class="col-md-4 fw-bold">Phone number:</div>
+                                                    <div class="col-md-5">+255 789 678 234</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
+                        
                         {{-- profile infomation space  --}}
                         <div class="d-flex justify-content-around">
-                          
+
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
         <!-- Static Table End -->
     @endsection
