@@ -6,7 +6,7 @@
 
 
 
-<form  action="{{ route('registerAsset') }}" method="post">
+<form  >
     @csrf
 	<div class="card-body" style="margin-top: 30px; margin-left:20px" >
 

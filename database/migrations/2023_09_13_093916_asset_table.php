@@ -18,9 +18,18 @@ return new class extends Migration
             $table->string('asset_description', 100);
             $table->string('serial_no', 30)->nullable();
             $table->float('cost');
-        
+
+
             $table->unsignedBigInteger('assettype_id');
             $table->unsignedBigInteger('condition_id');
+            $table->string('gfs_code');
+            $table->string('gfs_description');
+            $table->float('accumulated_depriciation');
+            $table->string('acquisition_date');
+            $table->string('registered_date');
+
+            $table->string('remarks');
+
             // $table->index('assettype_id');
             // $table->index('condition_id');
             $table->rememberToken();

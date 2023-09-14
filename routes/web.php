@@ -79,8 +79,8 @@ Route::group(['prefix'=>'store'], function(){
 
     Route::post('registerAsset',[StoreController::class,'store'])
     ->name('assetregisterform');
-    Route::get('assetregister', [registerController::class,'assetregister'])
-    ->name('assetregister');
+    Route::get('Asset', [StoreController::class,'Asset'])
+    ->name('Asset');
 
 
 });
