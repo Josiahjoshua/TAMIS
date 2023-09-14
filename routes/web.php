@@ -22,35 +22,36 @@ return view('index');
 } ) ->name('index');
 
 //ADMIN ROUTES
-Route::group(['prefix'=>'admin'], function(){
+// Route::group(['prefix'=>'admin'], function(){
 // Route::get('/', [directorController::class, 'index']) ->name('index');
 
-        Route::get('dashboard', [AdminController::class, 'dashboard'])
-        ->name('admin.dashboard');
+
+// Route::get('assetcategory', function () { return view('admin.assetcategory');});
+
+// Route::get('assethistory', function () { return view('admin.assethistory');});
+
+// Route::get('/assetinfo', function () { return view('admin.assetinfo');});
+
+// Route::get('directorate', function () { return view('admin.directorate');});
+
+// Route::get('branchreport', function () { return view('admin.branchreport');});
+
+// Route::get('dashboard', function () { return view('admin.dashboard');});
+
+// Route::get('department', function () { return view('admin.department');});
+
+// Route::get('employeeinfo', function () { return view('admin.employeeinfo');});
+
+// Route::get('employeereport', function () { return view('admin.employeereport');});
+
+// Route::get('transferasset', function () { return view('admin.transferasset');});
 
 
-        Route::get('directorate', [AdminController::class, 'directorate'])
-        ->name('admin.directorate');
+// Route::get('user', function () { return view('admin.user');});
 
-        Route::get('admin/assets', [AdminController::class, 'assets'])
-        ->name('admin.assets');
 
-        Route::get('assettype', [AdminController::class, 'assettype'])
-        ->name('admin.assettype');
 
-        Route::get('department', [AdminController::class, 'department'])
-        ->name('admin.department');
-
-        Route::get('/user', [AdminController::class, 'user'])
-        ->name('admin.user');
-
-        Route::get('transfer', [AdminController::class, 'transfer'])
-        ->name('admin.transfer');
-
-        Route::get('request', [AdminController::class, 'request'])
-        ->name('admin.request');
-
-});
+// Route::get('user', function () { return view('admin.user');});
 
 
 //routes for store
@@ -69,6 +70,19 @@ Route::group(['prefix'=>'store'], function(){
 
     Route::get('assetDisposition', [StoreController::class, 'assetDisposition'])
     ->name('store.assetDisposition');
+
+    Route::get('registeredAsset', [StoreController::class, 'registeredAsset'])
+    ->name('store.registeredAsset');
+
+    Route::get('assignAsset', [StoreController::class, 'assignAsset'])
+    ->name('store.assignAsset');
+
+    Route::post('registerAsset',[StoreController::class,'store'])
+    ->name('assetregisterform');
+    Route::get('Asset', [StoreController::class,'Asset'])
+    ->name('Asset');
+
+
 });
 
 //STOCK_CHECKER

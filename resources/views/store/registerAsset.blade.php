@@ -5,14 +5,16 @@
 
 
 
-<form>
+
+<form  >
+    @csrf
 	<div class="card-body" style="margin-top: 30px; margin-left:20px" >
 
-		<h2>ASSET REGISTER FORM</h2>
+		<h2></h2>
 		<div class="row form-group">
 			<div class="col-lg-1"><label for="assetno">Asset Number.</label></div>
-			<div class="col-lg-4"><input class="form-control" type="number" name="assetno" id="assetno" required></div>
-			<div class="col-lg-1"><label for="assetnodesc">Asset Name.</label></div>
+			<div class="col-lg-4"><input class="form-control" type="text" name="assetno" id="assetno" required></div>
+			<div class="col-lg-1"><label for="assetnodesc">Asset Description</label></div>
 			<div class="col-lg-4"><input class="form-control" name="assetnodesc" id="assetnodesc" required></div>
 		</div>
 		<div class="row form-group">
@@ -31,10 +33,10 @@
 				</select>
 			</div>
 			<div class="col-lg-1"><label for="regdate">Registered date</label></div>
-			<div class="col-lg-4"><input class="form-control" name="regdate" id="regdate" required></div>
+			<div class="col-lg-4"><input class="form-control" type="date" name="regdate" id="regdate" required></div>
 		</div>
 		<div class="row form-group">
-			<div class="col-lg-1"><label for="classcode">Class Code.</label></div>
+			<div class="col-lg-1"><label for="classcode">Serial Number</label></div>
 			<div class="col-lg-4"><input class="form-control" name="classcode" id="classcode" required></div>
 			<div class="col-lg-1"><label for="condition">Condition</label></div>
 			<div class="col-lg-4"><input class="form-control" name="condition" id="condition" required></div>
@@ -61,7 +63,7 @@
 
 		<div class="row form-group">
 			<div class="col-lg-1"><label for="remarks">Remarks</label></div>
-			<div class="col-lg-9"><input class="form-control" name="remarks" id="remarks" required></div>
+			<div class="col-lg-4"><input class="form-control" name="remarks" id="remarks" required></div>
 		</div>
 
 	<!-- /.card-body -->
