@@ -2,6 +2,10 @@
 
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\directorController;
+use App\Http\Controllers\user_departmentController;
+use App\Http\Controllers\StoreController;
+use App\Http\Controllers\AdminController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,9 +18,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
+
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 Route::get('/', function(){
     return view('index');
     } ) ->name('index');
@@ -24,6 +30,9 @@ Route::get('/', function(){
     //ADMIN ROUTES
     Route::group(['prefix'=>'admin'], function(){
     // Route::get('/', [directorController::class, 'index']) ->name('index');
+
+            // Route::get('welcome', [AdminController::class, 'welcome'])
+            // ->name('admin.welcome');
 
             Route::get('dashboard', [AdminController::class, 'dashboard'])
             ->name('admin.dashboard');
@@ -168,3 +177,16 @@ Route::middleware('auth')->group(function () {
 });
 
 require __DIR__.'/auth.php';
+
+
+
+
+
+
+
+
+
+
+
+
+
