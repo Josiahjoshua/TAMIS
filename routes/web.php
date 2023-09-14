@@ -117,6 +117,7 @@ Route::group(['prefix'=>'estate'], function(){
 
 
 
+
          //DIRECTOR ROUTES
 Route::group(['prefix'=>'director'], function(){
         Route::get('dashboard', [directorController::class, 'dashboard']) ->name('director.dashboard');
@@ -154,3 +155,39 @@ Route::group(['prefix'=>'user_department'], function(){
     Route::get('request', [user_departmentController::class, 'user_department.request']);
 
 });
+
+// Route::middleware(['auth'])->group(function () {
+//     Route::get('/admin/dashboard', 'AdminController@index')->name('admin.dashboard');
+//     Route::get('/user/dashboard', 'UserController@index')->name('user.dashboard');
+// });
+
+
+     // Define similar routes for other roles (estate, department, userdepartment, estate)
+Route::middleware(['auth', 'admin'])->group(function () {
+    Route::get('/admin/dashboard', 'AdminController@index')->name('admin.dashboard');
+});
+
+Route::middleware(['auth', 'user'])->group(function () {
+    Route::get('/user/dashboard', 'UserController@index')->name('user.dashboard');
+});
+
+Route::middleware(['auth', 'storekeeper'])->group(function () {
+    Route::get('/storekeeper/dashboard', 'StorekeeperController@index')->name('storekeeper.dashboard');
+});
+
+Route::middleware(['auth', 'estate'])->group(function () {
+    Route::get('/estate/dashboard', '   EstateController@index')->name('estate.dashboard');
+});
+
+Route::middleware(['auth', 'department'])->group(function () {
+    Route::get('/department/dashboard', 'DepartmentController@index')->name('department.dashboard');
+});
+
+Route::middleware(['auth', 'userdepartmentr'])->group(function () {
+    Route::get('/userdepartment/dashboard', 'UserdepartmentController@index')->name('userdepartment.dashboard');
+});
+
+Route::middleware(['auth', 'stockchecker'])->group(function () {
+    Route::get('/stockchecker/dashboard', 'StockcheckerController@index')->name('stockchecker.dashboard');
+});
+
