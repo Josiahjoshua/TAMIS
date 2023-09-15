@@ -19,7 +19,7 @@ class UserFactory extends Factory
     {
         return [
             'id' => fake()->id(),
-            'name' => fake()->name(),
+            'full_name' => fake()->name(),
 
             'remember_token' => Str::random(10),
         ];
@@ -31,7 +31,7 @@ class UserFactory extends Factory
     public function unverified(): static
     {
         return $this->state(fn (array $attributes) => [
-            'name' => null
+            'email' => null
         ]);
     }
 }

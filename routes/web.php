@@ -1,11 +1,13 @@
 <?php
+
+use App\Http\Controllers\ProfileController;
+use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\directorController;
 use App\Http\Controllers\user_departmentController;
-use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\StoreController;
 use App\Http\Controllers\AdminController;
-use App\Http\Controllers\Profileupdate;
 
+use App\Mode\Asset;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -17,50 +19,61 @@ use App\Http\Controllers\Profileupdate;
 |
 */
 
-//Login
+
+
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 Route::get('/', function(){
-return view('index');
-} ) ->name('index');
+    return view('index');
+    } ) ->name('index');
 
 //ADMIN ROUTES
-Route::group(['prefix'=>'admin'], function(){
+// Route::group(['prefix'=>'admin'], function(){
 // Route::get('/', [directorController::class, 'index']) ->name('index');
 
-        Route::get('dashboard', [AdminController::class, 'dashboard'])
-        ->name('admin.dashboard');
+
+// Route::get('assetcategory', function () { return view('admin.assetcategory');});
+
+// Route::get('assethistory', function () { return view('admin.assethistory');});
+
+// Route::get('/assetinfo', function () { return view('admin.assetinfo');});
+
+// Route::get('directorate', function () { return view('admin.directorate');});
+
+// Route::get('branchreport', function () { return view('admin.branchreport');});
+
+// Route::get('dashboard', function () { return view('admin.dashboard');});
+
+// Route::get('department', function () { return view('admin.department');});
+
+// Route::get('employeeinfo', function () { return view('admin.employeeinfo');});
+
+// Route::get('employeereport', function () { return view('admin.employeereport');});
+
+// Route::get('transferasset', function () { return view('admin.transferasset');});
 
 
-        Route::get('directorate', [AdminController::class, 'directorate'])
-        ->name('admin.directorate');
+// Route::get('user', function () { return view('admin.user');});
 
-        Route::get('admin/assets', [AdminController::class, 'assets'])
-        ->name('admin.assets');
 
-        Route::get('assettype', [AdminController::class, 'assettype'])
-        ->name('admin.assettype');
 
-        Route::get('department', [AdminController::class, 'department'])
-        ->name('admin.department');
-
-        Route::get('/user', [AdminController::class, 'user'])
-        ->name('admin.user');
-
-        Route::get('transfer', [AdminController::class, 'transfer'])
-        ->name('admin.transfer');
-
-        Route::get('request', [AdminController::class, 'request'])
-        ->name('admin.request');
-
-});
+// Route::get('user', function () { return view('admin.user');});
 
 
 //routes for store
 Route::group(['prefix'=>'store'], function(){
+
+
+
     Route::get('dashboard', [StoreController::class, 'storeDashboard'])
     ->name('store.dashboard');
 
     Route::get('registerAsset', [StoreController::class, 'RegisterAsset'])
     ->name('store.registerAsset');
+
+    Route::post('registerAsset', [StoreController::class, 'formSubmission'])
+    ->name('registerAsset');
 
     Route::get('gamisRegister', [StoreController::class, 'gamisRegister'])
     ->name('store.gamisRegister');
@@ -70,48 +83,74 @@ Route::group(['prefix'=>'store'], function(){
 
     Route::get('assetDisposition', [StoreController::class, 'assetDisposition'])
     ->name('store.assetDisposition');
+
+    Route::get('registeredAsset', [StoreController::class, 'registeredAsset'])
+    ->name('store.registeredAsset');
+
+    Route::get('assignAsset', [StoreController::class, 'assignAsset'])
+    ->name('store.assignAsset');
+
+
 });
 
 //STOCK_CHECKER
 Route::group(['prefix'=>'stock-checker'], function(){
 
-    Route::get('dashboard', function(){   return view('stock_checker.dashboard');})
+    Route::get('dashboard', [stockCheckerController::class, 'stockCheckerDashboard'])
     ->name('stock_checker.dashboard');
 
-    Route::get('assets_history', function(){ return view('stock_checker.assethistory');})
+    Route::get('assets_transfer_history', [stockCheckerController::class, 'assetsTransferHistory'])
     ->name('stock-checker.assethistory');
 
-    Route::get('assets_category', function(){ return view('stock_checker.assetcategory');})
-    ->name('stock-checker.assetcategory');
+    Route::get('assets_type', [stockCheckerController::class, 'assetsType'])
+    ->name('stock-checker.assettype');
 
-    Route::get('assets_info', function(){  return view('stock_checker.assetinfo'); })
+    Route::get('assets_info', [stockCheckerController::class, 'assetInfo'])
     ->name('stock-checker.assetinfo');
 
-    Route::get('department', function(){ return view('stock_checker.department');})
+    Route::get('department', [stockCheckerController::class, 'department'])
     ->name('stock-checker.department');
 
-    Route::get('assets_disposal', function(){ return view('stock_checker.assetdisposal'); })
+    Route::get('assets_disposal', [stockCheckerController::class, 'assetDisposal'])
     ->name('stock-checker.assetdisposal');
 
-    Route::get('assets_report', function() { return view('stock_checker.report');})
+    Route::get('assets_report', [stockCheckerController::class, 'report'])
     ->name('stock-checker.report');
 
-    Route::get('profile', function() {return view('stock_checker.user'); })
+    Route::get('profile', [stockCheckerController::class, 'userProfile'])
     ->name('stock_checker.profile');
+
 });
 
 //estate routes
 Route::group(['prefix'=>'estate'], function(){
+
+
     Route::get('category', function () { return view('estate.category');})->name('estate/category');
+
     Route::get('viewasset', function () {return view('estate.assetviews');});
 
-    Route::get('now/{assetName}', function ($assetName) {return view('estate.assetviews.testingsirikwaway', ['assetName' => $assetName]);})
-    ->name('now');
+
+    Route::get('now/{assetName}', [estateController::class, 'getNow'])->name('now');
+
+    // Route::get('now/{assetName}', function ($assetName) {return view('estate.assetviews.testingsirikwaway', ['assetName' => $assetName]);})
+    // ->name('now');
 
     Route::get('department', function () { return view('estate.departmentview');})->name('estate/department');
     Route::get('viewdepart/{departmentName}', function ($departmentName) {    return view('estate.assetviews.departmentviews', ['departmentName' => $departmentName]);
     })->name('viewdepart');
-    Route::get('requests', function () { return view('estate.estaterequests');})->name('requests');
+
+    Route::get('requests', [estateController::class, 'requestedasset'])->name('requests');
+
+
+    Route::get('trasferhistory', [estateController::class, 'trasferhistory'])->name('trasferhistory');
+
+
+
+    Route::get('getpdf', [estateController::class, 'getpdf'])->name('getpdf');
+
+    Route::get('dashboard', [estateController::class, 'dashboard'])->name('dashboard');
+
 
 });
 
@@ -134,25 +173,54 @@ Route::group(['prefix'=>'director'], function(){
         Route::get('assetassignment', [directorController::class, 'assetassignment']) ->name('director.assetassignment');
 
         Route::get('transferasset', [directorController::class, 'transferasset']) ->name('director.transferasset');
+        Route::post('addData', [directorController::class, 'addData']);
 });
 
 
 
                  //USER_DEPARTMENT
 Route::group(['prefix'=>'user_department'], function(){
-    Route::get('dashboard',[user_departmentController::class,'dashboard'])->name('user_department.dashboard');
-    Route::get('AssetInformation', [user_departmentController::class, 'assetInfo'])->name('user_department.assetInformation');
-    Route::get('transferHistory', [user_departmentController::class, 'transferasset'])->name('user_department.transferAsset');
-    Route::get('assetreq',[user_departmentController::class,'assetreq'])->name('user_department.assetreq');
-    Route::get('employee',[user_departmentController::class,'employeeinfo'])->name('user_department.employeeinfo');
-    Route::get('assetassigment', [user_departmentController::class, 'assetAssigment'])->name('user_department.assetAssigment');
-    Route::get('create', [user_departmentController::class, 'create']) ->name('user_department.create');
-    Route::get('assignAsset', [user_departmentController::class, 'assignAsset'])->name('user_department.assignAsset');
-    Route::get('transferasset', [user_departmentController::class, 'transferasset'])->name('user_department.transferasset');
-    Route::post('/show-popup', 'PopupController@showPopup')->name('user_department.pop');
-    Route::get('tempTransfer', [user_departmentController::class, 'tempTransfer'])->name('user_department.tempTransfer');
+
+
+
+    Route::get('dashboard',[user_departmentController::class,'dashboard'])
+    ->name('user_department.dashboard');
+    Route::get('AssetInformation', [user_departmentController::class, 'assetInfo'])
+    ->name('user_department.assetInformation');
+
+    Route::get('transferHistory', [user_departmentController::class, 'transferasset'])
+    ->name('user_department.transferAsset');
+
+    Route::get('assetreq',[user_departmentController::class,'assetreq'])
+    ->name('user_department.assetreq');
+
+    Route::get('employee',[user_departmentController::class,'employeeinfo'])
+    ->name('user_department.employeeinfo');
+
+    Route::get('assetassigment', [user_departmentController::class, 'assetAssigment'])
+    ->name('user_department.assetAssigment');
+
+    Route::get('create', [user_departmentController::class, 'create'])
+    ->name('user_department.create');
+
+    Route::get('assignAsset', [user_departmentController::class, 'assignAsset'])
+    ->name('user_department.assignAsset');
+
+    Route::get('transferasset', [user_departmentController::class, 'transferasset'])
+    ->name('user_department.transferasset');
+
+    Route::post('/show-popup', 'PopupController@showPopup')
+    ->name('user_department.pop');
+
+    Route::get('tempTransfer', [user_departmentController::class, 'tempTransfer'])
+    ->name('user_department.tempTransfer');
+
     Route::get('office',[user_departmentController::class,'user_department.office']);
+
     Route::get('request', [user_departmentController::class, 'user_department.request']);
+
+    Route::get('transferHistory',[user_departmentController::class, 'transferHistory'])->name('user_department.transferHistory1');
+
 
 });
 

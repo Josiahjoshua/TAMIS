@@ -93,7 +93,7 @@
                             <a href="brachoffice.php" role="button" aria-expanded="false"><i class="fa big-icon fa-home"></i> <span class="mini-dn"> Branch Office</span> </a>
                         </li> --}}
                         <li>
-                            <a href="{{ route('stock-checker.assetcategory') }}" role="button" aria-expanded="false"><i class="fa big-icon fa-flask"></i> <span class="mini-dn"> Asset Category</span> </a>
+                            <a href="{{ route('stock-checker.assettype') }}" role="button" aria-expanded="false"><i class="fa big-icon fa-flask"></i> <span class="mini-dn"> Asset Type</span> </a>
                         </li>
 
                         {{-- <li>
@@ -148,12 +148,11 @@
                                             <a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="nav-link dropdown-toggle">
                                                 <span class="adminpro-icon adminpro-user-rounded header-riht-inf"></span>
                                                 <span class="admin-name">Peculiar</span>
-                                                <span class="author-project-icon adminpro-icon adminpro-down-arrow"></span>
                                             </a>
                                             <ul role="menu" class="dropdown-header-top author-log dropdown-menu animated flipInX">
-                                                <li><a href="{{ route('stock_checker.profile') }}"><span class="adminpro-icon adminpro-user-rounded header-riht-inf"></span>My Profile</a>
+                                                <li><a href="{{ route('stock_checker.profile') }}"><span class="adminpro-icon adminpro-user-rounded header-riht-inf author-log-ic"></span>My Profile</a>
                                                 </li>
-                                                <li><a href="#"><span class="adminpro-icon adminpro-user-rounded header-riht-inf"></span>Change Password</a>
+                                                <li><a href="#"><span class="adminpro-icon adminpro-locked header-riht-inf author-log-ic"></span>Change Password</a>
                                                 </li>
                                                 <li><a href="index.php"><span class="adminpro-icon adminpro-locked author-log-ic"></span>Log Out</a>
                                                 </li>

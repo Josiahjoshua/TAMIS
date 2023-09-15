@@ -14,7 +14,7 @@ class UsersTableSeeder extends Seeder
      */
     public function run(): void
  {
-        DB::table('users')->insert([
+        DB::table('user')->insert([
 
             //Admin
             [
@@ -22,7 +22,9 @@ class UsersTableSeeder extends Seeder
                 'username' => 'admin',
                 'password' =>Hash::make('111'),
                 'phone' =>  '0764037344',
+                'role_id' => 1, // Specify the role ID here
             ],
+
 
 
 

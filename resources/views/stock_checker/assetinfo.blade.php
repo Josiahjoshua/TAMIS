@@ -194,16 +194,16 @@
                                             <thead>
                                                 <tr>
                                                     <th >SN</th>
-                                                    <th>Asset code</th>
-                                                    <th >Description</th>
-                                                    <th >Location</th>
+                                                    <th>Asset No.</th>
+                                                    <th >Description</th>     
                                                     <th >Acq. Cost</th>
-                                                    <th >Condition</th>
-                                                    <th >Quantity</th>
-                                                    <th >Serial No</th>
-                                                    <th >Date</th>
-                                                    <th >Assigned to</th>
-                                                    <th >Signature</th>
+                                                    <th >Asset_Type ID</th>
+                                                    <th >Condition ID</th>
+                                                    <th >Acq. date</th>
+                                                    <th >Registered date</th>
+                                                    <th >Remarks</th>
+                                                        {{-- <th>Assigned to</th>
+                                                        <th >Signature</th> --}}
                                                     <th ></th>
                                                 </tr>
                                             </thead>
@@ -212,14 +212,14 @@
                                                     <td>1</td>
                                                     <td>TIRDO 2203</td>
                                                     <td>ICT Set</td>
-                                                    <td >Msasani</td>
-                                                    <td>850,000</td>
-                                                    <td>January 12, 2020</td>
+                                                    <td >50000</td>
+                                                    <td>1</td>
                                                     <td>2</td>
+                                                    <td>January 12, 2020</td>
+                                                    <td>January 10, 2020</td>
                                                     <td></td>
-                                                    <td>22/03/2023</td>
-                                                    <td>Tenacious</td>
-                                                    <td>10nacious10</td>
+                                                    {{-- <td>Tenacious</td>
+                                                    <td>10nacious10</td> --}}
                                                     <td><button type="button" class="btn btn-primary btn-circle" data-toggle="modal" data-target="#edit"><i class="fa fa-edit"></i></button> <button type="button" class="btn btn-danger"><i class="fa fa-trash"></i></button></td>
                                                 </tr>
                                             </tbody>

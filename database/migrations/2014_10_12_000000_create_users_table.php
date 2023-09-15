@@ -25,6 +25,7 @@ return new class extends Migration
             $table->timestamps();
         });
     }
+    
 
             // $table->string('photo')->nullable();
             // $table->string('address')->nullable();
