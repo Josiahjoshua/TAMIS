@@ -4,6 +4,7 @@ use App\Http\Controllers\user_departmentController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\StoreController;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\Profileupdate;
 
 /*
 |--------------------------------------------------------------------------
@@ -154,3 +155,5 @@ Route::group(['prefix'=>'user_department'], function(){
     Route::get('request', [user_departmentController::class, 'user_department.request']);
 
 });
+
+Route::get('/profilemanagment', [Profileupdate::class, 'profilemanagnemt']);

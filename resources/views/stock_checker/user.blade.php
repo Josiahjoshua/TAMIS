@@ -16,122 +16,51 @@
                                     role="dialog">
                                     <div class="modal-dialog">
                                         <div class="modal-content">
-                                            <form action="">
+                                            <form action="/profilemanagment" method="POST">
                                                 <div class="modal-close-area modal-close-df">
                                                     <a class="close" data-dismiss="modal" href="#"><i
                                                             class="fa fa-close"></i></a>
                                                 </div>
                                                 <div class="modal-body">
-                                                    <div class="row">
-                                                        <div class="col-lg-12">
-                                                            <div class="sparkline9-list shadow-reset">
-                                                                <div class="sparkline9-hd">
-                                                                    <div class="main-sparkline9-hd">
-                                                                        <h1>User Information Encoding <span
-                                                                                class="basic-ds-n">Form</span></h1>
-
-                                                                    </div>
-                                                                </div>
-                                                                <div class="sparkline9-graph">
-                                                                    <div class="basic-login-form-ad">
-                                                                        <div class="row">
-                                                                            <div class="col-lg-12">
-                                                                                <div class="basic-login-inner">
-                                                                                    <h3>Update Info : </h3>
-                                                                        {{-- form for profile upation ////////////////////////////////////////  --}}
-                                                                                    <form action="/profile-info" method="post">
-                                                                                        @csrf
-                                                                                        <div class="form-group-inner">
-                                                                                            <div class="row">
-                                                                                                <div class="col-lg-4">
-                                                                                                    <label class="login2">Profile imge: </label>
-                                                                                                </div>
-                                                                                                <div class="col-lg-8">
-                                                                                                    <input type="file" name="profile-img"
-                                                                                                        class="form-control"
-                                                                                                        placeholder="Enter Employee Full Name" />
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                        <div class="form-group-inner">
-                                                                                            <div class="row">
-                                                                                                <div class="col-lg-4">
-                                                                                                    <label class="login2">Full
-                                                                                                        Name : </label>
-                                                                                                </div>
-                                                                                                <div class="col-lg-8">
-                                                                                                    <input type="text" name="profile-name"
-                                                                                                        class="form-control"
-                                                                                                        placeholder="Enter Employee Full Name" />
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                        <div class="form-group-inner">
-                                                                                            <div class="row">
-                                                                                                <div class="col-lg-4">
-                                                                                                    <label
-                                                                                                        class="login2">Username
-                                                                                                        : </label>
-                                                                                                </div>
-                                                                                                <div class="col-lg-8">
-                                                                                                    <input type="text"
-                                                                                                        class="form-control"
-                                                                                                        placeholder="Enter Username" />
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                        <div class="form-group-inner">
-                                                                                            <div class="row">
-                                                                                                <div class="col-lg-4">
-                                                                                                    <label class="login2">New password: </label>
-                                                                                                </div>
-                                                                                                <div class="col-lg-8">
-                                                                                                    <input type="password"
-                                                                                                        class="form-control"
-                                                                                                        placeholder="Enter New password" />
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                        <div class="form-group-inner">
-                                                                                            <div class="row">
-                                                                                                <div class="col-lg-4">
-                                                                                                    <label
-                                                                                                        class="login2">Address :
-                                                                                                    </label>
-                                                                                                </div>
-                                                                                                <div class="col-lg-8">
-                                                                                                    <input type="text"
-                                                                                                        class="form-control"
-                                                                                                        placeholder="Enter Address" />
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                        <div class="form-group-inner">
-                                                                                            <div class="row">
-                                                                                                <div class="col-lg-4">
-                                                                                                    <label
-                                                                                                        class="login2">Contact :
-                                                                                                    </label>
-                                                                                                </div>
-                                                                                                <div class="col-lg-8">
-                                                                                                    <input type="number"
-                                                                                                        class="form-control"
-                                                                                                        placeholder="Enter Contact Number" />
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </form>
-                                                                                    {{-- end //////////////////////////////////////////  --}}
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
+                                                    <form>
+                                                        <div class="row mb-3 d-flex justify-content-between">
+                                                            <label for="inputPassword3"
+                                                                class="col-sm-2 col-form-label p-2">Fullname:</label>
+                                                            <div class="col-sm-10">
+                                                                <input type="" name="text" class="form-control"
+                                                                    id="inputPassword3">
                                                             </div>
                                                         </div>
-                                                    </div>
+                                                        <div class="row mb-3 d-flex justify-content-between">
+                                                            <label for="inputPassword3"
+                                                                class="col-sm-2 col-form-label p-2">Username:</label>
+                                                            <div class="col-sm-10">
+                                                                <input type="" name="password" class="form-control"
+                                                                    id="inputPassword3">
+                                                            </div>
+                                                        </div>
+                                                        {{-- <div class="row mb-3 d-flex justify-content-between">
+                                                            <label for="inputPassword3"
+                                                                class="col-sm-2 col-form-label p-2">Password:</label>
+                                                            <div class="col-sm-10">
+                                                                <input type="password" class="form-control"
+                                                                    id="inputPassword3">
+                                                            </div>
+                                                        </div> --}}
+                                                        <div
+                                                            class="row mb-3 d-flex justify-content-between align-items-center">
+                                                            <label for="inputPassword3"
+                                                                class="col-sm-2 col-form-label p-2">PhoneNo:</label>
+                                                            <div class="col-sm-10">
+                                                                <input type="password" class="form-control"
+                                                                    id="inputPassword3">
+                                                            </div>
+                                                        </div>
+
+
+                                                    </form>
                                                 </div>
-                                                <div class="modal-footer footer-modal-admin">
+                                                <div class="modal-footer footer-modal-admin d-flex justify-content-center">
                                                     <a data-dismiss="modal" href="#">Cancel</a>
                                                     <a href="#">Save</a>
                                                 </div>
@@ -158,22 +87,38 @@
     <!-- Breadcome End-->
     <!-- Static Table Start -->
     <div class="data-table-area mg-b-15">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="sparkline13-list shadow-reset">
-                        <div class="sparkline13-hd">
-                            <div class="main-sparkline13-hd">
-                                <h1>Currently User Profile Info</h1>
-                            </div>
-                        </div>
-                        {{-- profile infomation space  --}}
-                        <div class="d-flex justify-content-around">
-                          
+        <div class="container-fluid row  d-flex align-items-center justify-content-center">
+
+            <div class="col">
+                <div class="col-md-6 offset-md-3 bg-white">
+                    <div class="image-placeholder bg-white">
+                        <!-- Content (optional) -->
+                        <div class="image-content">
+                            <!-- You can add text or other content here -->
+                            <!-- Example text -->
+                            <p>No Image</p>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <div class=" col">
+                <div class="">
+                    <div class="mb-3 d-flex aling-items-center p-2">
+                        <label for="name" class="form-label">Fullname:</label>
+                        <span class=""></span>
+                    </div>
+                    <div class="mb-3 d-flex aling-items-center p-2">
+                        <label for="username" class="form-label">Username:</label>
+                        <span class=""></span>
+                    </div>
+                    <div class="mb-3 d-flex aling-items-center p-2">
+                        <label for="phone" class="form-label">Phone No:</label>
+                        <span class=""></span>
+                    </div>
+                </div>
+            </div>
+
         </div>
         <!-- Static Table End -->
     @endsection
