@@ -129,9 +129,11 @@
                                                                     <label class="login2">Asset category : </label>
                                                                 </div>
                                                                 <div class="col-lg-4">
-                                                                    <select class="form-control">Assets Category
-                                                                        @foreach ($info as $info)
-                                                                        <option value="{{$info->assettype_id}}" name="{{$info->assettype_name}}">{{$info->assettype_name}}</option>
+                                                                    <label for="asset type"name='asset_type'></label>
+                                                                    <select class="form-control">
+
+                                                                        @foreach ($data as $assettype)
+                                                                            <option value="{{$assettype->id}}">{{$assettype->assettype_name}}</option>
                                                                         @endforeach
                                                                     </select>
                                                                 </div>
@@ -142,12 +144,16 @@
                                                             <div class="row">
                                                                 <div class="col-lg-4">
                                                                     <label class="login2">Condition : </label>
+                                                                   
                                                                 </div>
                                                                 <div class="col-lg-4">
                                                                     <select class="form-control">Select Condition
-                                                                        @foreach ($list as $item)
-                                                                        <option value="{{$item->condition_id}}" name="{{$item->condition_name}}">{{$item->condition_name}}</option>
-                                                                        @endforeach
+                                                                        @foreach ($condi as $ctn )
+                                                                        <option value="{{$ctn->id}}">{{$ctn->condition_name}}</option>
+
+                                                                    @endforeach
+
+
                                                                     </select>
                                                                 </div>
                                                             </div>
@@ -194,9 +200,6 @@
                                                                 </div>
                                                                 <div class="col-lg-2">
                                                                 <select class="form-control">Building
-                                                                    @foreach ($build as $build)
-                                                                         <option value="{{$build->building_id}}" name="{{$build->building_name}}">{{$build->building_name}}</option>
-                                                                    @endforeach
 
                                                                 </select>
                                                                 </div>

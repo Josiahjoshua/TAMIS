@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 use Illuminate\Support\Facades\DB;
 
 use Illuminate\Http\Request;
+use App\Models\asset_type;
+use App\Models\condition;
 
 class user_departmentController extends Controller
 {
@@ -45,12 +47,9 @@ class user_departmentController extends Controller
     public function assignAsset()
     {
          //retrival data from database of condition
-         $data =array(
-            'list'=>DB::table('condition')->get(),
-            'info'=>DB::table('asset_type')->get(),
-            'build'=>DB::table('building')->get()
-        );
-        return view('user_department.assign_asset', $data);
+       $data=asset_type::all();
+       $condi=condition::all();
+        return view('user_department.assign_asset',['data'=>$data,'condi'=>$condi]);
     }
 
     //receive from form of assignAsset
